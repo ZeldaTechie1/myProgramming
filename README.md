@@ -1,4 +1,4 @@
-# ProgsToTestMySkills
+# My Programming
 This repository keeps track of all the programs I have created through out the years in different Programming Languages.
 
 It contains
