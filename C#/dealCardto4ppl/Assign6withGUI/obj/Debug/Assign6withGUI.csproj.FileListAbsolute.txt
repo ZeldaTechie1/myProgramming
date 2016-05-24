@@ -1,0 +1,10 @@
+F:\myWork(sort)\myCode\BasicCardGame_(Deals_to_4_people)\Assign6withGUI\bin\Debug\Assign6withGUI.exe.config
+F:\myWork(sort)\myCode\BasicCardGame_(Deals_to_4_people)\Assign6withGUI\bin\Debug\Assign6withGUI.exe
+F:\myWork(sort)\myCode\BasicCardGame_(Deals_to_4_people)\Assign6withGUI\bin\Debug\Assign6withGUI.pdb
+F:\myWork(sort)\myCode\BasicCardGame_(Deals_to_4_people)\Assign6withGUI\obj\Debug\Assign6withGUI.csprojResolveAssemblyReference.cache
+F:\myWork(sort)\myCode\BasicCardGame_(Deals_to_4_people)\Assign6withGUI\obj\Debug\Assignment6CSharp.mainForm.resources
+F:\myWork(sort)\myCode\BasicCardGame_(Deals_to_4_people)\Assign6withGUI\obj\Debug\Assign6withGUI.Properties.Resources.resources
+F:\myWork(sort)\myCode\BasicCardGame_(Deals_to_4_people)\Assign6withGUI\obj\Debug\Assignment6CSharp.showHandsForm.resources
+F:\myWork(sort)\myCode\BasicCardGame_(Deals_to_4_people)\Assign6withGUI\obj\Debug\Assign6withGUI.csproj.GenerateResource.Cache
+F:\myWork(sort)\myCode\BasicCardGame_(Deals_to_4_people)\Assign6withGUI\obj\Debug\Assign6withGUI.exe
+F:\myWork(sort)\myCode\BasicCardGame_(Deals_to_4_people)\Assign6withGUI\obj\Debug\Assign6withGUI.pdb
