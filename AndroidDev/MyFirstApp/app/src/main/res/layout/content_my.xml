@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- linear layout is subclass of viewgroup, you view things in a liner fashion
+ the orientation attribute tells you how the things inside linear layout will appaer
+ if you are the root layout, use match parent to fill the area
+ -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_my">
+
+    <!--id provides unique identifier
+    @ sign is required when refering to any resource obj from xml
+    follow by resource type (id in this case)
+    then a resource name-->
+
+    <!--wrap content means only as big as needed to fit contents-->
+
+    <!--the hint is what to display when that text field is empty
+    here we rnt using hard coded, rather a referance to a string resource define in a separate file
+    NOTE: since we refer to a concrete resource (not identifier) it doesnt need the plus-->
+
+    <!--Weight attribute is how much of a the screen you should fill with this thing
+    EX: if obj1.weight=1 and other.weight =2, then other will fill 2/3 of screen-->
+
+    <!--improves layout efficiency because using wrap content uses alot of system power and will ultimately be irelevant
+    since it will have to recalculate the width because of the weight attribute-->
+
+    <EditText android:id="@+id/edit_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_message"
+        android:layout_weight="1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_send"/>
+</LinearLayout>

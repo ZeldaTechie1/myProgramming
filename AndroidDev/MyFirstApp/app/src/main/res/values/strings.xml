@@ -1,0 +1,10 @@
+<!--this is my string resources file-->
+<!--for text in the UI, ALWAYS specify each string as a resource
+*this lets you manage all your text from one location, which makes it easier to find and update
+*also allows different languages by providing alternative definitions for each string resource-->
+<resources>
+    <string name="app_name">My First App</string>
+    <string name="action_settings">Settings</string>
+    <string name="edit_message">Enter a Message</string>
+    <string name="button_send">Send</string>
+</resources>
