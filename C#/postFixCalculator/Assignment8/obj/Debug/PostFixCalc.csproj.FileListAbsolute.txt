@@ -1,0 +1,9 @@
+F:\myWork(sort)\myCode\Assign8CalcPostFixProb\Assignment8\Assignment8\bin\Debug\Assignment8.exe.config
+F:\myWork(sort)\myCode\Assign8CalcPostFixProb\Assignment8\Assignment8\bin\Debug\Assignment8.exe
+F:\myWork(sort)\myCode\Assign8CalcPostFixProb\Assignment8\Assignment8\bin\Debug\Assignment8.pdb
+F:\myWork(sort)\myCode\Assign8CalcPostFixProb\Assignment8\Assignment8\obj\Debug\PostFixCalc.csprojResolveAssemblyReference.cache
+F:\myWork(sort)\myCode\Assign8CalcPostFixProb\Assignment8\Assignment8\obj\Debug\Assignment8.mainForm.resources
+F:\myWork(sort)\myCode\Assign8CalcPostFixProb\Assignment8\Assignment8\obj\Debug\Assignment8.Properties.Resources.resources
+F:\myWork(sort)\myCode\Assign8CalcPostFixProb\Assignment8\Assignment8\obj\Debug\PostFixCalc.csproj.GenerateResource.Cache
+F:\myWork(sort)\myCode\Assign8CalcPostFixProb\Assignment8\Assignment8\obj\Debug\Assignment8.exe
+F:\myWork(sort)\myCode\Assign8CalcPostFixProb\Assignment8\Assignment8\obj\Debug\Assignment8.pdb
