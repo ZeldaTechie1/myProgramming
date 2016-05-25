@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
             this.inputString = new System.Windows.Forms.TextBox();
             this.calculateButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -96,11 +97,11 @@
             // 
             // consoleText
             // 
-            this.consoleText.Location = new System.Drawing.Point(12, 85);
+            this.consoleText.Location = new System.Drawing.Point(12, 141);
             this.consoleText.Multiline = true;
             this.consoleText.Name = "consoleText";
             this.consoleText.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.consoleText.Size = new System.Drawing.Size(263, 392);
+            this.consoleText.Size = new System.Drawing.Size(263, 336);
             this.consoleText.TabIndex = 6;
             // 
             // anotherProblemButton
@@ -126,12 +127,13 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(12, 59);
+            this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(263, 20);
+            this.textBox1.Size = new System.Drawing.Size(263, 76);
             this.textBox1.TabIndex = 9;
-            this.textBox1.Text = "Seperate you operands and operators with a space";
+            this.textBox1.Text = resources.GetString("textBox1.Text");
             // 
-            // Form1
+            // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -146,7 +148,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.calculateButton);
             this.Controls.Add(this.inputString);
-            this.Name = "Form1";
+            this.Name = "mainForm";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();

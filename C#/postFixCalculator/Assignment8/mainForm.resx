@@ -117,4 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>This Calculator calculates a final value 
+from an original equation in Post Fix Notation
+For Example:
+     Try "3 4 5 * -" which is (3 - (4 * 5)) to get -17
+Seperate your operands and operators with a space
+</value>
+  </data>
 </root>
