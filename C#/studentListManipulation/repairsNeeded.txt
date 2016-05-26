@@ -1,0 +1,14 @@
+FIX EDIT TAB!
+	make search last name visible and work
+	make binary search telephone visible and work
+
+Fix all the ran out of time parts
+	search last name
+	binary search telephone
+	FOR BOTH:
+		should display all entries with that last name in order in the edit tab
+		UNLESS: you click "display all" OR "display sorted" (should be display ALL sorted)
+
+*previous and next work on the current set of entries (including whether or not those entries are only include a last name or a telephone)
+
+*make a slot under search last name and search telephone for appropiate searching

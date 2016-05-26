@@ -1,0 +1,3 @@
+F:\myWork(sort)\myCode\Assignment10\Assignment10\bin\Debug\Assignment10.exe.config
+F:\myWork(sort)\myCode\Assignment10\Assignment10\obj\Debug\Assignment10.exe
+F:\myWork(sort)\myCode\Assignment10\Assignment10\obj\Debug\Assignment10.pdb
