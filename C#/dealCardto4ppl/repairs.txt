@@ -1,0 +1,4 @@
+-gets new deck, infinitly
+	needs to clear what is there and display the new info
+-show hands spawns infinite forms
+-play again doesnt clear the getnewdeck textbox
