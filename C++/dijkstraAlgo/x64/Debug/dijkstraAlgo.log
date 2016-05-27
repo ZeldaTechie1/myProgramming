@@ -1,0 +1,7 @@
+﻿  main.cpp
+c:\users\dr negative's laptop\documents\visual studio 2015\projects\dijkstraalgo\weighteddirectedgraph.h(119): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\dr negative's laptop\documents\visual studio 2015\projects\dijkstraalgo\weighteddirectedgraph.h(163): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\users\dr negative's laptop\documents\visual studio 2015\projects\dijkstraalgo\weighteddirectedgraph.h(164): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+c:\users\dr negative's laptop\documents\visual studio 2015\projects\dijkstraalgo\weighteddirectedgraph.h(220): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\dr negative's laptop\documents\visual studio 2015\projects\dijkstraalgo\weighteddirectedgraph.h(231): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  dijkstraAlgo.vcxproj -> C:\Users\Dr Negative's Laptop\Documents\Visual Studio 2015\Projects\dijkstraAlgo\x64\Debug\dijkstraAlgo.exe

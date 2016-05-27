@@ -1,0 +1,5 @@
+﻿  main.cpp
+f:\mywork(sort)\mycode\binarysearchtree\binarysearchtree\avltree.h(163): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+f:\mywork(sort)\mycode\binarysearchtree\binarysearchtree\avltree.h(77): warning C4715: 'AVLTree::findSmallest': not all control paths return a value
+  binarySearchTree.vcxproj -> F:\myWork(sort)\myCode\binarySearchTree\Debug\binarySearchTree.exe
+  binarySearchTree.vcxproj -> F:\myWork(sort)\myCode\binarySearchTree\Debug\binarySearchTree.pdb (Partial PDB)

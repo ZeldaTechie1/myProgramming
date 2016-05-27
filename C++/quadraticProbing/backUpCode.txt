@@ -1,0 +1,138 @@
+#pragma once
+
+#include <iostream>
+#include <string>
+#include <vector>
+#include <cmath>
+
+using namespace std;
+
+//has the template option but only works for ints for now
+class quadraticHashTable
+{
+
+	//this allows you to take advantage of the full storage capabilities of int
+	struct item {
+		int data; //irelevant until active or deleted flags go to true
+		bool empty=true; //T = there is something in the cell
+		bool deleted=false; //T = there is something but it has been deleted
+	};
+
+	int totalNumItems = 0;
+	vector<item> hashList;
+
+public:
+	//constructor
+	quadraticHashTable()
+	{
+		quadraticHashTable(11); //start size at 11 for simplicity's sake
+	}
+
+	quadraticHashTable(int s)
+	{
+		hashList.resize(s);
+	}
+
+	//insert with quadtratic probing
+	void insert(int num)
+	{
+		totalNumItems++;
+
+		resize();
+
+		int originalHashLoc = num % (hashList.size()); //only for ints, might want different hashing funcs for different types
+		int hashLoc = originalHashLoc;
+		
+		for (int i = 1; hashList[hashLoc].empty == false; i++)
+		{
+			hashLoc = (originalHashLoc + (int)pow(i, 2));//I base myself off of the original hashlocation, not super sure If I was able to base myself off of the previous hashlocation
+			while (hashLoc >= hashList.size()) //capacity is the total slots in my vector
+				hashLoc = hashLoc - hashList.size();
+		}
+		
+		hashList[hashLoc].data = num;
+		hashList[hashLoc].empty = false;
+
+	}
+
+	//Lazy delete - marks that slot as deleted - doesnt allow you to insert into that location - by having deleted "flag" the contains func will know to keep searching
+	void remove(int num) //its only going to remove if the value is found, other wise it will just try to find it - will only delete first instance
+	{
+		int originalHashLoc = num % (hashList.size());
+		int hashLoc = originalHashLoc;
+
+		for (int i = 1; hashList[hashLoc].empty == true; i++) //assumes that we will eventually find an empty slot (because our hash size is a prime and at any time is at most less than half full
+		{
+			if (num == hashList[hashLoc].data)
+			{
+				hashList[hashLoc].deleted = true;
+				totalNumItems--;
+				break;
+			}
+
+			hashLoc = (originalHashLoc + (int)pow(i, 2));
+			while (hashLoc >= hashList.size())
+				hashLoc = hashLoc - hashList.size();
+		}
+	}
+
+	bool contains(int num)
+	{
+		int originalHashLoc = num % (hashList.size()); 
+		int hashLoc = originalHashLoc;
+
+		for (int i = 1; hashList[hashLoc].empty==false; i++) //assumes that we will eventually find an empty slot (because our hash size is a prime and at any time is at most less than half full
+		{
+			if (num == hashList[hashLoc].data)
+				return true;
+
+			hashLoc = (originalHashLoc + (int)pow(i, 2));
+			while (hashLoc >= hashList.size())
+				hashLoc = hashLoc - hashList.size();
+		}
+		return false;
+	}
+
+	void testDisplay()
+	{
+		cout << "start of HashList" << endl;
+		for (item x : hashList)
+			if (x.deleted == false && x.empty == false) //doesnt print value of slot that have been deleted or those that were never occupied
+				cout << x.data << endl;
+			else
+				cout << "-" << endl;
+		cout << "end of HashList" << endl << endl;
+	}
+
+private:
+
+	void resize() //just resizes up for now for simplicit's sake
+	{
+		if((hashList.size()/2)<totalNumItems)
+			rehash();
+	}
+
+	void rehash()
+	{
+		totalNumItems = 0;
+		vector<item> oldHashList=hashList; //create copy of old hashList so I can retreive data from it
+		hashList.clear();
+		hashList.resize(nextPrime(oldHashList.size())); //resize my hashlist to the next prime that is atleast twice the size of my old size
+
+		for (item x : oldHashList) //scan through old hashList
+			if (x.deleted == false && x.empty == false) //make sure that location is active and hasnt been deleted
+				insert(x.data); //insert the item into our new hash table
+	}
+
+	//requires prime
+	//built on intuitive assumption that for a number to be prime it mustn't be divisble by (2,3,5,7)
+	//sieve of eratosthenes
+	int nextPrime(int oldPrime)//not efficient, i know - didnt optimize because the focus isnt on primes
+	{
+		int newPrime = (oldPrime * 2) + 1; //new prime must be atleast double the size of the old one - start at an odd number to calc next prime
+		while ((newPrime % 2 == 0) || (newPrime % 3 == 0) || (newPrime % 5 == 0) || (newPrime % 7 == 0))
+			newPrime += 2;
+		return newPrime;
+	}
+
+};

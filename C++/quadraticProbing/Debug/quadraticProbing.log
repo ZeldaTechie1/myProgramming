@@ -1,0 +1,5 @@
+﻿  main.cpp
+c:\users\dr negative's laptop\documents\visual studio 2015\projects\quadraticprobing\quadratichashtable.h(58): warning C4018: '<': signed/unsigned mismatch
+c:\users\dr negative's laptop\documents\visual studio 2015\projects\quadraticprobing\quadratichashtable.h(105): warning C4018: '<': signed/unsigned mismatch
+c:\users\dr negative's laptop\documents\visual studio 2015\projects\quadraticprobing\quadratichashtable.h(122): warning C4018: '<': signed/unsigned mismatch
+  quadraticProbing.vcxproj -> C:\Users\Dr Negative's Laptop\Documents\Visual Studio 2015\Projects\quadraticProbing\Debug\quadraticProbing.exe

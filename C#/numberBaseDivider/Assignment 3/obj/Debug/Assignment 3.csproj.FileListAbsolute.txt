@@ -1,0 +1,30 @@
+c:\users\bryan.cancel01\documents\visual studio 2013\Projects\Assignment 3\Assignment 3\bin\Debug\Assignment 3.exe.config
+c:\users\bryan.cancel01\documents\visual studio 2013\Projects\Assignment 3\Assignment 3\obj\Debug\Assignment 3.csprojResolveAssemblyReference.cache
+c:\users\bryan.cancel01\documents\visual studio 2013\Projects\Assignment 3\Assignment 3\obj\Debug\Assignment_3.Form1.resources
+c:\users\bryan.cancel01\documents\visual studio 2013\Projects\Assignment 3\Assignment 3\obj\Debug\Assignment_3.Properties.Resources.resources
+c:\users\bryan.cancel01\documents\visual studio 2013\Projects\Assignment 3\Assignment 3\obj\Debug\Assignment 3.csproj.GenerateResource.Cache
+c:\users\bryan.cancel01\documents\visual studio 2013\Projects\Assignment 3\Assignment 3\bin\Debug\Assignment 3.exe
+c:\users\bryan.cancel01\documents\visual studio 2013\Projects\Assignment 3\Assignment 3\bin\Debug\Assignment 3.pdb
+c:\users\bryan.cancel01\documents\visual studio 2013\Projects\Assignment 3\Assignment 3\obj\Debug\Assignment 3.exe
+c:\users\bryan.cancel01\documents\visual studio 2013\Projects\Assignment 3\Assignment 3\obj\Debug\Assignment 3.pdb
+C:\Users\Bryan\Documents\Visual Studio 2015\Projects\Assignment 3\Assignment 3\Assignment 3\bin\Debug\Assignment 3.exe.config
+C:\Users\Bryan\Documents\Visual Studio 2015\Projects\Assignment 3\Assignment 3\Assignment 3\obj\Debug\Assignment 3.exe
+C:\Users\Bryan\Documents\Visual Studio 2015\Projects\Assignment 3\Assignment 3\Assignment 3\obj\Debug\Assignment 3.pdb
+C:\Users\Bryan\Documents\Visual Studio 2015\Projects\Assignment 3\Assignment 3\Assignment 3\bin\Debug\Assignment 3.exe
+C:\Users\Bryan\Documents\Visual Studio 2015\Projects\Assignment 3\Assignment 3\Assignment 3\bin\Debug\Assignment 3.pdb
+C:\Users\Bryan\Documents\Visual Studio 2015\Projects\Assignment 3\Assignment 3\Assignment 3\obj\Debug\Assignment 3.csprojResolveAssemblyReference.cache
+C:\Users\Bryan\Documents\Visual Studio 2015\Projects\Assignment 3\Assignment 3\Assignment 3\obj\Debug\Assignment_3.Form1.resources
+C:\Users\Bryan\Documents\Visual Studio 2015\Projects\Assignment 3\Assignment 3\Assignment 3\obj\Debug\Assignment_3.Properties.Resources.resources
+C:\Users\Bryan\Documents\Visual Studio 2015\Projects\Assignment 3\Assignment 3\Assignment 3\obj\Debug\Assignment 3.csproj.GenerateResource.Cache
+G:\Old Storage Drive\from docs\Visual Studio 2015\Projects\Assignment 3\Assignment 3\Assignment 3\bin\Debug\Assignment 3.exe.config
+G:\Old Storage Drive\from docs\Visual Studio 2015\Projects\Assignment 3\Assignment 3\Assignment 3\obj\Debug\Assignment 3.exe
+G:\Old Storage Drive\from docs\Visual Studio 2015\Projects\Assignment 3\Assignment 3\Assignment 3\obj\Debug\Assignment 3.pdb
+F:\myWork(sort)\myCode\Assignment 3\Assignment 3\Assignment 3\bin\Debug\Assignment 3.exe.config
+F:\myWork(sort)\myCode\Assignment 3\Assignment 3\Assignment 3\obj\Debug\Assignment 3.exe
+F:\myWork(sort)\myCode\Assignment 3\Assignment 3\Assignment 3\obj\Debug\Assignment 3.pdb
+F:\myWork(sort)\myCode\Assignment 3\Assignment 3\Assignment 3\bin\Debug\Assignment 3.exe
+F:\myWork(sort)\myCode\Assignment 3\Assignment 3\Assignment 3\bin\Debug\Assignment 3.pdb
+F:\myWork(sort)\myCode\Assignment 3\Assignment 3\Assignment 3\obj\Debug\Assignment 3.csprojResolveAssemblyReference.cache
+F:\myWork(sort)\myCode\Assignment 3\Assignment 3\Assignment 3\obj\Debug\Assignment_3.Form1.resources
+F:\myWork(sort)\myCode\Assignment 3\Assignment 3\Assignment 3\obj\Debug\Assignment_3.Properties.Resources.resources
+F:\myWork(sort)\myCode\Assignment 3\Assignment 3\Assignment 3\obj\Debug\Assignment 3.csproj.GenerateResource.Cache

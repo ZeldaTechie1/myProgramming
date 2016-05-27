@@ -1,0 +1,13 @@
+﻿  main.cpp
+f:\mywork(sort)\mycode\dijkstraalgo\weightedDirectedGraph.h(14): warning C4390: ';': empty controlled statement found; is this the intent?
+f:\mywork(sort)\mycode\dijkstraalgo\weightedDirectedGraph.h(133): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+f:\mywork(sort)\mycode\dijkstraalgo\weightedDirectedGraph.h(175): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+f:\mywork(sort)\mycode\dijkstraalgo\weightedDirectedGraph.h(176): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+f:\mywork(sort)\mycode\dijkstraalgo\weightedDirectedGraph.h(207): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+f:\mywork(sort)\mycode\dijkstraalgo\weightedDirectedGraph.h(218): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  Generating code
+  376 of 380 functions (98.9%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  dijkstraAlgo.vcxproj -> F:\myWork(sort)\myCode\dijkstraAlgo\x64\Release\dijkstraAlgo.exe

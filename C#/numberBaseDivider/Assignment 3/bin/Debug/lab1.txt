@@ -1,0 +1,5 @@
+Number Entered: 234234
+Thousands: 234
+Hundreds: 2
+Tens: 3
+Ones: 4
