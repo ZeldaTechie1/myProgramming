@@ -1,0 +1,8 @@
+1. place the masm615a folder in the root directory where the OS is running
+2. find the .asm file in your cmd
+3. create the executable
+	type "make32 FILENAMEHERE"
+	doesnt require file type
+4. run executable
+	type "FILENAMEHERE"
+	doesnt require file type
