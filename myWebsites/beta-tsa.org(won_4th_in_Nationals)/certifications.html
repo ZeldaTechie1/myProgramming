@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<link rel="shortcut icon" href="images/faviB.png" type="image/png"> 
+<link rel="icon" href="images/faviB.png" type="image/png">
+<title>BETA TSA</title>
+
+<link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
+		<script type = "text/javascript">
+
+
+			var isSelected1 = false;
+			var isSelected2 = false;
+
+			function toggle1()
+			{
+
+				if(!isSelected1)
+				{
+					document.getElementById("cte").style.display="block";
+					isSelected1 = true;
+
+					document.getElementById("ourchapter").style.display="none";
+					isSelected2 = false;
+				}
+				else
+				{
+					document.getElementById("cte").style.display="none";
+					isSelected1 = false;
+				}
+			}
+			function toggle2()
+			{
+
+				if(!isSelected2)
+				{
+					document.getElementById("ourchapter").style.display="block";
+					isSelected2 = true;
+
+					document.getElementById("cte").style.display="none";
+					isSelected1 = false;
+
+				}
+				else
+				{
+					document.getElementById("ourchapter").style.display="none";
+					isSelected2 = false;
+				}
+			}
+
+			function tug()
+			{
+
+				document.getElementById("cte").style.display="none";
+				document.getElementById("ourchapter").style.display="none";
+				isSelected1 = false;
+				isSelected2 = false;
+
+			}
+
+		</script>
+
+
+</head>
+
+<body>
+
+
+
+
+<div class="backStrip">.</div>
+<div class="strip">.</div>
+
+<div class="header">
+    <div class="menu">
+        <div class="span">
+            <ul id="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" class="on" onclick = "toggle1();">CTE</a>
+			<div class="subs">
+                        	<div id="cte">
+                            	<ul>
+                                	<li>
+                                   	 <ul>
+						<li><a href="about.html">About</a></li>
+						<li><a href="education.html">Education</a></li>
+        					<li><a href="certifications.html">Certifications</a></li>
+                                    	</ul>
+                                	</li>
+                            	</ul>
+                        	</div>
+                    	</div>
+		</li>
+
+                <li><a  href="#" onclick = "toggle2();">Our Chapter</a>
+    			<div class="subs">
+                        	<div id="ourchapter">
+                            	<ul>
+                                	<li>
+                                   	 <ul>
+						<li><a href="chapter513.html">Chapter 513</a></li>
+						<li><a href="competition.html">Competition</a></li>
+                                        	<li><a href="activities.html">Activities</a></li>
+                                        	<li><a href="leadership.html">Leadership</a></li>
+                                    	</ul>
+                                	</li>
+                            	</ul>
+                        	</div>
+                    	</div>
+		</li>
+
+        
+                <li><a href="thecodezone.html">The Code Zone</a></li>
+		<li><a href="aboutus.html">About Us</a></li>
+                
+            </ul>
+        </div>
+    </div>
+
+<a href = "index.html"><img src="images/betatsalogo.png" class="logo" alt="BETA TSA Logo"></a>
+
+</div>
+
+<div class="slide" style="color:white;" onclick="tug();">
+	<div id="slideshow" style="width:1000px;">
+	   <div>
+	     <img src="images/certification.png" style="width:1000px; height:350px; overflow-y:hidden;" alt="Certification are the keys to IT Success">
+	   </div>
+	</div>
+
+</div>
+
+
+<div class="backStripM">.</div>
+<div class="strip">.</div>
+
+<div class="content" onclick ="tug();">
+<img src="images/wallofcertificaitons.png" style="float:left; width:350px;" alt="Wall of Certifications"/>
+<h1>Certifications</h1>
+<hr class="line"/>
+<h3>Our school&#39;s Technology Track focuses on getting students a vast amount of Professional Certifications in a variety of fields, so that they are ready for anything that comes their way. Certifications offered include all of the certifications in the IC3 suite, the Microsoft Specialist Series, the CIW Web Foundations Associate Series, and the Adobe Suite. These certifications range from photo editing, video editing, server management, web development and so much more. Feel free to hover over each of the Icons below and find more about the certifications that form part of its Series and what those certifications are used for professionally.
+</h3>
+<hr class="invisible" style="height:5px;"/>
+<img src="images/ic3.png" style="float:left; height:100px; padding:45px;" class="hovpics" id="ic3ic3" alt="IC3 Logo"/><img src="images/microsoft.png" style="float:left; height:100px; padding:45px;" class="hovpics" id="microsoftmicrosoft" alt="Microsoft Office Logo"/><img src="images/ciw.png" style="float:left; height:100px; padding:45px;" class="hovpics" id="ciwciw" alt="CIW Logo"/><img src="images/adobe.png" style="float:left; height:100px; padding:45px;" id="adobeadobe" class="hovpics" alt="Adobe Logo"/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<div class="info" id="ic3">
+<div class="part"><img src="images/computingfundamentals.png" class="hoviconsLR" alt="IC3 Computing Fundamentals Logo"/><h3 style="float:left; width:775px; margin-top:-5px;">Computing Fundamentals | Learn the fundamentals of computer hardware, software, operating systems, and troubleshooting to help you use your computer technology to the max</h3></div>
+<div class="part"><img src="images/keyapplications.png" class="hoviconsLR" alt="IC3 Key Applications Logo"/><h3 style="float:left; width:775px; margin-top:-5px;">Key Applications |  Learn how to use applications, modify interface elements and use sources online to help you when you get caught up in a bind</h3></div>
+<div class="part"><img src="images/livingonline.png" class="hoviconsLR" alt="IC3 Living Online Logo"/><h3 style="float:left; width:775px; margin-top:-5px;">Living Online | Learn how to work in the internet to maximize communication, education, collaboration, and social interaction in a safe and ethical way</h3></div>
+</div>
+<div class="info" id="microsoft">
+<div class="part"><img src="images/word.png" class="hoviconsLM" alt="Microsoft Word Logo"/><h3 style="float:left; width:500px; margin-top:-5px;">Microsoft Word | Word Processing Program</h3></div>
+<div class="part"><img src="images/powerpoint.png" class="hoviconsLM" alt="Microsoft Powerpoint Logo"/><h3 style="float:left; width:500px; margin-top:-5px;">Microsoft Powerpoint | Slideshow Presentation Creation</h3></div>
+<div class="part"><img src="images/excel.png" class="hoviconsLM" alt="Microsoft Excel Logo"/><h3 style="float:left; width:500px; margin-top:-5px;">Microsoft Excel | Spreadsheet Creation</h3></div>
+<div class="part"><img src="images/access.png" class="hoviconsLM" alt="Microsoft Access Logo"/><h3 style="float:left; width:500px; margin-top:-5px;">Microsoft Access | Database Software Program</h3></div>
+<div class="part"><img src="images/outlook.png" class="hoviconsLM" alt="Microsoft Outlook Logo"/><h3 style="float:left; width:500px; margin-top:-5px;">Microsoft Outlook | Email program</h3></div>
+<div class="part"><img src="images/onenote.png" class="hoviconsLM" alt="Microsoft OneNote Logo"/><h3 style="float:left; width:500px; margin-top:-5px;">Microsoft OneNote | Digital Personal Organizer</h3></div>
+<div class="part"><img src="images/sharepoint.png" class="hoviconsLM" alt="Microsoft SharePoint Logo"/><h3 style="float:left; width:500px; margin-top:-5px;">Microsoft SharePoint | Sharing of Data through a CMS and document management</h3></div>
+</div>
+<div class="info" id="ciw">
+<div class="part"><img src="images/nta.png" class="hoviconsRM" alt="Network Technology Associate Logo"/><h3 style="float:right; width:500px; margin-top:-5px;">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Network Technology Associate | Learn the fundamentals of networking, internet protocols and network security important for all who use the internet. </h3></div>
+<div class="part"><img src="images/sda.png" class="hoviconsRM" alt="Site Development Associate Logo"/><h3 style="float:right; width:500px; margin-top:-5px;">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Site Development Associate | Learn the essential web page development skills, and learn how to develop websites of your own with html5 and css3 or graphical user interface tools. </h3></div>
+<div class="part"><img src="images/iba.png" class="hoviconsRM" alt="Internet Business Associate Logo"/><h3 style="float:right; width:500px; margin-top:-5px;">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Internet Business Associate | Learn how to work effectively in the business environment and learn the task involved in Web Tech job roles and the skills and technology needed to perform them. </h3></div>
+</div>
+<div class="info" id="adobe">
+<div class="part"><img src="images/photoshop.png" class="hoviconsRR" alt="Adobe Photoshop Logo"/><h3 style="float:right;">Photoshop CS6 | Photo Editing</h3></div>
+<div class="part"><img src="images/dreamweaver.png" class="hoviconsRR" alt="Adobe Dreamweaver Logo"/><h3 style="float:right;">Dreamweaver CS6 | GUI for Web Development</h3></div>
+<div class="part"><img src="images/premiere.png" class="hoviconsRR" alt="Adobe Premiere Logo"/><h3 style="float:right;">Premiere CS6 | Video Editing</h3></div>
+<div class="part"><img src="images/indesign.png" class="hoviconsRR" alt="Adobe In Design Logo"/><h3 style="float:right;">In Design CS6 | Publication Creation</h3></div>
+<div class="part"><img src="images/flash.png" class="hoviconsRR" alt="Adobe Flash Logo"/><h3 style="float:right;">Flash CS6 | Animations</h3></div>
+<div class="part"><img src="images/illustrator.png" class="hoviconsRR" alt="Adobe Illustrator Logo"/><h3 style="float:right;">Illustrator CS6 | Vector Graphics</h3></div>
+</div>
+
+</div>
+
+
+
+<div class="backStripM">.</div>
+<div class="strip">.</div>
+
+<div class="footer" onclick ="tug();">
+
+<a href="http://instagram.com/beta_tsa"><img src="images/instagram.png" class="share" alt="Instagram Icon" id="inst"></a>
+<a href="https://twitter.com/betatxtsa"><img src="images/twitter.png" class="share" alt="Twitter Icon" id="twit"></a> 
+<a href="https://www.facebook.com/groups/89143845409/"><img src="images/facebook.png" class="share" alt="Facebook Icon" id="face"></a>
+
+</div>
+
+<div style = "text-align:center; width:500px; margin-left:auto; margin-right:auto;margin-top:-40px; color:white;" ><b>Business Education Technology Academy</b> 2014. <i>All Rights Reserved</i>.</div>
+<br/>
+<div style = "text-align:center;width:1000px; margin-left:auto; margin-right:auto; margin-top:-25px;" ><a href = "sitemap.html" class="sitemaplink"><h3>Site Map</h3></a></div>
+
+
+
+</body>
+
+</html>

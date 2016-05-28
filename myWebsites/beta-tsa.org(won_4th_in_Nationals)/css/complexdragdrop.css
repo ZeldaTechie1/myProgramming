@@ -1,0 +1,53 @@
+.shiftleft
+{
+float:left;
+}
+.shiftright
+{
+position:relative;
+float:right;
+left:-20%;
+}
+.holders
+{
+position:relative;
+width:40px;
+height:40px;
+border:1px solid #aaa;
+border-radius:50%;
+}
+.droppers
+{
+position:relative;
+border:1px solid #aaa;
+border-radius:50%;
+}
+#directions
+{
+text-align:center;
+text-decoration:underline;
+font-size:120%;
+padding-bottom:1%;
+}
+ul li
+{
+color:white;
+}
+ul li p
+{
+position:relative;
+display:block;
+top:-50px;
+left:55px;
+width:90%;
+}
+.dragger
+{
+text-align:center; 
+background-color:#333333;
+width:40px;
+height:40px;
+line-height:35px;
+border-radius:50%;
+font-size:40px;
+}

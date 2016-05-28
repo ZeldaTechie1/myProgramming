@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<link rel="shortcut icon" href="images/faviB.png" type="image/png"> 
+<link rel="icon" href="images/faviB.png" type="image/png">
+<title>BETA TSA</title>
+
+		<script type = "text/javascript">
+
+
+			var isSelected1 = false;
+			var isSelected2 = false;
+
+			function toggle1()
+			{
+
+				if(!isSelected1)
+				{
+					document.getElementById("cte").style.display="block";
+					isSelected1 = true;
+
+					document.getElementById("ourchapter").style.display="none";
+					isSelected2 = false;
+				}
+				else
+				{
+					document.getElementById("cte").style.display="none";
+					isSelected1 = false;
+				}
+			}
+			function toggle2()
+			{
+
+				if(!isSelected2)
+				{
+					document.getElementById("ourchapter").style.display="block";
+					isSelected2 = true;
+
+					document.getElementById("cte").style.display="none";
+					isSelected1 = false;
+
+				}
+				else
+				{
+					document.getElementById("ourchapter").style.display="none";
+					isSelected2 = false;
+				}
+			}
+
+			function tug()
+			{
+
+				document.getElementById("cte").style.display="none";
+				document.getElementById("ourchapter").style.display="none";
+				isSelected1 = false;
+				isSelected2 = false;
+
+			}
+
+		</script>
+
+
+</head>
+
+<body>
+
+
+
+
+<div class="backStrip">.</div>
+<div class="strip">.</div>
+
+<div class="header">
+    <div class="menu">
+        <div class="span">
+            <ul id="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" onclick = "toggle1();">CTE</a>
+			<div class="subs">
+                        	<div id="cte">
+                            	<ul>
+                                	<li>
+                                   	 <ul>
+						<li><a href="about.html">About</a></li>
+						<li><a href="education.html">Education</a></li>
+        					<li><a href="certifications.html">Certifications</a></li>
+                                    	</ul>
+                                	</li>
+                            	</ul>
+                        	</div>
+                    	</div>
+		</li>
+
+                <li><a  href="#" onclick = "toggle2();">Our Chapter</a>
+    			<div class="subs">
+                        	<div id="ourchapter">
+                            	<ul>
+                                	<li>
+                                   	 <ul>
+						<li><a href="chapter513.html">Chapter 513</a></li>
+						<li><a href="competition.html">Competition</a></li>
+                                        	<li><a href="activities.html">Activities</a></li>
+                                        	<li><a href="leadership.html">Leadership</a></li>
+                                    	</ul>
+                                	</li>
+                            	</ul>
+                        	</div>
+                    	</div>
+		</li>
+
+        
+                <li><a href="thecodezone.html">The Code Zone</a></li>
+		<li><a href="aboutus.html">About Us</a></li>
+                
+            </ul>
+        </div>
+    </div>
+
+<a href = "index.html"><img src="images/betatsalogo.png" class="logo" alt="BETA TSA Logo"></a>
+
+</div>
+
+<div class="title">Site Map</div>
+
+<div class="content" id="sitemap" onclick ="tug();">
+<div class="column">
+<ul>
+	<li class = "float"><a href = "index.html">Home</a></li>
+		<li>CTE	
+			<ul>
+				<li><a href = "about.html">About</a></li>
+				<li><a href = "education.html">Education</a></li>
+				<li><a href = "certifications.html">Certifications</a></li>
+			</ul>
+		</li>
+
+	<li class = "float">Our Chapter
+		<ul>
+			<li><a href = "chapter513.html">Chapter 513</a></li>
+			<li><a href = "competition.html">Competition</a></li>
+			<li><a href = "activities.html">Activities</a></li>
+			<li><a href = "leadership.html">Leadership</a></li>
+		</ul>
+	</li>
+
+	<li class = "float"><a href = "aboutus.html">About Us</a></li>
+	<li><a href="pdf/paperwork.pdf" target = "_blank">Paperwork</a></li>
+</ul>
+
+</div>
+<div class="column">
+
+<ul>
+	<li class = "float"><a href = "thecodezone.html">The Code Zone</a>
+		<ul>
+
+			<li>Tutorials
+				<ul>
+					<li><a href = "lesson1V.html">Lesson 1</a></li>
+					<li><a href = "lesson2V.html">Lesson 2</a></li>
+					<li><a href = "lesson3V.html">Lesson 3</a></li>
+					<li><a href = "lesson4V.html">Lesson 4</a></li>
+					<li><a href = "lesson5V.html">Lesson 5</a></li>
+					<li><a href = "lesson6V.html">Lesson 6</a></li>
+					<li><a href = "lesson7V.html">Lesson 7</a></li>
+					<li><a href = "lesson8V.html">Lesson 8</a></li>
+					<li><a href = "lesson9V.html">Lesson 9</a></li>
+					<li><a href = "lesson10V.html">Lesson 10</a></li>
+				</ul>
+			</li>
+		</ul>
+							
+</ul>
+
+
+</div>
+<div class="column">
+
+<ul>
+	<!--<li class = "float"><a href = "thecodezone.html">The Code Zone</a>-->
+		<ul>
+
+			<li>Activities
+				<ul>
+					<li><a href = "lesson1A.html">Lesson 1</a></li>
+					<li><a href = "lesson2A.html">Lesson 2</a></li>
+					<li><a href = "lesson3A.html">Lesson 3</a></li>
+					<li><a href = "lesson4A.html">Lesson 4</a></li>
+					<li><a href = "lesson5A.html">Lesson 5</a></li>
+					<li><a href = "lesson6A.html">Lesson 6</a></li>
+					<li><a href = "lesson7A.html">Lesson 7</a></li>
+					<li><a href = "lesson8A.html">Lesson 8</a></li>
+					<li><a href = "lesson9A.html">Lesson 9</a></li>
+					<li><a href = "lesson10A.html">Lesson 10</a></li>	
+				</ul>
+			</li>
+			<li><a href = "tryit.php">Try It Yourself!</a></li>
+			
+		</ul>
+							
+</ul>
+
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+<div class="backStripM">.</div>
+<div class="strip">.</div>
+
+<div class="footer" onclick ="tug();">
+
+<a href="http://instagram.com/beta_tsa"><img src="images/instagram.png" class="share" alt="Instagram Icon" id="inst"></a>
+<a href="https://twitter.com/betatxtsa"><img src="images/twitter.png" class="share" alt="Twitter Icon" id="twit"></a> 
+<a href="https://www.facebook.com/groups/89143845409/"><img src="images/facebook.png" class="share" alt="Facebook Icon" id="face"></a>
+
+</div>
+
+<div style = "text-align:center; width:500px; margin-left:auto; margin-right:auto;margin-top:-40px; color:white;" ><b>Business Education Technology Academy</b> 2014. <i>All Rights Reserved</i>.</div>
+<br/>
+<div style = "text-align:center;width:1000px; margin-left:auto; margin-right:auto; margin-top:-25px;" ><a href = "sitemap.html" class="sitemaplink"><h3>Site Map</h3></a></div>
+
+
+
+
+
+</body>
+
+</html>

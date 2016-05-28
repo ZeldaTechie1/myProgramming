@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<link rel="shortcut icon" href="images/faviB.png" type="image/png"> 
+<link rel="icon" href="images/faviB.png" type="image/png">
+<title>BETA TSA</title>
+
+<link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
+		<script type = "text/javascript">
+
+
+			var isSelected1 = false;
+			var isSelected2 = false;
+
+			function toggle1()
+			{
+
+				if(!isSelected1)
+				{
+					document.getElementById("cte").style.display="block";
+					isSelected1 = true;
+
+					document.getElementById("ourchapter").style.display="none";
+					isSelected2 = false;
+				}
+				else
+				{
+					document.getElementById("cte").style.display="none";
+					isSelected1 = false;
+				}
+			}
+			function toggle2()
+			{
+
+				if(!isSelected2)
+				{
+					document.getElementById("ourchapter").style.display="block";
+					isSelected2 = true;
+
+					document.getElementById("cte").style.display="none";
+					isSelected1 = false;
+
+				}
+				else
+				{
+					document.getElementById("ourchapter").style.display="none";
+					isSelected2 = false;
+				}
+			}
+
+			function tug()
+			{
+
+				document.getElementById("cte").style.display="none";
+				document.getElementById("ourchapter").style.display="none";
+				isSelected1 = false;
+				isSelected2 = false;
+
+			}
+
+		</script>
+
+
+</head>
+
+<body>
+
+
+
+
+<div class="backStrip">.</div>
+<div class="strip">.</div>
+
+<div class="header">
+    <div class="menu">
+        <div class="span">
+            <ul id="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" onclick = "toggle1();">CTE</a>
+			<div class="subs">
+                        	<div id="cte">
+                            	<ul>
+                                	<li>
+                                   	 <ul>
+						<li><a href="about.html">About</a></li>
+						<li><a href="education.html">Education</a></li>
+        					<li><a href="certifications.html">Certifications</a></li>
+                                    	</ul>
+                                	</li>
+                            	</ul>
+                        	</div>
+                    	</div>
+		</li>
+
+                <li><a  href="#" class="on" onclick = "toggle2();">Our Chapter</a>
+    			<div class="subs">
+                        	<div id="ourchapter">
+                            	<ul>
+                                	<li>
+                                   	 <ul>
+						<li><a href="chapter513.html">Chapter 513</a></li>
+						<li><a href="competition.html">Competition</a></li>
+                                        	<li><a href="activities.html">Activities</a></li>
+                                        	<li><a href="leadership.html">Leadership</a></li>
+                                    	</ul>
+                                	</li>
+                            	</ul>
+                        	</div>
+                    	</div>
+		</li>
+
+        
+                <li><a href="thecodezone.html">The Code Zone</a></li>
+		<li><a href="aboutus.html">About Us</a></li>
+                
+            </ul>
+        </div>
+    </div>
+
+<a href = "index.html"><img src="images/betatsalogo.png" class="logo" alt="BETA TSA Logo"></a>
+
+</div>
+
+<div class="slide" style="color:white;" onclick="tug();">
+	<div id="slideshow" style="width:1000px;">
+	   <div>
+	     <img src="images/fallfestival.png" style="width:1000px; height:350px; overflow-y:hidden;" alt="Fall Festival Tater Tot Stand">
+	   </div>
+	</div>
+
+</div>
+
+
+<div class="backStripM">.</div>
+<div class="strip">.</div>
+
+<div class="content" onclick ="tug();">
+
+
+<h1>Fundraisers</h1>
+<hr class="line"/>
+
+
+<h4 style="margin-left:0px;">Krispy Kreme Donut Sales </h4>
+
+<h3>
+At the beginning of the year we were looking for a fundraiser to start off the year with and a lot of ideas were thrown out but none as good as krispy kreme donuts. The closest krispy kreme donuts was around 30 minutes from our school, and on top of that who doesn't love donuts!? especially krispy kreme donuts. So we decided to sell for about a month and it went so great that we did it a second time and we have been able to buy equipment for our newborn robotics team and buy jackets for chapter team and a variety of other materials to help kids succeed in their competitions.
+</h3>
+
+<h4 style="margin-left:0px;">Fall Festival Fair | November 26, 2013</h4>
+
+<img src="images/jeff.png" alt="Jeff Happy about our new fundraiser" style="width:246px; float:right; margin-left:20px;  border:2px solid white;"/>
+
+<h3>
+During the month of November our school has something that we call the Fall Festival where we reserve a day to 
+
+have fun. During the day there are various stands and kiosk set up outside and inside the school by various clubs to fundraise. This year we chose to sell hash browns with cheese and besides the cheesy smell we had stuck to our clothes for hours, it went great and was so much fun! 
+</h3>
+
+<h4 style="margin-left:0px;">Chocolate Sales</h4>
+<h3>
+Right after our second krispy kreme fundraiser we noticed a decrease in demand for donuts so we decided that food sells and decided to sell chocolates. These sales have been just as successful as our krispy kreme sales and has allowed our club to get even more materials and resources for our members.
+</h3>
+
+
+<h1>Community Service</h1>
+<hr class="line"/>
+
+<img src="images/trunkortreat.png" alt="Kids passing out candy at our trunk or treat event" style="width:246px; float:left; margin-right:20px; margin-top:20px;  border:2px solid white;"/>
+
+<h4 style="margin-left:0px;">Trunk or Treat</h4>
+
+<h3>
+On halloween we have kids come over to our school and we set up trucks full of candy and we allow kids of all ages to come over and TRUNK or treat in a safe and protected environment. An environment where their parents don't have to worry about cars or other dangerous obstacles or dangerous people.
+</h3>
+
+</div>
+
+
+<div class="backStripM">.</div>
+<div class="strip">.</div>
+
+<div class="footer" onclick ="tug();">
+
+<a href="http://instagram.com/beta_tsa"><img src="images/instagram.png" class="share" alt="Instagram Icon" id="inst"></a>
+<a href="https://twitter.com/betatxtsa"><img src="images/twitter.png" class="share" alt="Twitter Icon" id="twit"></a> 
+<a href="https://www.facebook.com/groups/89143845409/"><img src="images/facebook.png" class="share" alt="Facebook Icon" id="face"></a>
+
+</div>
+
+<div style = "text-align:center; width:500px; margin-left:auto; margin-right:auto;margin-top:-40px; color:white;" ><b>Business Education Technology Academy</b> 2014. <i>All Rights Reserved</i>.</div>
+<br/>
+<div style = "text-align:center;width:1000px; margin-left:auto; margin-right:auto; margin-top:-25px;" ><a href = "sitemap.html" class="sitemaplink"><h3>Site Map</h3></a></div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<link rel="shortcut icon" href="images/faviB.png" type="image/png"> 
+<link rel="icon" href="images/faviB.png" type="image/png">
+<title>BETA TSA</title>
+
+<link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
+		<script type = "text/javascript">
+
+
+			var isSelected1 = false;
+			var isSelected2 = false;
+
+			function toggle1()
+			{
+
+				if(!isSelected1)
+				{
+					document.getElementById("cte").style.display="block";
+					isSelected1 = true;
+
+					document.getElementById("ourchapter").style.display="none";
+					isSelected2 = false;
+				}
+				else
+				{
+					document.getElementById("cte").style.display="none";
+					isSelected1 = false;
+				}
+			}
+			function toggle2()
+			{
+
+				if(!isSelected2)
+				{
+					document.getElementById("ourchapter").style.display="block";
+					isSelected2 = true;
+
+					document.getElementById("cte").style.display="none";
+					isSelected1 = false;
+
+				}
+				else
+				{
+					document.getElementById("ourchapter").style.display="none";
+					isSelected2 = false;
+				}
+			}
+
+			function tug()
+			{
+
+				document.getElementById("cte").style.display="none";
+				document.getElementById("ourchapter").style.display="none";
+				isSelected1 = false;
+				isSelected2 = false;
+
+			}
+
+		</script>
+
+
+</head>
+
+<body>
+
+
+
+
+<div class="backStrip">.</div>
+<div class="strip">.</div>
+
+<div class="header">
+    <div class="menu">
+        <div class="span">
+            <ul id="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" onclick = "toggle1();">CTE</a>
+			<div class="subs">
+                        	<div id="cte">
+                            	<ul>
+                                	<li>
+                                   	 <ul>
+						<li><a href="about.html">About</a></li>
+						<li><a href="education.html">Education</a></li>
+        					<li><a href="certifications.html">Certifications</a></li>
+                                    	</ul>
+                                	</li>
+                            	</ul>
+                        	</div>
+                    	</div>
+		</li>
+
+                <li><a  href="#" class="on" onclick = "toggle2();">Our Chapter</a>
+    			<div class="subs">
+                        	<div id="ourchapter">
+                            	<ul>
+                                	<li>
+                                   	 <ul>
+						<li><a href="chapter513.html">Chapter 513</a></li>
+						<li><a href="competition.html">Competition</a></li>
+                                        	<li><a href="activities.html">Activities</a></li>
+                                        	<li><a href="leadership.html">Leadership</a></li>
+                                    	</ul>
+                                	</li>
+                            	</ul>
+                        	</div>
+                    	</div>
+		</li>
+
+        
+                <li><a href="thecodezone.html">The Code Zone</a></li>
+		<li><a href="aboutus.html">About Us</a></li>
+                
+            </ul>
+        </div>
+    </div>
+
+<a href = "index.html"><img src="images/betatsalogo.png" class="logo" alt="BETA TSA Logo"></a>
+
+</div>
+
+<div class="slide" style="color:white;" onclick="tug();">
+	<div id="slideshow" style="width:1000px;">
+	      <div>
+	     <img src="images/vex2.png" style="width:1000px; height:350px; overflow-y:hidden;" alt="Our School">
+	   </div>
+	</div>
+
+</div>
+
+
+<div class="backStripM">.</div>
+<div class="strip">.</div>
+
+<div class="content" onclick ="tug();">
+
+<img src="images/trophy.png" style="height:150px; float:left;" alt = "An image of a torphy"/>
+<h1>Competition</h1>
+<hr class="line"/>
+<h3>
+Our School loves to compete, we work countless hours to make our projects to the best of our ability. Those efforts have paid off, and the results that we have obtained are great!
+</h3>
+<hr class="invisible"/>
+<h1 style="font-size:60px;">Regionals</h1>
+<hr class="line"/>
+
+		<div style="width:100px; height:665px; float:left;">
+
+		<h4 style="display:inline-block; margin-left:0px;  margin-right: 20px; float:left;  margin-top:15px; line-height:35px;">1st:</h4>
+		
+		</div>
+		<div style="width:900px; margin-left:100px;">
+<img src="images/dvpteam.png" style="width: 296px; float:right; margin:10px; margin-right:0px;  border:2px solid white;" alt = "This is our Digital Video Production team"/>
+<h3 style="border-bottom:2px solid #00ffff; display:inline-block;">DEBATE</h3><h3  style="display:inline-block; width:350px;">&nbsp;| Joel Leal and Omar Olivares&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+<h3 style="border-bottom:2px solid #00ffff; display:inline-block;">DIGITAL VIDEO PRODUCTION</h3><h3  style="display:inline-block;">&nbsp;| Charlie Giang, Ethan Perez,</h3><h3 style="display:inline-block; line-height:1px; width:475px;">Luis Andrade, Miguel Rios</h3>
+<h3 style="border-bottom:2px solid #00ffff; display:inline-block;">ON DEMAND VIDEO</h3><h3  style="display:inline-block;">&nbsp;| Leander Abreu, Agustin Brizuela,</h3><h3   style="display:inline-block; line-height:1px; width:800px;">Jeremiah Odale, Logan Klein, Maximilliano Johnson</h3>
+
+<iframe width="320" height="240" style="float:left; margin:10px; margin-bottom:5px; margin-left:0px;" src="//www.youtube.com/embed/nkF1rqVVTw4" allowfullscreen></iframe>
+
+<h3 style="border-bottom:2px solid #00ffff; display:inline-block;">TECH BOWL</h3><h3  style="display:inline-block;">&nbsp;| Seung Kim, Lauryn Brough, Dante Vela</h3>
+<h3 style="border-bottom:2px solid #00ffff; display:inline-block;">TECHNOLOGY PROBLEM SOLVING</h3><h3  style="display:inline-block; width:550px;">&nbsp;| Alexis Rios, Robert Salazar</h3>
+<h3 id="robot" style="border-bottom:2px solid #00ffff; display:inline-block;">VEX ROBOTICS</h3><h3 style="display:inline-block;">&nbsp;| Bryan Cancel, Abby Cancel, Jared Garza,</h3><h3 style="line-height:1px; height:25px;">Jefferson Lint
+</h3>
+<h3 style="border-bottom:2px solid #00ffff; display:inline-block;">VIDEO GAME DESIGN</h3><h3  style="display:inline-block;">&nbsp;| Brandon Odoms, Nicolas Godinez, Raul Ramirez</h3>
+<h3 style="line-height:1px;">
+<a href="images/firemanrescue.exe" target="_blank">CLICK HERE to Download their game: Fireman Rescue</a> 
+</h3>
+<br/>
+		</div>
+<br/>
+		
+<!--	Second Place	-->	
+		
+		<div style="width:100px; height:200px; float:left;">
+		<h4 style="display:inline-block; margin-left:0px;  margin-right: 20px; float:left;  margin-top:15px; line-height:35px; font-size:35px;">2nd:</h4>
+		</div>
+		
+		<div style="width:900px; margin-left:100px;  height:200px;">
+		
+		<img src="images/chapterteam.png" style="width:304px; float:right; margin-top:-15px;  border:2px solid white;" alt = "Our freshman chapter team competitors"/>
+		
+<h3 style="border-bottom:2px solid #00ffff; display:inline-block;">CHAPTER TEAM</h3><h3  style="display:inline-block;">&nbsp;|Cesia Flores, Daniel Escobedo, Sydney Berry,</h3><h3  style="display:inline-block;  width:415px;">Victoria Escamilla, Jefferson Lint, Erika Martinez
+</h3>
+
+
+<h3 style="border-bottom:2px solid #00ffff; display:inline-block;">FUTURE TECH TEACHER</h3><h3  style="display:inline-block;">&nbsp;| Erika Martinez</h3>
+		</div>
+
+<br/>
+<br/>
+<br/>
+
+		<div style="width:100px; height:200px; float:left; margin-top:-30px;">
+		<h4 style="display:inline-block; margin-left:0px;  margin-right: 20px; float:left;  margin-top:15px; line-height:35px; font-size:35px;">3rd:</h4>
+		</div>
+		<div style="width:900px; margin-left:100px;  height:200px;  margin-top:-30px;">
+<h3 style="border-bottom:2px solid #00ffff; display:inline-block;">EXTEMPORANEOUS SPEECH</h3><h3  style="display:inline-block; width:600px;">&nbsp;| Abraham Leal</h3>		
+		
+<h3 style="border-bottom:2px solid #00ffff; display:inline-block;">PREPARED PRESENTATION</h3><h3  style="display:inline-block; width:600px;">&nbsp;| Jose Nerio</h3>
+
+<h3 style="border-bottom:2px solid #00ffff; display:inline-block;">WEB DESIGN</h3><h3  style="display:inline-block; width:600px;">&nbsp;| Bryan Cancel, Jesus Reyes, Charlie Giang</h3>
+		</div>
+	<div style="width:100px; height:100px; float:left;">
+
+<h4 style="display:inline-block; margin-left:0px;  margin-right: 20px; float:left;  margin-top:15px; line-height:35px; font-size:35px;">5th:</h4>
+		</div>
+		<div style="width:900px; margin-left:100px;  height:100px;">
+<h3 style="border-bottom:2px solid #00ffff; display:inline-block;">
+DRAGSTER DESIGN</h3><h3  style="display:inline-block;">&nbsp;| Jared Garza
+</h3>
+		</div>
+
+
+<h1 style="font-size:60px;">State</h1>
+<hr class="line"/>
+<h4 style="display:inline-block; margin-left:0px;  margin-right: 20px; float:left;   line-height:35px;">1st:</h4>
+
+<iframe width="320" height="240" style="float:right; margin-top:0px;" src="//www.youtube.com/embed/apCAPHT9ikM" allowfullscreen></iframe>
+
+<h3 style="border-bottom:2px solid #00ffff; display:inline-block;">
+DIGITAL VIDEO PRODUCTION
+</h3>
+<h3>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Charlie Giang, Ethan Perez, Luis Andrade, Miguel Rios
+</h3>
+<h4 style="display:inline-block; margin-left:0px;  margin-right: 20px; float:left;   line-height:20px;">3rd:</h4>
+<h3  style="border-bottom:2px solid #00ffff; display:inline-block;">
+WEB DESIGN
+</h3>
+<h3>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bryan Cancel, Jesus Reyes, Charlie Giang
+</h3>
+<br/>
+
+
+
+</div>
+
+
+<div class="backStripM">.</div>
+<div class="strip">.</div>
+
+<div class="footer" onclick ="tug();">
+
+<a href="http://instagram.com/beta_tsa"><img src="images/instagram.png" class="share" alt="Instagram Icon" id="inst"></a>
+<a href="https://twitter.com/betatxtsa"><img src="images/twitter.png" class="share" alt="Twitter Icon" id="twit"></a> 
+<a href="https://www.facebook.com/groups/89143845409/"><img src="images/facebook.png" class="share" alt="Facebook Icon" id="face"></a>
+
+</div>
+
+<div style = "text-align:center; width:500px; margin-left:auto; margin-right:auto;margin-top:-40px; color:white;" ><b>Business Education Technology Academy</b> 2014. <i>All Rights Reserved</i>.</div>
+<br/>
+<div style = "text-align:center;width:1000px; margin-left:auto; margin-right:auto; margin-top:-25px;" ><a href = "sitemap.html" class="sitemaplink"><h3>Site Map</h3></a></div>
+
+
+</body>
+
+</html>

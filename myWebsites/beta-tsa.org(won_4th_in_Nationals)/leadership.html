@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<link rel="shortcut icon" href="images/faviB.png" type="image/png"> 
+<link rel="icon" href="images/faviB.png" type="image/png">
+<title>BETA TSA</title>
+
+<link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
+		<script type = "text/javascript">
+
+
+			var isSelected1 = false;
+			var isSelected2 = false;
+
+			function toggle1()
+			{
+
+				if(!isSelected1)
+				{
+					document.getElementById("cte").style.display="block";
+					isSelected1 = true;
+
+					document.getElementById("ourchapter").style.display="none";
+					isSelected2 = false;
+				}
+				else
+				{
+					document.getElementById("cte").style.display="none";
+					isSelected1 = false;
+				}
+			}
+			function toggle2()
+			{
+
+				if(!isSelected2)
+				{
+					document.getElementById("ourchapter").style.display="block";
+					isSelected2 = true;
+
+					document.getElementById("cte").style.display="none";
+					isSelected1 = false;
+
+				}
+				else
+				{
+					document.getElementById("ourchapter").style.display="none";
+					isSelected2 = false;
+				}
+			}
+
+			function tug()
+			{
+
+				document.getElementById("cte").style.display="none";
+				document.getElementById("ourchapter").style.display="none";
+				isSelected1 = false;
+				isSelected2 = false;
+
+			}
+
+		</script>
+
+
+</head>
+
+<body>
+
+
+
+
+<div class="backStrip">.</div>
+<div class="strip">.</div>
+
+<div class="header">
+    <div class="menu">
+        <div class="span">
+            <ul id="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" onclick = "toggle1();">CTE</a>
+			<div class="subs">
+                        	<div id="cte">
+                            	<ul>
+                                	<li>
+                                   	 <ul>
+						<li><a href="about.html">About</a></li>
+						<li><a href="education.html">Education</a></li>
+        					<li><a href="certifications.html">Certifications</a></li>
+                                    	</ul>
+                                	</li>
+                            	</ul>
+                        	</div>
+                    	</div>
+		</li>
+
+                <li><a  href="#" class="on" onclick = "toggle2();">Our Chapter</a>
+    			<div class="subs">
+                        	<div id="ourchapter">
+                            	<ul>
+                                	<li>
+                                   	 <ul>
+						<li><a href="chapter513.html">Chapter 513</a></li>
+						<li><a href="competition.html">Competition</a></li>
+                                        	<li><a href="activities.html">Activities</a></li>
+                                        	<li><a href="leadership.html">Leadership</a></li>
+                                    	</ul>
+                                	</li>
+                            	</ul>
+                        	</div>
+                    	</div>
+		</li>
+
+        
+                <li><a href="thecodezone.html">The Code Zone</a></li>
+		<li><a href="aboutus.html">About Us</a></li>
+                
+            </ul>
+        </div>
+    </div>
+
+<a href = "index.html"><img src="images/betatsalogo.png" class="logo" alt="BETA TSA Logo"></a>
+
+</div>
+
+<div class="slide" style="color:white;" onclick="tug();">
+	<div id="slideshow" style="width:1000px;">
+	   <div>
+	     <img src="images/officers.png" style="width:1000px; height:350px; overflow-y:hidden;" alt="Our Officers">
+	   </div>
+	</div>
+
+</div>
+
+
+<div class="backStripM">.</div>
+<div class="strip">.</div>
+
+<div class="content" onclick ="tug();">
+
+<h1>Officers</h1>
+<hr class="line"/>
+		<div style="height:1150px;">
+<img src="images/gavel.png" class="positions" alt = "The symbol of the President - the gavel"/>
+
+<div class="officerinfo" style="opacity:0; filter: alpha(opacity=0);">stuff2</div>
+<img src="images/placeholder.gif" class="officerpics" style="opacity:0; filter: alpha(opacity=0);" alt = ""/>
+
+<div class="officerinfo"><h3 class="officernames">Jose Nerio</h3><h3>President | Senior</h3><!--<h3 class="email">Email: <a href="mailto:joseluis276@hotmail.com">joseluis276@hotmail.com</a></h3>--></div>
+<img src="images/jose.png" class="officerpics" alt = "Our TSA regional president Jose Nerio"/>
+
+
+<hr class="invisible"/>
+
+
+<img src="images/star.png" class="positions" alt = "The symbol of the Vice President - the star"/>
+
+<div class="officerinfo" style="opacity:0; filter: alpha(opacity=0);">stuff2</div>
+<img src="images/placeholder.gif" class="officerpics" style="opacity:0; filter: alpha(opacity=0);" alt = ""/>
+
+<div class="officerinfo"><h3 class="officernames">Charlie Giang</h3><h3>Vice-President | Senior</h3><!--<h3 class="email">Email: <a href="mailto:cgiang39@gmail.com">cgiang39@gmail.com</a></h3>--></div>
+<img src="images/charlie.png" class="officerpics" alt = "Our TSA regional Vice President Charlie Giang"/>
+
+
+<hr class="invisible"/>
+
+
+<img src="images/balance.png" class="positions" alt = "The symbol of the Treasurer - the balance"/>
+
+<div class="officerinfo"><h3 class="officernames">Cesia Flores</h3><h3>Co-Treasurer | Freshman</h3><!--<h3 class="email">Email: <a href="mailto:205282@mystisd.net">205282@mystisd.net</a></h3>--></div>
+<img src="images/cesia.png" class="officerpics" alt = "Our TSA Regional co-treasurer Cesia Flores"/>
+
+<div class="officerinfo"><h3 class="officernames">Bryan Cancel</h3><h3>Treasurer | Senior</h3><!--<h3 class="email">Email: <a href="mailto:bghostcancel@gmail.com">bghostcancel@gmail.com</a></h3>--></div>
+<img src="images/bryan.png" class="officerpics" alt = "Our TSA Regional co-treasurer Bryan Cancel"/>
+
+<hr class="invisible"/>
+
+
+<img src="images/pen.png" class="positions" alt = "The symbol of the Secretary - the pen"/>
+
+<div class="officerinfo"><h3 class="officernames">Erika Martinez</h3><h3>Co-Secretary | Freshman</h3><!--<h3 class="email">Email: <a href="mailto:erikasmtz@gmail.com">erikasmtz@gmail.com</a></h3>--></div>
+<img src="images/erika.png" class="officerpics" alt = "Our TSA Regional co-secretary Erika Martinez"/>
+
+<div class="officerinfo"><h3 class="officernames">Lauryn Brough</h3><h3>Secretary | Sophomore</h3><!--<h3 class="email">Email: <a href="mailto:wolfpup1230@yahoo.com">wolfpup1230@yahoo.com</a></h3>--></div>
+<img src="images/lauren.png" class="officerpics" alt = "Our TSA Regional co-secretary Lauren Brough"/>
+
+<hr class="invisible"/>
+
+
+<img src="images/lighthouse.png" class="positions" alt = "The symbol of the reporter - the lighthouse"/>
+
+<div class="officerinfo"><h3 class="officernames">Sydney Berry</h3><h3>Co-Reporter | Freshman</h3><!--<h3 class="email">Email: <a href="mailto:sydneyjberry12@gmail.com">sydneyjberry12@gmail.com</a></h3>--></div>
+<img src="images/sydney.png" class="officerpics" alt = "Our TSA Regional Co-Reporter Sydney Berry"/>
+
+<div class="officerinfo"><h3 class="officernames">Seung Kim</h3><h3>Reporter | Sophomore</h3><!--<h3 class="email">Email: <a href="mailto:smeow456@yahoo.com">smeow456@yahoo.com</a></h3>--></div>
+<img src="images/seung.png" class="officerpics" alt = "Our TSA Regional Co-Reporter Seung Kim"/>
+
+<hr class="invisible"/>
+
+<img src="images/handshake.png" class="positions" alt = "The symbol of the Sargeant of Arms - the hearty handshake"/>
+
+<div class="officerinfo" style="opacity:0; filter: alpha(opacity=0);">stuff2</div>
+<img src="images/placeholder.gif" class="officerpics" style="opacity:0; filter: alpha(opacity=0);" alt = ""/>
+
+<div class="officerinfo"><h3 class="officernames">Cynthia</h3><h3 class="officernames">Aguillon</h3><h3>Sergeant-At-Arms | Junior</h3><!--<h3 class="email">Email: <a href="mailto:beliebermahomiiie@gmail.com">beliebermahomiiie@gmail.com</a></h3>--></div>
+<img src="images/cynthia.png" class="officerpics" alt = "Our TSA Regional Sargeant of Arms Cynthia Aguillon"/>
+
+		</div>
+		
+<h1>Sponsors</h1>
+<hr class="line"/>
+		<div style="height:450px;">
+<img src="images/garcia.png" class="sponsorpics" alt = "Our TSA Co-advisor Alejandro Garcia"/>
+<div class="sponsorinfo">
+<h3 class="officernames" style="display:inline-block;">Alejandro Garcia |&nbsp;</h3>
+<h3 style="display:inline-block; line-height:90%;">Email:</h3><h3 style="line-height:100%;  display:inline-block; width:400px;">&nbsp;<a href="mailto:alejandro.garcia@stisd.net">alejandro.garcia@stisd.net</a></h3>
+
+<h3 style="text-decoration:underline; display:inline-block; line-height:90%;">Education:</h3><h3 style="line-height:90%;  display:inline-block;  width:650px;">&nbsp;University of Texas at Pan American</h3>
+
+<h3 style="text-decoration:underline; display:inline-block; line-height:90%;">Majors:</h3><h3 style="line-height:90%;  display:inline-block; width:650px;">&nbsp;Bachelor of Science in Computer Science</h3>
+
+<h3 style="text-decoration:underline; display:inline-block; line-height:90%;">Other Info:</h3><h3 style="line-height:90%;  display:inline-block;">&nbsp;Computer Science IB and AP teacher and UIL Coach.</h3>
+
+</div>
+
+
+<img src="images/cardenas.png" class="sponsorpics" alt = "Our TSA Co-advisor Sylvia Cardenas"/>
+<div class="sponsorinfo">
+<h3 class="officernames" style="display:inline-block;">Sylvia Cardenas |&nbsp;</h3>
+<h3 style="display:inline-block; line-height:90%;">Email:</h3><h3 style="line-height:100%;  display:inline-block; width:400px;">&nbsp;<a href="mailto:sylvia.cardenas@stisd.net">sylvia.cardenas@stisd.net</a></h3>
+
+<h3 style="text-decoration:underline; display:inline-block; line-height:90%;">Education:</h3><h3 style="line-height:90%;  display:inline-block;  width:650px;">&nbsp;South Texas College</h3>
+
+<h3 style="text-decoration:underline; display:inline-block; line-height:90%;">Majors:</h3><h3 style="line-height:90%;  display:inline-block; width:650px;">&nbsp;[Associates] Computer Specialist,&nbsp;</h3>
+
+<h3 style="line-height:90%;  display:inline-block;">[Bachelors] Computer and Information Technology</h3>
+
+</div>
+		</div>
+</div>
+
+
+<div class="backStripM" style="margin-top:50px;">.</div>
+<div class="strip">.</div>
+
+<div class="footer" onclick ="tug();">
+
+<a href="http://instagram.com/beta_tsa"><img src="images/instagram.png" class="share" alt="Instagram Icon" id="inst"></a>
+<a href="https://twitter.com/betatxtsa"><img src="images/twitter.png" class="share" alt="Twitter Icon" id="twit"></a> 
+<a href="https://www.facebook.com/groups/89143845409/"><img src="images/facebook.png" class="share" alt="Facebook Icon" id="face"></a>
+
+</div>
+
+<div style = "text-align:center; width:500px; margin-left:auto; margin-right:auto;margin-top:-40px; color:white;" ><b>Business Education Technology Academy</b> 2014. <i>All Rights Reserved</i>.</div>
+<br/>
+<div style = "text-align:center;width:1000px; margin-left:auto; margin-right:auto; margin-top:-25px;" ><a href = "sitemap.html" class="sitemaplink"><h3>Site Map</h3></a></div>
+
+</body>
+
+</html>

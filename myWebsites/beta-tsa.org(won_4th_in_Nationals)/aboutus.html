@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<link rel="shortcut icon" href="images/faviB.png" type="image/png"> 
+<link rel="icon" href="images/faviB.png" type="image/png">
+<title>BETA TSA</title>
+
+<link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
+
+		<script type = "text/javascript">
+
+
+			var isSelected1 = false;
+			var isSelected2 = false;
+
+			function toggle1()
+			{
+
+				if(!isSelected1)
+				{
+					document.getElementById("cte").style.display="block";
+					isSelected1 = true;
+
+					document.getElementById("ourchapter").style.display="none";
+					isSelected2 = false;
+				}
+				else
+				{
+					document.getElementById("cte").style.display="none";
+					isSelected1 = false;
+				}
+			}
+			function toggle2()
+			{
+
+				if(!isSelected2)
+				{
+					document.getElementById("ourchapter").style.display="block";
+					isSelected2 = true;
+
+					document.getElementById("cte").style.display="none";
+					isSelected1 = false;
+
+				}
+				else
+				{
+					document.getElementById("ourchapter").style.display="none";
+					isSelected2 = false;
+				}
+			}
+
+			function tug()
+			{
+
+				document.getElementById("cte").style.display="none";
+				document.getElementById("ourchapter").style.display="none";
+				isSelected1 = false;
+				isSelected2 = false;
+
+			}
+
+		</script>
+
+
+</head>
+
+<body>
+
+
+
+
+<div class="backStrip">.</div>
+<div class="strip">.</div>
+
+<div class="header">
+    <div class="menu">
+        <div class="span">
+            <ul id="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" onclick = "toggle1();">CTE</a>
+			<div class="subs">
+                        	<div id="cte">
+                            	<ul>
+                                	<li>
+                                   	 <ul>
+						<li><a href="about.html">About</a></li>
+						<li><a href="education.html">Education</a></li>
+        					<li><a href="certifications.html">Certifications</a></li>
+                                    	</ul>
+                                	</li>
+                            	</ul>
+                        	</div>
+                    	</div>
+		</li>
+
+                <li><a  href="#" onclick = "toggle2();">Our Chapter</a>
+    			<div class="subs">
+                        	<div id="ourchapter">
+                            	<ul>
+                                	<li>
+                                   	 <ul>
+						<li><a href="chapter513.html">Chapter 513</a></li>
+						<li><a href="competition.html">Competition</a></li>
+                                        	<li><a href="activities.html">Activities</a></li>
+                                        	<li><a href="leadership.html">Leadership</a></li>
+                                    	</ul>
+                                	</li>
+                            	</ul>
+                        	</div>
+                    	</div>
+		</li>
+
+        
+                <li><a href="thecodezone.html">The Code Zone</a></li>
+		<li><a href="aboutus.html"  class="on">About Us</a></li>
+                
+            </ul>
+        </div>
+    </div>
+
+<a href = "index.html"><img src="images/betatsalogo.png" class="logo" alt="BETA TSA Logo"></a>
+
+</div>
+
+<div class="slide" style="color:white;" onclick="tug();">
+	<div id="slideshow" style="width:1000px;">
+	   <div>
+	     <img src="images/developer.png" alt="Meet the Developers"/>
+	   </div>
+	</div>
+
+</div>
+
+
+<div class="backStripM">.</div>
+<div class="strip">.</div>
+
+<div class="content" onclick ="tug();">
+
+
+<img src="images/bryancoding.png" style="width:296px;  border:2px solid white; margin:20px; float:left; margin-left:0px;" alt = "One of the developers Bryan Cancel"/>
+<h3 style="font-size:24px; margin-bottom:20px;">Bryan Cancel</h3>
+<h3 style="line-height:125%;">Hello there! Well I guess you could consider me the Director of the show, I was the one in charge of putting everything together. I coded all the html and css in the website, by hand (no dreamweaver or wix) because Im cool like that! And I designed the site and the cool features it has. I also created all the video tutorials and edited them and I gathered the info for the site and couple of pictures. Overall I had lots of fun doing something new, hope yall like the site! If you would like to know more about me, click the link bellow to view my Resume or click the Linkedin link to view my profile, feel free to contact me at any time, my Info is below!
+</h3>
+      
+<h3><a href="https://www.linkedin.com/pub/bryan-cancel/7a/a19/69"><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_myprofile_160x33.png" alt="View Bryan Cancel's profile on LinkedIn"></a> | Email: <a href="mailto:bghostcancel@gmail.com">bghostcancel@gmail.com</a> | <a href="pdf/BryanCancelsResume.pdf">Resume</a> </h3>
+
+<hr class="invisible" style="5px"/>
+
+<img src="images/jesuscoding.png" style="width:296px;  border:2px solid white; margin:20px; float:left; margin-left:0px;" alt = "One of the developers Jesus Reyes"/>
+<h3 style="font-size:24px; margin-bottom:20px;">Jesus Reyes</h3>
+<h3 style="line-height:125%;">Hey there, I was more of the back end developer in this project. I created the <a href="tryit.php">Try it yourself</a> editor (PHP) and the <a href="lesson1A.html">drag and drop</a> (JavaScript) features of this project by hand as well. I also helped out with gathering the site info and plugging in the content as well as writing the html, css, javascript and php code of <a href="thecodezone.html">“The Code Zone”</a>. Making this website had a lot of obstacles and I am proud to say that despite that we have made it to Nationals. This was an amazing experience and I would not hesitate to do this again if I could. Below you will see my LinkedIn Account and email address. Feel free to contact me at any time! Have an awesome day!
+</h3>
+      
+<h3><a href="http://www.linkedin.com/pub/jesus-eliceo-reyes/95/994/6b4"><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_myprofile_160x33.png" width="160" height="33" alt="View Jesus Eliceo Reyes's profile on LinkedIn"></a> | Email: <a href="mailto:jes_mil@live.com">jes_mil@live.com</a> </h3>
+<hr class="invisible">
+
+<hr class="invisible" style="5px"/>
+
+<img src="images/charliecoding.png" style="width:296px;  border:2px solid white; margin:20px; float:left; margin-left:0px;" alt = "One of the developers Charlie Giang"/>
+<h3 style="font-size:24px; margin-bottom:20px;">Charlie Giang</h3>
+<h3 style="line-height:125%;">Hey guys, I was helped in almost all parts of the website. I helped design the layout for The Code Zone and helped give tips to make the site more usable, like adding hovers on the images that are also links for example. I also took a couple of the photos and did a bit of the editing. Overall I had lots of fun doing this project and, I really liked how our site turned out and I hope you do too!
+</h3>
+<br/>
+<br/>
+      
+<hr class="invisible">
+
+<a href="sitemap.html"><img src="images/map.png" style="width:75px; float:left; margin-top:-25px;" alt = ""/><h3 style="margin-top:0px; float:left;">Our Site Map</h3></a>
+<a href="pdf/paperwork.pdf" target = "_blank"><h3 style="margin-top:0px; float:right;">Paperwork</h3><img src="images/paperwork.png" style="width:75px; float:right; margin-top:-25px;" alt = ""/></a>
+<br/>
+<br/>
+</div> 
+
+<div class="backStripM">.</div>
+<div class="strip">.</div>
+
+<div class="footer" onclick ="tug();">
+
+<a href="http://instagram.com/beta_tsa"><img src="images/instagram.png" class="share" alt="Instagram Icon" id="inst"></a>
+<a href="https://twitter.com/betatxtsa"><img src="images/twitter.png" class="share" alt="Twitter Icon" id="twit"></a> 
+<a href="https://www.facebook.com/groups/89143845409/"><img src="images/facebook.png" class="share" alt="Facebook Icon" id="face"></a>
+
+</div>
+
+<div style = "text-align:center; width:500px; margin-left:auto; margin-right:auto;margin-top:-40px; color:white;" ><b>Business Education Technology Academy</b> 2014. <i>All Rights Reserved</i>.</div>
+<br/>
+<div style = "text-align:center;width:1000px; margin-left:auto; margin-right:auto; margin-top:-25px;" ><a href = "sitemap.html" class="sitemaplink"><h3>Site Map</h3></a></div>
+
+
+
+
+</body>
+
+</html>

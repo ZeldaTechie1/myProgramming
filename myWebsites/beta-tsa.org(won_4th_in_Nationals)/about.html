@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<link rel="shortcut icon" href="images/faviB.png" type="image/png"> 
+<link rel="icon" href="images/faviB.png" type="image/png">
+<title>BETA TSA</title>
+
+
+<link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
+		<script type = "text/javascript">
+
+
+			var isSelected1 = false;
+			var isSelected2 = false;
+
+			function toggle1()
+			{
+
+				if(!isSelected1)
+				{
+					document.getElementById("cte").style.display="block";
+					isSelected1 = true;
+
+					document.getElementById("ourchapter").style.display="none";
+					isSelected2 = false;
+				}
+				else
+				{
+					document.getElementById("cte").style.display="none";
+					isSelected1 = false;
+				}
+			}
+			function toggle2()
+			{
+
+				if(!isSelected2)
+				{
+					document.getElementById("ourchapter").style.display="block";
+					isSelected2 = true;
+
+					document.getElementById("cte").style.display="none";
+					isSelected1 = false;
+
+				}
+				else
+				{
+					document.getElementById("ourchapter").style.display="none";
+					isSelected2 = false;
+				}
+			}
+
+			function tug()
+			{
+
+				document.getElementById("cte").style.display="none";
+				document.getElementById("ourchapter").style.display="none";
+				isSelected1 = false;
+				isSelected2 = false;
+
+			}
+
+		</script>
+
+
+</head>
+
+<body>
+
+
+
+
+<div class="backStrip">.</div>
+<div class="strip">.</div>
+
+<div class="header">
+    <div class="menu">
+        <div class="span">
+            <ul id="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" class="on" onclick = "toggle1();">CTE</a>
+			<div class="subs">
+                        	<div id="cte">
+                            	<ul>
+                                	<li>
+                                   	 <ul>
+						<li><a href="about.html">About</a></li>
+						<li><a href="education.html">Education</a></li>
+        					<li><a href="certifications.html">Certifications</a></li>
+                                    	</ul>
+                                	</li>
+                            	</ul>
+                        	</div>
+                    	</div>
+		</li>
+
+                <li><a  href="#" onclick = "toggle2();">Our Chapter</a>
+    			<div class="subs">
+                        	<div id="ourchapter">
+                            	<ul>
+                                	<li>
+                                   	 <ul>
+						<li><a href="chapter513.html">Chapter 513</a></li>
+						<li><a href="competition.html">Competition</a></li>
+                                        	<li><a href="activities.html">Activities</a></li>
+                                        	<li><a href="leadership.html">Leadership</a></li>
+                                    	</ul>
+                                	</li>
+                            	</ul>
+                        	</div>
+                    	</div>
+		</li>
+
+        
+                <li><a href="thecodezone.html">The Code Zone</a></li>
+		<li><a href="aboutus.html">About Us</a></li>
+                
+            </ul>
+        </div>
+    </div>
+
+<a href = "index.html"><img src="images/betatsalogo.png" class="logo" alt="BETA TSA Logo"></a>
+
+</div>
+
+<div class="slide" style="color:white;" onclick="tug();">
+	<div id="slideshow" style="width:1000px;">
+	   <div>
+	     <img src="images/arrismendibanner.png" alt="Mr. Arissmendi giving his speech"/>
+	   </div>
+	   <div>
+	     <a href="education.html"><img src="images/education.png" alt="Kids in Class"></a>
+	   </div>
+	   <div>
+		<a href="certifications.html"><img src="images/certification.png" alt="Certifications are the keys to IT Sucess"/></a>
+	   </div>
+	</div>
+
+</div>
+
+
+<div class="backStripM">.</div>
+<div class="strip">.</div>
+
+<div class="content" onclick ="tug();">
+<h1>The Tech Track</h1>
+<hr class="line"/>
+
+<h3>
+Our Technology Track has been created to prepare students for any field of technology. Students can take <a href="education.html">courses</a> in order to become proficient 2D and 3D animators or they could work to become graphic designers with the skills that they acquire through the development of posters and banners throughout our <a href = "education.html">courses</a>. There are <a href = "education.html">courses</a> that prepare students to become audio and video editors through the creation of video advertisements or mini movies and students can even work to become web designers in the future like some of our BETA Alumni. The track is a four year pathway that prepares the student for anything in the technology field through the use of hands on courses, the opportunity to gain <a href="certifications.html">professional certifications</a>, and the opportunity to use these acquired skills in <a href="education.html#riits">internships</a>.
+</h3>
+
+<hr class="invisible" style="height:1px;"/>
+
+<h1>Extra</h1>
+<hr class="line"/>
+<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clubs and Events</h4>
+
+<hr class="invisible"/>
+
+<img src="images/tsalogotsa.png" alt="tsa logo" style="width:250px; float:left; margin:20px; margin-left:0px;"/>
+
+<h4>
+TSA (Technology Student <br/>Association) 
+</h4>
+
+
+
+<h3>
+The Technology Student Association is a highly respected organization in our school. Many kids love to participate in a variety of <a href="competition.html">competitions</a> in order to test the skills that they have gained over the years through our hands on <a href="education.html">courses</a> and our <a href="certifications.html">certification</a> programs.
+</h3>
+
+<img src="images/hestec.png" alt="hestec logo" style="width:100px; float:right; margin:20px; margin-right:0px;"/>
+
+<h4 style = "margin-left:0;">
+HESTEC Robotics at UTPA
+</h4>
+<h3>
+HESTEC stands for Hispanic Engineering, Science and Technology Week and took place in the University of Texas at Pan American this year. Our students were able to participate in a freshman only event where their challenge was to build a sumo robot out of Lego EV3 pieces that could detect its opponent and knock it out of the park!
+</h3>
+
+<img src="images/arrismendipic.png" alt="Ms. Roge, Mr. Arismendi, and Our Principal" style="width:254px; float:left; margin:20px; margin-left:0px; border:2px solid white;"/>
+
+<h4 style="font-size:35px; margin-left:0;">
+Mr. Armando Arismendi Visits!
+</h4>
+<h3>
+Mr. Arismendi is the Director of Special Government Projects at IBM and is currently responsible for the development and delivery of custom supercomputers for the U.S. Government. He was kind enough to give us a visit in our school and give us tips and tricks to success and we are thankful for the time he took out of his day to do so.
+</h3>
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+
+
+
+
+<h1>Future Plans</h1>
+<hr class="line"/>
+
+<img src="images/working.png" alt="Vex Team Working on their Robot" style="width:254px; float:right; margin:20px; margin-right:0px; border:2px solid white;"/>
+
+<h3>
+In the future BETA plans to incorporate more STEM courses into the curriculum by adding 3 classes to the Technology track oriented toward Engineering and Robotics. This change was made due to the enormous interest in Robotics in the past year, where the <a href="competition.html#robot">VEX Robotics team</a> that last year only had 4 team members turned into a Robotics Club that housed 30 members, and plans to have many more members in the years to come! The classes include <a href="education.html#coeat">Concepts of Engineering and Technology</a>, <a href="education.html#rpad">Robotics Programming and Design</a>, <a href="education.html#raa12">Robotics and Automation 1 & 2</a>. Click on the classes to learn more!
+</h3>
+
+</div>
+
+
+<div class="backStripM">.</div>
+<div class="strip">.</div>
+
+<div class="footer" onclick ="tug();">
+
+<a href="http://instagram.com/beta_tsa"><img src="images/instagram.png" class="share" alt="Instagram Icon" id="inst"></a>
+<a href="https://twitter.com/betatxtsa"><img src="images/twitter.png" class="share" alt="Twitter Icon" id="twit"></a> 
+<a href="https://www.facebook.com/groups/89143845409/"><img src="images/facebook.png" class="share" alt="Facebook Icon" id="face"></a>
+
+</div>
+
+<div style = "text-align:center; width:500px; margin-left:auto; margin-right:auto;margin-top:-40px; color:white;"><b>Business Education Technology Academy</b> 2014. <i>All Rights Reserved</i>.</div>
+<br/>
+<div style = "text-align:center;width:1000px; margin-left:auto; margin-right:auto; margin-top:-25px;" ><a href = "sitemap.html" class="sitemaplink"><h3>Site Map</h3></a></div>
+
+
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript">
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+},  5000);
+</script>
+
+
+
+
+
+
+</body>
+
+</html>

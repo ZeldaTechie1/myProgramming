@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<link rel="shortcut icon" href="images/faviB.png" type="image/png"> 
+<link rel="icon" href="images/faviB.png" type="image/png">
+
+<link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
+
+<title>BETA TSA</title>
+
+
+		<script type = "text/javascript">
+
+
+			var isSelected1 = false;
+			var isSelected2 = false;
+
+			function toggle1()
+			{
+
+				if(!isSelected1)
+				{
+					document.getElementById("cte").style.display="block";
+					isSelected1 = true;
+
+					document.getElementById("ourchapter").style.display="none";
+					isSelected2 = false;
+				}
+				else
+				{
+					document.getElementById("cte").style.display="none";
+					isSelected1 = false;
+				}
+			}
+			function toggle2()
+			{
+
+				if(!isSelected2)
+				{
+					document.getElementById("ourchapter").style.display="block";
+					isSelected2 = true;
+
+					document.getElementById("cte").style.display="none";
+					isSelected1 = false;
+
+				}
+				else
+				{
+					document.getElementById("ourchapter").style.display="none";
+					isSelected2 = false;
+				}
+			}
+
+			function tug()
+			{
+
+				document.getElementById("cte").style.display="none";
+				document.getElementById("ourchapter").style.display="none";
+				isSelected1 = false;
+				isSelected2 = false;
+
+			}
+
+		</script>
+
+
+</head>
+
+<body>
+
+
+
+
+<div class="backStrip">.</div>
+<div class="strip">.</div>
+
+<div class="header">
+    <div class="menu">
+        <div class="span">
+            <ul id="nav">
+                <li><a href="index.html" class="on">Home</a></li>
+                <li><a href="#" onclick = "toggle1();">CTE</a>
+			<div class="subs">
+                        	<div id="cte">
+                            	<ul>
+                                	<li>
+                                   	 <ul>
+						<li><a href="about.html">About</a></li>
+						<li><a href="education.html">Education</a></li>
+        					<li><a href="certifications.html">Certifications</a></li>
+                                    	</ul>
+                                	</li>
+                            	</ul>
+                        	</div>
+                    	</div>
+		</li>
+
+                <li><a  href="#" onclick = "toggle2();">Our Chapter</a>
+    			<div class="subs">
+                        	<div id="ourchapter">
+                            	<ul>
+                                	<li>
+                                   	 <ul>
+						<li><a href="chapter513.html">Chapter 513</a></li>
+						<li><a href="competition.html">Competition</a></li>
+                                        	<li><a href="activities.html">Activities</a></li>
+                                        	<li><a href="leadership.html">Leadership</a></li>
+                                    	</ul>
+                                	</li>
+                            	</ul>
+                        	</div>
+                    	</div>
+		</li>
+
+        
+                <li><a href="thecodezone.html">The Code Zone</a></li>
+		<li><a href="aboutus.html">About Us</a></li>
+                
+            </ul>
+        </div>
+    </div>
+
+<a href = "#"><img src="images/betatsalogo.png" class="logo" alt="BETA TSA Logo"></a>
+
+</div>
+
+<div class="slide" style="color:white;" onclick="tug();">
+	<div id="slideshow" style="width:1000px;">
+	   <div>
+	     <img src="images/beta.png" style="width:1000px; height:350px; overflow-y:hidden;" alt="Our School">
+	   </div>
+	     <div>
+	     <a href="about.html"><img src="images/arrismendibanner.png" alt="Mr. Arissmendi giving his speech"/></a>
+	   </div>
+	     <div>
+	     <a href="chapter513.html"><img src="images/regional.png" style="width:1000px; height:350px; overflow-y:hidden;" alt="Our Chapter"></a>
+	   </div>
+	        <div>
+	     <a href="thecodezone.html"><img src="images/thecodezonebanner.png" style="width:1000px; height:350px; overflow-y:hidden;" alt="The Code Zone"></a>
+	   </div>
+	     <div>
+	     <a href="aboutus.html"><img src="images/developer.png" style="width:1000px; height:350px; overflow-y:hidden;" alt="Meet The Developers"></a>
+	   </div>
+	</div>
+
+</div>
+
+
+<div class="backStripM">.</div>
+<div class="strip">.</div>
+
+<div class="content" onclick ="tug();">
+<img src="images/betashield.png" style="width:250px; float:left;" alt="BETA Shield">
+<h1>WELCOME</h1>
+<hr class="line"/>
+<h2>&nbsp;&nbsp;&nbsp; to BETA TSA</h2>
+<h3>We are a school dedicated to Business Education and Technology. <a href="about.html">Our CTE Program</a> is expansive and gives students the chance to become <a href="certifications.html">certified</a> in many fields of technology. One of the certifications offered by our school is the Site Development Associate so we are proud to present our website.</h3> 
+
+<hr class="invisible"/>
+
+<img src="images/html5css3.png" style="width:300px; float:right;" alt="HTML5 and CSS3">
+<h1>Learn</h1><h4 style="color:#ff6633;">HTML5</h4>
+<hr class="line"/>
+<h2 style=" display:inline-block;">and&nbsp;</h2><div style="color:#3399cc; display:inline-block;"><h2 style=" display:inline-block;">CSS3</h2></div>
+<h3>Having a website is an essential part of marketing any business. For that reason many people are looking to hire web designers. If you would like to code a web site in HTML5 and CSS3 visit <a href="thecodezone.html">The Code Zone</a> !</h3>
+
+<hr class="invisible"/>
+
+<img src="images/calendar.png" style="width:250px; float:left; margin-left:0px; margin-right:25px;" alt="Calendar">
+<h1>Calendar</h1>
+<hr class="line">
+
+	<ul>
+<li style="text-decoration:line-through"><h3 style="margin:5px;">Statewide Leadership Conference | December 5-7 | 2013 in Kerrville, TX</h3></li>
+<li style="text-decoration:line-through"><h3 style="margin:5px;">Regional Leadership Conference | January 24 | University of Texas Pan-American in Edinburg, TX</h3></li>
+<li style="text-decoration:line-through"><h3 style="margin:5px;">Regional Competition | February 21st | South Texas College</h3></li>
+<li style="text-decoration:line-through"><h3 style="margin:5px;">Texas TSA Contest and Conference | April 10-12 | Waco, TX</h3></li>
+<li style="font-size:22px;"><div style="display:inline-block; background-color:#0099cc;"><h3 style="margin:5px;">Submit the Link for Web Master competition | May 15th</h3></div></li>
+<li><h3 style="margin:5px;">National TSA Conference | June 27 --> July 1 | Gaylord National Washington DC</h3></li>
+
+	</ul>
+
+<br/>
+
+
+</div>
+
+
+<div class="backStripM">.</div>
+<div class="strip">.</div>
+
+
+
+<div class="footer" onclick ="tug();">
+
+<a href="http://instagram.com/beta_tsa"><img src="images/instagram.png" class="share" alt="Instagram Icon" id="inst"></a>
+<a href="https://twitter.com/betatxtsa"><img src="images/twitter.png" class="share" alt="Twitter Icon" id="twit"></a> 
+<a href="https://www.facebook.com/groups/89143845409/"><img src="images/facebook.png" class="share" alt="Facebook Icon" id="face"></a>
+
+</div>
+
+<div style = "text-align:center; width:500px; margin-left:auto; margin-right:auto;margin-top:-40px; color:white;" ><b>Business Education Technology Academy</b> 2014. <i>All Rights Reserved</i>.</div>
+<br/>
+<div style = "text-align:center;width:1000px; margin-left:auto; margin-right:auto; margin-top:-25px;" ><a href = "sitemap.html" class="sitemaplink"><h3>Site Map</h3></a></div>
+
+
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript">
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+},  5000);
+</script>
+
+
+
+
+
+
+</body>
+
+</html>

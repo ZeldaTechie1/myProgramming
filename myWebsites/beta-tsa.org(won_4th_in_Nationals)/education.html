@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<link rel="shortcut icon" href="images/faviB.png" type="image/png"> 
+<link rel="icon" href="images/faviB.png" type="image/png">
+<title>BETA TSA</title>
+
+<link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
+		<script type = "text/javascript">
+
+
+			var isSelected1 = false;
+			var isSelected2 = false;
+
+			function toggle1()
+			{
+
+				if(!isSelected1)
+				{
+					document.getElementById("cte").style.display="block";
+					isSelected1 = true;
+
+					document.getElementById("ourchapter").style.display="none";
+					isSelected2 = false;
+				}
+				else
+				{
+					document.getElementById("cte").style.display="none";
+					isSelected1 = false;
+				}
+			}
+			function toggle2()
+			{
+
+				if(!isSelected2)
+				{
+					document.getElementById("ourchapter").style.display="block";
+					isSelected2 = true;
+
+					document.getElementById("cte").style.display="none";
+					isSelected1 = false;
+
+				}
+				else
+				{
+					document.getElementById("ourchapter").style.display="none";
+					isSelected2 = false;
+				}
+			}
+
+			function tug()
+			{
+
+				document.getElementById("cte").style.display="none";
+				document.getElementById("ourchapter").style.display="none";
+				isSelected1 = false;
+				isSelected2 = false;
+
+			}
+
+		</script>
+
+
+</head>
+
+<body>
+
+
+
+
+<div class="backStrip">.</div>
+<div class="strip">.</div>
+
+<div class="header">
+    <div class="menu">
+        <div class="span">
+            <ul id="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" class="on" onclick = "toggle1();">CTE</a>
+			<div class="subs">
+                        	<div id="cte">
+                            	<ul>
+                                	<li>
+                                   	 <ul>
+						<li><a href="about.html">About</a></li>
+						<li><a href="education.html">Education</a></li>
+        					<li><a href="certifications.html">Certifications</a></li>
+                                    	</ul>
+                                	</li>
+                            	</ul>
+                        	</div>
+                    	</div>
+		</li>
+
+                <li><a  href="#" onclick = "toggle2();">Our Chapter</a>
+    			<div class="subs">
+                        	<div id="ourchapter">
+                            	<ul>
+                                	<li>
+                                   	 <ul>
+						<li><a href="chapter513.html">Chapter 513</a></li>
+						<li><a href="competition.html">Competition</a></li>
+                                        	<li><a href="activities.html">Activities</a></li>
+                                        	<li><a href="leadership.html">Leadership</a></li>
+                                    	</ul>
+                                	</li>
+                            	</ul>
+                        	</div>
+                    	</div>
+		</li>
+
+        
+                <li><a href="thecodezone.html">The Code Zone</a></li>
+		<li><a href="aboutus.html">About Us</a></li>
+                
+            </ul>
+        </div>
+    </div>
+
+<a href = "index.html"><img src="images/betatsalogo.png" class="logo" alt="BETA TSA Logo"></a>
+
+</div>
+
+<div class="slide" style="color:white;" onclick="tug();">
+	<div id="slideshow" style="width:1000px;">
+	   <div>
+	     <img src="images/education.png" style="width:1000px; height:350px; overflow-y:hidden;" alt="Kids Learning">
+	   </div>
+	</div>
+
+</div>
+
+
+<div class="backStripM">.</div>
+<div class="strip">.</div>
+
+<div class="content" onclick ="tug();">
+
+	<div style="height:600px;">
+<h1>Instructors</h1>
+<hr class="line"/>
+
+<img src="images/cardenas.png" class="teachpics" alt="Ms. Cardenas"/>
+
+
+<div class="teachpicsdiv">
+<h3 style="font-size:22px;">Ms. Slyvia Cardenas </h3>
+<h3>Teaches: <a href="#dim">Digital Interactive Media</a> | <a href="#wt">Web Design</a></h3>
+</div>
+
+<img src="images/alvarado.png" class="teachpics" alt="Mr. Alvarado"/>
+
+
+<div class="teachpicsdiv">
+<h3 style="font-size:22px;">Mr. Leonel Alvarado</h3>
+<h3>Teaches: <a href="#dim">Digital Interactive Media</a> | <a href="#aa">Advanced Animation</a></h3>
+</div>
+
+<img src="images/garza.png" class="teachpics" alt="Mr. Garza"/>
+
+
+<div class="teachpicsdiv">
+<h3 style="font-size:22px;">Mr. Jesse Garza</h3>
+<h3>Teaches: <a href="#a">Animation</a></h3>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+</div>
+
+<img src="images/roge.png" class="teachpics" alt="Ms. Roge"/>
+
+
+<div class="teachpicsdiv">
+<h3 style="font-size:22px;">Ms. Vickie Roge</h3>
+<h3>Teaches: <a href="#poit">Principles of Information Technology</a> | <a href="#wt">Web Technologies</a> | <a href="#riits">Research in Information Technology Solutions (Internships)</a> </h3>
+</div>
+
+<img src="images/garcia.png" class="teachpics" alt="Mr. Garcia"/>
+
+
+<div class="teachpicsdiv">
+<h3 style="font-size:22px;">Mr. Alejandro Garcia </h3>
+<h3>Teaches: <a href="#cs1">Computer Science 1</a> | <a href="#cs2">Computer Science 2 (AP)</a></h3>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+</div>
+	</div>
+<hr class="invisible"/>
+
+<h1 style="text-align:left;">Courses</h1>
+<hr class="line"/>
+	<div class="courses">
+		
+		<div style="width:1000px; text-align:center;"><h1 style="font-size:60px;">9</h1></div><br/>	
+		<hr class="line" style="margin-top:-25px;"/>
+		
+
+		<h4 style="margin-left:0px; font-size:30px;" id="poit">Principles of Information Technology</h4>
+		<h3>Develop 
+		 literacy skills to adapt to emerging technologies. Implement personal and interpersonal skills to prepare for a rapidly evolving workplace environment. 
+		</h3>
+		<h3>
+		Skills Gained: Reading, Writing, Computing, Communication, Reasoning
+		</h3>
+		<h3>
+ 		Certifications Gained: <a href="certifications.html">IC3 GS4 Series</a>
+		</h3>
+		
+			
+
+		<h4 style="margin-left:0px; font-size:30px;" id="coeat">Concepts of Engineering and Technology (COMING SOON)</h4>
+		<img src="images/stem.png" width="200" alt="stem" style="float:right;">			
+		<h3>
+		Overview of various fields of science, technology, mathematics, and engineering and their inter-relationships. Students will use a variety of computer hardware and software applications to complete assignments and projects. Students will then use those skills to develop a product or service to be used in the real world.
+		</h3>
+		<h3>		
+		Skills Gained: Making informed decisions, Development of products or services
+		</h3>
+		<br/>
+
+		<div style="width:1000px; text-align:center;"><h1 style="font-size:60px;">10</h1></div><br/>	
+		<hr class="line" style="margin-top:-25px;"/>
+		
+		
+		<h4 style="margin-left:0px; font-size:30px;" id="dim">Digital Interactive Media</h4>
+		<h3>
+		Prerequisite: Principles of Information Technology
+		</h3>
+		<h3>		
+		Through the study of Digital and Interactive Media students will learn to analyze and assess current and emerging technologies, all while designing and creating multimedia projects that address customer needs and resolve a problem. 
+		</h3>
+		<h3>	
+		Skills Gained: Critical Thinking
+		</h3>
+		<h3>
+		Certifications Gained: <a href="certifications.html">Photoshop CS6</a>
+		</h3>
+		
+					
+		<h4 style="margin-left:0px; font-size:30px;" id="cs1">Computer Science 1</h4>
+			
+		
+		
+		<h3>
+		<img src="images/binary.png" width="200" alt="binary" style="float:left; margin-right:10px;">Prerequisite: Algebra 1
+		</h3>			
+		<h3>	
+		Computer Science present the opportunity for student to design, implement and present meaningful programs through a variety of media. They will collaborate with each other and their instructor to solve the problems presented throughout the course. 
+		</h3>
+		<h3>
+		Skills Gained: Collaboration, Research fluency, Critical Thinking, Problem Solving, Decision making, Technology Operation, Technology Concepts, Data Analysis, Task Requirements, Plan Search Strategies
+		</h3>
+		
+		<h4 style="margin-left:0px; font-size:30px;" id="rpad">Robotics Programming and Design (COMING SOON)</h4>
+		<h3>
+		This course will foster students creativity and innovation by presenting opportunities to design, implement, and present meaningful robotic program through a variety of media. The will collaborate with one another, their instructor and various electronic communities to solve problems in the design and programming of robots. 
+		</h3>
+		<h3>
+		Skills Gained: Problem Solving, Principles of Robotics, Automation
+		</h3>
+
+		<div style="width:1000px; text-align:center;"><h1 style="font-size:60px;">11</h1></div><br/>	
+		<hr class="line" style="margin-top:-25px;"/>
+		
+		
+		<h4 style="margin-left:0px; font-size:30px;" id="cs2">Computer Science 2 (AP)</h4>
+		<h3>
+		Prerequisites: Computer Science 1, Algebra 2
+		</h3>
+		<h3>
+		A college Level Version of the Computer Science Course
+		</h3>
+		
+		<img src="images/animation.gif" width="165" height="225" alt="animation" style="float:right;">
+				
+		<h4 style="margin-left:0px; font-size:30px;" id="a">Animation</h4>
+		<h3>
+		Development of animation skills and motion graphics through the study of the history of animation and techniques in the industry. 
+		</h3>
+		
+		<h4 style="margin-left:0px; font-size:30px;" id="wt">Web Technologies</h4>
+		<h3>
+		Prerequisites: Principles of Information Technology
+		</h3>
+		<h3>		
+		Learn how to make informed decisions and apply the decisions to the field of information technology through the study of web technologies and design. 
+		</h3>
+		<h3>		
+		Certifications Gained: <a href="certifications.html">CIW Web Foundations Associate (Series)</a> 
+		</h3>
+		<h4 style="margin-left:0px; font-size:30px;" id="raa12">Robotics and Automation 1 & 2 (COMING SOON)</h4>
+		<h3>
+		Learn about the concept design process and to transfer their advanced academic skills to component designs in a project based environment. 
+		</h3>
+
+		<div style="width:1000px; text-align:center;"><h1 style="font-size:60px;">12</h1></div><br/>
+		<hr class="line" style="margin-top:-25px;"/>
+		
+
+		<h4 style="margin-left:0px; font-size:30px;" id="aa">Advanced Animation</h4>
+		<h3>
+		Prerequisite: Animation
+		</h3>
+		<h3>		
+		Learn the skills needed to create Art, Audio / Video and communicate an idea effectively through the use of 2D and 3D animations.
+		</h3>
+		<h3>
+		Certifications Gained: <a href="certifications.html">Adobe Suite</a>
+		</h3>		
+					
+			
+		
+		<h4 style="margin-left:0px; font-size:30px;" id="riits">Research in Information Technology Solutions</h4>
+		<img src="images/it.png" width="175" alt="IT" style="float:left; margin-right:10px;">
+		<h3>
+		Student will attend internships at different companies and organization where they will learn and apply skills in their perspective fields, whether it be web design, poster creation, video advertisements, customer service, or any thing else that has to do with technology. All of this while learning how to work with a team and gaining a real world experience in a job setting. 
+		</h3>
+
+
+	</div>	
+</div>
+
+
+<div class="backStripM">.</div>
+<div class="strip">.</div>
+
+<div class="footer" onclick ="tug();">
+
+<a href="http://instagram.com/beta_tsa"><img src="images/instagram.png" class="share" alt="Instagram Icon" id="inst"></a>
+<a href="https://twitter.com/betatxtsa"><img src="images/twitter.png" class="share" alt="Twitter Icon" id="twit"></a> 
+<a href="https://www.facebook.com/groups/89143845409/"><img src="images/facebook.png" class="share" alt="Facebook Icon" id="face"></a>
+
+</div>
+
+<div style = "text-align:center; width:500px; margin-left:auto; margin-right:auto;margin-top:-40px; color:white;" ><b>Business Education Technology Academy</b> 2014. <i>All Rights Reserved</i>.</div>
+<br/>
+<div style = "text-align:center;width:1000px; margin-left:auto; margin-right:auto; margin-top:-25px;" ><a href = "sitemap.html" class="sitemaplink"><h3>Site Map</h3></a></div>
+
+</body>
+
+</html>	

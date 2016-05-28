@@ -1,0 +1,9 @@
+[12-May-2014 20:08:28 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/betatsao/public_html/NEWSITE/tryit.php on line 232
+[12-May-2014 20:08:31 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/betatsao/public_html/NEWSITE/tryit.php on line 232
+[14-May-2014 17:56:41 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/betatsao/public_html/NEWSITE/tryit.php on line 209
+[14-May-2014 17:57:07 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/betatsao/public_html/NEWSITE/tryit.php on line 209
+[14-May-2014 19:56:54 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/betatsao/public_html/NEWSITE/tryit.php on line 209
+[14-May-2014 19:56:57 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/betatsao/public_html/NEWSITE/tryit.php on line 209
+[14-May-2014 19:57:04 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/betatsao/public_html/NEWSITE/tryit.php on line 209
+[14-May-2014 20:17:26 UTC] PHP Parse error:  syntax error, unexpected '++' (T_INC) in /home/betatsao/public_html/NEWSITE/tryit.php on line 217
+[15-May-2014 21:45:39 UTC] PHP Parse error:  syntax error, unexpected 'just' (T_STRING) in /home/betatsao/public_html/try_it0.php on line 1
