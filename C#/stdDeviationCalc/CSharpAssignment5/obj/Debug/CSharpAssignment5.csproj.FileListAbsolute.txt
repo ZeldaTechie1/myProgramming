@@ -1,0 +1,24 @@
+C:\Users\Bryan\Documents\GitHub\CSharpAssignment5\CSharpAssignment5\bin\Debug\CSharpAssignment5.exe.config
+C:\Users\Bryan\Documents\GitHub\CSharpAssignment5\CSharpAssignment5\bin\Debug\CSharpAssignment5.exe
+C:\Users\Bryan\Documents\GitHub\CSharpAssignment5\CSharpAssignment5\bin\Debug\CSharpAssignment5.pdb
+C:\Users\Bryan\Documents\GitHub\CSharpAssignment5\CSharpAssignment5\obj\Debug\CSharpAssignment5.csprojResolveAssemblyReference.cache
+C:\Users\Bryan\Documents\GitHub\CSharpAssignment5\CSharpAssignment5\obj\Debug\CSharpAssignment5.Form1.resources
+C:\Users\Bryan\Documents\GitHub\CSharpAssignment5\CSharpAssignment5\obj\Debug\CSharpAssignment5.Properties.Resources.resources
+C:\Users\Bryan\Documents\GitHub\CSharpAssignment5\CSharpAssignment5\obj\Debug\CSharpAssignment5.csproj.GenerateResource.Cache
+C:\Users\Bryan\Documents\GitHub\CSharpAssignment5\CSharpAssignment5\obj\Debug\CSharpAssignment5.exe
+C:\Users\Bryan\Documents\GitHub\CSharpAssignment5\CSharpAssignment5\obj\Debug\CSharpAssignment5.pdb
+C:\Users\Bryan\Documents\GitHub\CSharpAssignment5-StandardDev\CSharpAssignment5\bin\Debug\CSharpAssignment5.exe.config
+C:\Users\Bryan\Documents\GitHub\CSharpAssignment5-StandardDev\CSharpAssignment5\obj\Debug\CSharpAssignment5.exe
+C:\Users\Bryan\Documents\GitHub\CSharpAssignment5-StandardDev\CSharpAssignment5\obj\Debug\CSharpAssignment5.pdb
+G:\Old Storage Drive\from docs\GitHub\CSharpAssignment5-StandardDev\CSharpAssignment5\bin\Debug\CSharpAssignment5.exe.config
+G:\Old Storage Drive\from docs\GitHub\CSharpAssignment5-StandardDev\CSharpAssignment5\obj\Debug\CSharpAssignment5.exe
+G:\Old Storage Drive\from docs\GitHub\CSharpAssignment5-StandardDev\CSharpAssignment5\obj\Debug\CSharpAssignment5.pdb
+F:\myWork(sort)\myCode\CSharpAssignment5-StandardDev\CSharpAssignment5\bin\Debug\CSharpAssignment5.exe.config
+F:\myWork(sort)\myCode\CSharpAssignment5-StandardDev\CSharpAssignment5\obj\Debug\CSharpAssignment5.exe
+F:\myWork(sort)\myCode\CSharpAssignment5-StandardDev\CSharpAssignment5\obj\Debug\CSharpAssignment5.pdb
+F:\myWork(sort)\myCode\CSharpAssignment5-StandardDev\CSharpAssignment5\bin\Debug\CSharpAssignment5.exe
+F:\myWork(sort)\myCode\CSharpAssignment5-StandardDev\CSharpAssignment5\bin\Debug\CSharpAssignment5.pdb
+F:\myWork(sort)\myCode\CSharpAssignment5-StandardDev\CSharpAssignment5\obj\Debug\CSharpAssignment5.csprojResolveAssemblyReference.cache
+F:\myWork(sort)\myCode\CSharpAssignment5-StandardDev\CSharpAssignment5\obj\Debug\CSharpAssignment5.Form1.resources
+F:\myWork(sort)\myCode\CSharpAssignment5-StandardDev\CSharpAssignment5\obj\Debug\CSharpAssignment5.Properties.Resources.resources
+F:\myWork(sort)\myCode\CSharpAssignment5-StandardDev\CSharpAssignment5\obj\Debug\CSharpAssignment5.csproj.GenerateResource.Cache

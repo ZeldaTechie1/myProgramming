@@ -1,0 +1,21 @@
+C:\Users\Bryan\Documents\GitHub\CSharpAssignment4\Assignment4\Assignment4\bin\Debug\Assignment4.exe.config
+C:\Users\Bryan\Documents\GitHub\CSharpAssignment4\Assignment4\Assignment4\bin\Debug\Assignment4.exe
+C:\Users\Bryan\Documents\GitHub\CSharpAssignment4\Assignment4\Assignment4\bin\Debug\Assignment4.pdb
+C:\Users\Bryan\Documents\GitHub\CSharpAssignment4\Assignment4\Assignment4\obj\Debug\Assignment4.csprojResolveAssemblyReference.cache
+C:\Users\Bryan\Documents\GitHub\CSharpAssignment4\Assignment4\Assignment4\obj\Debug\Assignment4.Form1.resources
+C:\Users\Bryan\Documents\GitHub\CSharpAssignment4\Assignment4\Assignment4\obj\Debug\Assignment4.Properties.Resources.resources
+C:\Users\Bryan\Documents\GitHub\CSharpAssignment4\Assignment4\Assignment4\obj\Debug\Assignment4.csproj.GenerateResource.Cache
+C:\Users\Bryan\Documents\GitHub\CSharpAssignment4\Assignment4\Assignment4\obj\Debug\Assignment4.exe
+C:\Users\Bryan\Documents\GitHub\CSharpAssignment4\Assignment4\Assignment4\obj\Debug\Assignment4.pdb
+G:\Old Storage Drive\from docs\GitHub\CSharpAssignment4\Assignment4\Assignment4\bin\Debug\Assignment4.exe.config
+G:\Old Storage Drive\from docs\GitHub\CSharpAssignment4\Assignment4\Assignment4\obj\Debug\Assignment4.exe
+G:\Old Storage Drive\from docs\GitHub\CSharpAssignment4\Assignment4\Assignment4\obj\Debug\Assignment4.pdb
+F:\myWork(sort)\myCode\CSharpAssignment4\Assignment4\Assignment4\bin\Debug\Assignment4.exe.config
+F:\myWork(sort)\myCode\CSharpAssignment4\Assignment4\Assignment4\obj\Debug\Assignment4.exe
+F:\myWork(sort)\myCode\CSharpAssignment4\Assignment4\Assignment4\obj\Debug\Assignment4.pdb
+F:\myWork(sort)\myCode\CSharpAssignment4\Assignment4\Assignment4\bin\Debug\Assignment4.exe
+F:\myWork(sort)\myCode\CSharpAssignment4\Assignment4\Assignment4\bin\Debug\Assignment4.pdb
+F:\myWork(sort)\myCode\CSharpAssignment4\Assignment4\Assignment4\obj\Debug\Assignment4.csprojResolveAssemblyReference.cache
+F:\myWork(sort)\myCode\CSharpAssignment4\Assignment4\Assignment4\obj\Debug\Assignment4.Form1.resources
+F:\myWork(sort)\myCode\CSharpAssignment4\Assignment4\Assignment4\obj\Debug\Assignment4.Properties.Resources.resources
+F:\myWork(sort)\myCode\CSharpAssignment4\Assignment4\Assignment4\obj\Debug\Assignment4.csproj.GenerateResource.Cache
