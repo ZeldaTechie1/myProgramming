@@ -1,0 +1,17 @@
+﻿Build started 4/13/2015 11:57:04 PM.
+     1>Project "C:\Users\Bryan\Documents\Visual Studio 2013\Projects\ConsoleApplication42\ConsoleApplication42\ConsoleApplication42.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\ConsoleApplication41\ConsoleApplication41\idk.cpp
+         idk.cpp
+     1>c:\users\bryan\documents\visual studio 2013\projects\consoleapplication41\consoleapplication41\idk.cpp(19): error C2065: 'Move' : undeclared identifier
+     1>c:\users\bryan\documents\visual studio 2013\projects\consoleapplication41\consoleapplication41\idk.cpp(19): error C2146: syntax error : missing ';' before identifier 'a'
+     1>c:\users\bryan\documents\visual studio 2013\projects\consoleapplication41\consoleapplication41\idk.cpp(19): error C3861: 'a': identifier not found
+     1>c:\users\bryan\documents\visual studio 2013\projects\consoleapplication41\consoleapplication41\idk.cpp(59): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\bryan\documents\visual studio 2013\projects\consoleapplication41\consoleapplication41\idk.cpp(69): warning C4258: 'i' : definition from the for loop is ignored; the definition from the enclosing scope is used
+                 c:\users\bryan\documents\visual studio 2013\projects\consoleapplication41\consoleapplication41\idk.cpp(52) : definition of 'i' ignored
+                 c:\users\bryan\documents\visual studio 2013\projects\consoleapplication41\consoleapplication41\idk.cpp(45) : definition of 'i' used
+     1>Done Building Project "C:\Users\Bryan\Documents\Visual Studio 2013\Projects\ConsoleApplication42\ConsoleApplication42\ConsoleApplication42.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.32

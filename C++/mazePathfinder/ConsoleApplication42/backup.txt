@@ -1,0 +1,158 @@
+#include<iostream>
+#include<fstream>
+#include<string>
+#include<stack>
+
+#include"move.h"
+
+using namespace std;
+
+void dynam2D();
+//void dyname2DDelete();
+bool findAWayOut(char **arr, int row, int col, int rpos, int cpos, stack<int>& x, stack<int>& y);
+void print(char **arr, int row, int col, int i, bool ans);
+
+void test(stack<int>& x);
+
+int main()
+{
+	//create names for inputing and outputting form files 
+	ifstream inFile;
+	ofstream outFile;
+	//open where we will input and output
+	inFile.open("maze.txt");
+	outFile.open("maze.out.txt");
+	stack <int> x;
+	stack <int> y;
+
+	string line;
+	int row; // amount of rows in the maze
+	int col; // amount of cols in the maze
+	int rpos; // our starting x var in the maze
+	int cpos; // our starting y var in the maze
+	char** arr; //Dynamically allocated pointer of a pointer 
+
+	//Print Header in File
+	outFile << "Solutions for the Maze Assignment" << endl;
+	outFile << "Bryan Cancel" << endl;
+
+	//take in the first value that will be a row for sure
+	inFile >> row;
+	//keep going until eof so you process all of the mazes
+	for (int i = 1; !inFile.eof(); i++)
+	{
+		//Now input column
+		inFile >> col;
+
+		//2D dynamically allocated array creation
+		arr = new char*[col];
+		for (int i = 0; i < col; ++i)
+			arr[i] = new char[row];
+
+		//read in the maze into a 2D dynamically allocated array
+		for (int r = -1; r < row; r++) //starts at -1 since geline is taking the spare new line character [not idea why] (my way of clearing buffer)
+		{
+			getline(inFile, line);
+			for (int c = 0; c < line.length(); c++)
+				arr[r][c] = line[c];
+		}
+
+		//get the location where you will start at X var and Y var
+		inFile >> rpos;
+		inFile >> cpos;
+
+		//Print out the info ask by Dr. Wylie 
+		bool ans = findAWayOut(arr, row, col, rpos, cpos, x, y); //check if there is a way out
+		print(arr, row, col, i, ans);
+		
+		//free up memory(2D array) ---------- THIS WAS CRASHING ON ME BUT IT IS SUPPOSED TO WORK...
+		/*for (int i = 0; i < col; ++i) {
+			delete[] arr[i];
+		}
+		delete[] arr;*/
+
+		//take in another value which should be the row or eof
+		inFile >> row;
+	}
+
+	system("pause");
+	return 0;
+}
+
+//Find the Way Out Funciton (SHOULD WORK RECURSIVELY)
+bool findAWayOut(char **arr, int row, int col, int rpos, int cpos, stack<int>& x, stack<int>& y)
+{
+	//push the first coordinate
+	x.push(rpos);
+	y.push(cpos);
+
+	int counter = 0;
+	//keep going until you find the end or your list are empty, which would mean the there is now way out
+	
+	while (x.empty() == false)
+	{
+		//top the first two values and place them in side of rpos and cpos
+		rpos = x.top();
+		cpos = y.top();
+
+		//after the first time check for your location being equal to E (means there is a way out)
+		if (arr[rpos][cpos] == 'E' && counter != 0)
+			return true;
+
+		//add a breadcrumb at the location and pop it off of the stack
+		arr[rpos][cpos] = '.';
+		x.pop();
+		y.pop();
+
+		//check all the locations surrounding the current starting point and push them to the stacks
+		if (rpos != row && ((arr[rpos + 1][cpos] == '+') || (arr[rpos + 1][cpos] == 'E')))
+		{
+			x.push(rpos + 1);
+			y.push(cpos);
+		}
+		if (rpos != 0 && ((arr[rpos - 1][cpos] == '+') || (arr[rpos - 1][cpos] == 'E')))
+		{
+			x.push(rpos - 1);
+			y.push(cpos);
+		}
+		if (cpos != col && ((arr[rpos][cpos + 1] == '+') || (arr[rpos][cpos + 1] == 'E')))
+		{
+			x.push(rpos);
+			y.push(cpos + 1);
+		}
+		if (cpos != 0 && ((arr[rpos][cpos - 1] == '+') || (arr[rpos][cpos - 1] == 'E')))
+		{
+			x.push(rpos);
+			y.push(cpos - 1);
+		}
+		counter++;
+	}
+
+	return false;	
+}
+
+void print(char **arr, int row, int col, int i, bool ans)
+{
+	ofstream outFile("maze.out.txt", ios::app);
+
+	//The following will be repeated for each maze in maze.txt
+	outFile << endl << endl;
+	outFile << "Maze Number: " << i << endl << endl;
+
+	//Print the maze showing your breadcrumbs (.) along the way
+	for (int r = 0; r < row; r++)
+	{
+		for (int c = 0; c < col; c++)
+		{
+			outFile << arr[r][c];
+		}
+		outFile << endl;
+	}
+	outFile << endl;
+
+	//The appropriate message – either “There is a way out!” or “There is not a way out!”
+	if (ans == true)
+		outFile << "There is a way out!" << endl;
+	else
+		outFile << "There is not a way out!" << endl;
+}

@@ -1,0 +1,3 @@
+﻿  Lab0325.cpp
+c:\users\bryan\desktop\myprogramming\freshmanspringcode\projects\consoleapplication32\consoleapplication32\lab0325.cpp(78): warning C4715: 'CountBaseDigits': not all control paths return a value
+  ConsoleApplication32.vcxproj -> C:\Users\bryan\Desktop\myProgramming\freshmanSpringCode\Projects\ConsoleApplication32\Debug\ConsoleApplication32.exe
