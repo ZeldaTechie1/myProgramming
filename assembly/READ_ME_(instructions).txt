@@ -1,3 +1,5 @@
+To Be Able to Run the Programs:
+
 1. place the "Masm615a" folder into your root directory (where you Operating System is installed)
 2. place the ".asm" file you want to run into the "Masm615a" folder (now in the root directory)
 3. go into the command prompt
