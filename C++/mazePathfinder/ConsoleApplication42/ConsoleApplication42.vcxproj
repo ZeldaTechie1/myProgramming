@@ -78,13 +78,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\ConsoleApplication41\ConsoleApplication41\idk.cpp" />
-  </ItemGroup>
-  <ItemGroup>
     <Text Include="..\..\ConsoleApplication41\ConsoleApplication41\maze.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Move.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="maze.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

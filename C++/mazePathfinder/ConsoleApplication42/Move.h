@@ -1,4 +1,10 @@
-class Move{public:	Move();	Move(int r, int c);private:	int row, col;};
+class Move
+{
+public:
+	Move();
+	Move(int r, int c);
+	int row, col;
+};
 
 Move::Move(int r, int c)
 {

@@ -1,3 +1,12 @@
 F:\myWork(sort)\myCode\Assignment 3\Assignment 3\Assignment 3\bin\Debug\Assignment 3.exe.config
 F:\myWork(sort)\myCode\Assignment 3\Assignment 3\Assignment 3\obj\Debug\Assignment 3.exe
 F:\myWork(sort)\myCode\Assignment 3\Assignment 3\Assignment 3\obj\Debug\Assignment 3.pdb
+C:\Users\bryan\Documents\GitHub\myProgramming\C#\numberBaseDivider\Assignment 3\bin\Debug\Assignment 3.exe.config
+C:\Users\bryan\Documents\GitHub\myProgramming\C#\numberBaseDivider\Assignment 3\obj\Debug\Assignment 3.exe
+C:\Users\bryan\Documents\GitHub\myProgramming\C#\numberBaseDivider\Assignment 3\obj\Debug\Assignment 3.pdb
+C:\Users\bryan\Documents\GitHub\myProgramming\C#\numberBaseDivider\Assignment 3\bin\Debug\Assignment 3.exe
+C:\Users\bryan\Documents\GitHub\myProgramming\C#\numberBaseDivider\Assignment 3\bin\Debug\Assignment 3.pdb
+C:\Users\bryan\Documents\GitHub\myProgramming\C#\numberBaseDivider\Assignment 3\obj\Debug\NumberBaseDivider.csprojResolveAssemblyReference.cache
+C:\Users\bryan\Documents\GitHub\myProgramming\C#\numberBaseDivider\Assignment 3\obj\Debug\Assignment_3.Form1.resources
+C:\Users\bryan\Documents\GitHub\myProgramming\C#\numberBaseDivider\Assignment 3\obj\Debug\Assignment_3.Properties.Resources.resources
+C:\Users\bryan\Documents\GitHub\myProgramming\C#\numberBaseDivider\Assignment 3\obj\Debug\NumberBaseDivider.csproj.GenerateResource.Cache

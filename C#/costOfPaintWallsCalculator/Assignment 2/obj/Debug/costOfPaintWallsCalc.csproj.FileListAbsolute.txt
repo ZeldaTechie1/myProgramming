@@ -1,3 +1,9 @@
 F:\myWork(sort)\myCode\Assignment 2\Assignment 2\bin\Debug\Assignment 2.exe.config
 F:\myWork(sort)\myCode\Assignment 2\Assignment 2\obj\Debug\Assignment 2.exe
 F:\myWork(sort)\myCode\Assignment 2\Assignment 2\obj\Debug\Assignment 2.pdb
+C:\Users\bryan\Documents\GitHub\myProgramming\C#\costOfPaintWallsCalculator\Assignment 2\bin\Debug\Assignment 2.exe.config
+C:\Users\bryan\Documents\GitHub\myProgramming\C#\costOfPaintWallsCalculator\Assignment 2\obj\Debug\Assignment 2.exe
+C:\Users\bryan\Documents\GitHub\myProgramming\C#\costOfPaintWallsCalculator\Assignment 2\obj\Debug\Assignment 2.pdb
+C:\Users\bryan\Documents\GitHub\myProgramming\C#\costOfPaintWallsCalculator\Assignment 2\bin\Debug\Assignment 2.exe
+C:\Users\bryan\Documents\GitHub\myProgramming\C#\costOfPaintWallsCalculator\Assignment 2\bin\Debug\Assignment 2.pdb
+C:\Users\bryan\Documents\GitHub\myProgramming\C#\costOfPaintWallsCalculator\Assignment 2\obj\Debug\costOfPaintWallsCalc.csprojResolveAssemblyReference.cache

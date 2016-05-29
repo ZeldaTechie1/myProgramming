@@ -22,3 +22,6 @@ F:\myWork(sort)\myCode\CSharpAssignment5-StandardDev\CSharpAssignment5\obj\Debug
 F:\myWork(sort)\myCode\CSharpAssignment5-StandardDev\CSharpAssignment5\obj\Debug\CSharpAssignment5.Form1.resources
 F:\myWork(sort)\myCode\CSharpAssignment5-StandardDev\CSharpAssignment5\obj\Debug\CSharpAssignment5.Properties.Resources.resources
 F:\myWork(sort)\myCode\CSharpAssignment5-StandardDev\CSharpAssignment5\obj\Debug\CSharpAssignment5.csproj.GenerateResource.Cache
+C:\Users\bryan\Documents\GitHub\myProgramming\C#\stdDeviationCalc\CSharpAssignment5\bin\Debug\CSharpAssignment5.exe.config
+C:\Users\bryan\Documents\GitHub\myProgramming\C#\stdDeviationCalc\CSharpAssignment5\obj\Debug\CSharpAssignment5.exe
+C:\Users\bryan\Documents\GitHub\myProgramming\C#\stdDeviationCalc\CSharpAssignment5\obj\Debug\CSharpAssignment5.pdb

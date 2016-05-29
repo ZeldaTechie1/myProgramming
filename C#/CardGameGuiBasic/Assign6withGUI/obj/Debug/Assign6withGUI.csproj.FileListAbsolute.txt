@@ -25,3 +25,15 @@ G:\Old Storage Drive\from docs\GitHub\Assign6withGUI\Assign6withGUI\obj\Debug\As
 E:\myWork(sort)\myCode\CardGameGuiBasic\Assign6withGUI\bin\Debug\Assign6withGUI.exe.config
 E:\myWork(sort)\myCode\CardGameGuiBasic\Assign6withGUI\obj\Debug\Assign6withGUI.exe
 E:\myWork(sort)\myCode\CardGameGuiBasic\Assign6withGUI\obj\Debug\Assign6withGUI.pdb
+C:\Users\bryan\Documents\GitHub\myProgramming\C#\CardGameGuiBasic\Assign6withGUI\bin\Debug\Assign6withGUI.exe.config
+C:\Users\bryan\Documents\GitHub\myProgramming\C#\CardGameGuiBasic\Assign6withGUI\obj\Debug\Assign6withGUI.exe
+C:\Users\bryan\Documents\GitHub\myProgramming\C#\CardGameGuiBasic\Assign6withGUI\obj\Debug\Assign6withGUI.pdb
+C:\Users\bryan\Documents\GitHub\myProgramming\C#\CardGameGuiBasic\Assign6withGUI\bin\Debug\Assign6withGUI.exe
+C:\Users\bryan\Documents\GitHub\myProgramming\C#\CardGameGuiBasic\Assign6withGUI\bin\Debug\Assign6withGUI.pdb
+C:\Users\bryan\Documents\GitHub\myProgramming\C#\CardGameGuiBasic\Assign6withGUI\obj\Debug\Assign6withGUI.csprojResolveAssemblyReference.cache
+C:\Users\bryan\Documents\GitHub\myProgramming\C#\CardGameGuiBasic\Assign6withGUI\obj\Debug\Assignment6CSharp.mainForm.resources
+C:\Users\bryan\Documents\GitHub\myProgramming\C#\CardGameGuiBasic\Assign6withGUI\obj\Debug\Assign6withGUI.oDeck.resources
+C:\Users\bryan\Documents\GitHub\myProgramming\C#\CardGameGuiBasic\Assign6withGUI\obj\Debug\Assign6withGUI.Properties.Resources.resources
+C:\Users\bryan\Documents\GitHub\myProgramming\C#\CardGameGuiBasic\Assign6withGUI\obj\Debug\Assignment6CSharp.showHandsForm.resources
+C:\Users\bryan\Documents\GitHub\myProgramming\C#\CardGameGuiBasic\Assign6withGUI\obj\Debug\Assign6withGUI.shuffledDeck.resources
+C:\Users\bryan\Documents\GitHub\myProgramming\C#\CardGameGuiBasic\Assign6withGUI\obj\Debug\Assign6withGUI.csproj.GenerateResource.Cache

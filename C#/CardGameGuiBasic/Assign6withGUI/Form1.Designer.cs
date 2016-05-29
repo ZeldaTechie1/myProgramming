@@ -137,7 +137,7 @@
             this.p1Name.Margin = new System.Windows.Forms.Padding(4);
             this.p1Name.Name = "p1Name";
             this.p1Name.ReadOnly = true;
-            this.p1Name.Size = new System.Drawing.Size(107, 29);
+            this.p1Name.Size = new System.Drawing.Size(107, 34);
             this.p1Name.TabIndex = 7;
             this.p1Name.TabStop = false;
             this.p1Name.Text = "Player 1";
@@ -149,7 +149,7 @@
             this.p2Name.Margin = new System.Windows.Forms.Padding(4);
             this.p2Name.Name = "p2Name";
             this.p2Name.ReadOnly = true;
-            this.p2Name.Size = new System.Drawing.Size(107, 29);
+            this.p2Name.Size = new System.Drawing.Size(107, 34);
             this.p2Name.TabIndex = 8;
             this.p2Name.TabStop = false;
             this.p2Name.Text = "Player 2";
@@ -161,7 +161,7 @@
             this.p3Name.Margin = new System.Windows.Forms.Padding(4);
             this.p3Name.Name = "p3Name";
             this.p3Name.ReadOnly = true;
-            this.p3Name.Size = new System.Drawing.Size(107, 29);
+            this.p3Name.Size = new System.Drawing.Size(107, 34);
             this.p3Name.TabIndex = 9;
             this.p3Name.TabStop = false;
             this.p3Name.Text = "Player 3";
@@ -173,7 +173,7 @@
             this.p4Name.Margin = new System.Windows.Forms.Padding(4);
             this.p4Name.Name = "p4Name";
             this.p4Name.ReadOnly = true;
-            this.p4Name.Size = new System.Drawing.Size(107, 29);
+            this.p4Name.Size = new System.Drawing.Size(107, 34);
             this.p4Name.TabIndex = 10;
             this.p4Name.TabStop = false;
             this.p4Name.Text = "Player 4";
@@ -185,7 +185,7 @@
             this.p1Deck.Margin = new System.Windows.Forms.Padding(4);
             this.p1Deck.Name = "p1Deck";
             this.p1Deck.ReadOnly = true;
-            this.p1Deck.Size = new System.Drawing.Size(612, 29);
+            this.p1Deck.Size = new System.Drawing.Size(612, 34);
             this.p1Deck.TabIndex = 11;
             this.p1Deck.TabStop = false;
             // 
@@ -196,7 +196,7 @@
             this.p2Deck.Margin = new System.Windows.Forms.Padding(4);
             this.p2Deck.Name = "p2Deck";
             this.p2Deck.ReadOnly = true;
-            this.p2Deck.Size = new System.Drawing.Size(612, 29);
+            this.p2Deck.Size = new System.Drawing.Size(612, 34);
             this.p2Deck.TabIndex = 12;
             this.p2Deck.TabStop = false;
             // 
@@ -207,7 +207,7 @@
             this.p3Deck.Margin = new System.Windows.Forms.Padding(4);
             this.p3Deck.Name = "p3Deck";
             this.p3Deck.ReadOnly = true;
-            this.p3Deck.Size = new System.Drawing.Size(612, 29);
+            this.p3Deck.Size = new System.Drawing.Size(612, 34);
             this.p3Deck.TabIndex = 13;
             this.p3Deck.TabStop = false;
             // 
@@ -218,7 +218,7 @@
             this.p4Deck.Margin = new System.Windows.Forms.Padding(4);
             this.p4Deck.Name = "p4Deck";
             this.p4Deck.ReadOnly = true;
-            this.p4Deck.Size = new System.Drawing.Size(612, 29);
+            this.p4Deck.Size = new System.Drawing.Size(612, 34);
             this.p4Deck.TabIndex = 14;
             this.p4Deck.TabStop = false;
             // 
@@ -248,13 +248,13 @@
             this.arrangeCardsButton.Name = "arrangeCardsButton";
             this.arrangeCardsButton.Size = new System.Drawing.Size(248, 31);
             this.arrangeCardsButton.TabIndex = 17;
-            this.arrangeCardsButton.Text = "Arrange Cards";
+            this.arrangeCardsButton.Text = "Arrange Cards in Hands";
             this.arrangeCardsButton.UseVisualStyleBackColor = true;
             this.arrangeCardsButton.Click += new System.EventHandler(this.arrangeCardsButton_Click);
             // 
             // mainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(852, 574);
             this.Controls.Add(this.arrangeCardsButton);

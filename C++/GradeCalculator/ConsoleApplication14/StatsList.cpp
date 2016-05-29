@@ -3,6 +3,7 @@
 //Constructor
 StatsList::StatsList()
 {
+	//set the counter that keeps track of your index back to 0
 	Counter=0;
 }
 
@@ -24,6 +25,7 @@ double StatsList::Mean()
 	{
 		Total = Total + List[r];
 	}
+	//then return the total of all the grades divided by the Counter of how many grades there are
 	return (Total / Counter);
 }
 
@@ -40,30 +42,39 @@ double StatsList::MeanNoHighLow()
 			Total = Total + List[r];
 		}
 	}
+	//then return the total of all the grades divided by the Counter of how many grades there are, minus two since you removed the high and low grades
 	return (Total / (Counter-2));
 }
 
 //print the number of each grade use the private GradeCountRange function
 void StatsList::PrintGradeCount()
 {
-	//A=100-90 | B=89-80 | C=79-70 | D=69-60 | F=59-0
+	//REFERANCE: A=100-90 | B=89-80 | C=79-70 | D=69-60 | F=59-0
+	//variable for high low and let wich is the char for the specific letter
 	double low=90.0; 
 	double high=100.0;
 	char let=65;
 
+	//loop that prints out how many of each letter grade there are until it gets to G which isnt a letter grade
 	while (let < 71)
 	{
+		//line that prints everthing nicely
 		std::cout << let << ": " << GradeCountRange(low, high) << std::endl;
+		//if the you get an a there is a range of 11 number you can get to still get an a, in any other situation its only 10 so this handles the exception
 		if (high == 100)
 			high = 89.99;
-		else
+		else //subtract by ten to move on to a lower range of values
 			high = high - 10;
+		//subtract by ten to move on to a lower range of values
 		low = low - 10;
+		//if low is lower than 60 or a D then it goes to zero so any grade in that range woud be an F
 		if (low < 60)
 		{
 			low = 0;
 		}
+		//add to the letter char to move on to the next letter
 		let++;
+		//take care of E exception
 		if (let == 69)
 			let++;
 	}	
@@ -98,13 +109,14 @@ ListType StatsList::GetLow()
 //add the newgrade to the list IF the list isnt full, returns true for success and false in the case of a full list
 bool StatsList::NewGrade(ListType num)
 {
+	//if list isnt full add the grade to the list
 	if (Counter < MAXCELLS)
 	{
 		List[Counter]=num;
 		Counter++;
 		return true;
 	}
-	else
+	else // return false so It gives you an error message in the main
 		return false;
 }
 

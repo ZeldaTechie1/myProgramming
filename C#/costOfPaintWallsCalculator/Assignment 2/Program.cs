@@ -13,6 +13,13 @@ CLASS: CSCI 3328-01 ASSIGNMENT #:2
 DATE DUE: 9/21/15 DATE TURNED IN: 9/17/15
 */
 
+//NOTE
+/*
+-one gal of paint for 450 sqfeet of wall space.
+-Labor cost is a constant of 0.60 cents per sqft.
+-Sales tax is .0825
+*/
+
 namespace Assignment_2
 {
     //CLASS TO RECEIVE INPUT FROM USER
@@ -186,10 +193,6 @@ namespace Assignment_2
     {
         static void Main(string[] args)
         {
-            //NOTE
-            /*one gal of paint for 450 sqfeet of wall space.
-            Labor cost is a constant of 0.60 cents per sqft.*/
-
             //GET INPUT FROM USER
             Input I = new Input();
             I.getInput();

@@ -95,5 +95,10 @@ namespace Assignment4
         {
 
         }
+
+        private void initialDeposit_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
