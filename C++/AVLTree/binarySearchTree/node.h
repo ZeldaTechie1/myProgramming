@@ -7,8 +7,8 @@ class node
 public:
 	node *left;
 	node *right;
-	int data;
-	int height = 1;
+	int data; //has to be positive numbers, -1 is used to indicate that nodes non exsistance
+	int height = 1; //a height of 1 if the node is a leaf
 
 	node(int x)
 	{

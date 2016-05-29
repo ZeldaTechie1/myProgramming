@@ -1,12 +1,10 @@
 #pragma once
 #include "node.h"
 
-//CLASS AVLTree
-
 class AVLTree
 {
 private:
-	node *root;
+	node *root; //root of the tree
 
 public:
 	AVLTree()
@@ -43,13 +41,14 @@ public:
 		return n->data;
 	}
 
-	void sort(int * &arr, int sortStart, int arrLength)
+	void sort(int * &arr, int sortStart, int arrLength) //sort the values in an array with an AVL tree
 	{
 		//place all values into the avl tree
 		for (int i = sortStart; i <= arrLength; i++)
 			insert(arr[i], root);
 
-		//use the find smallest function that returns the smallest smallest value inside of the binary search tree and place the values in the locations of the array
+		//use the find smallest function that returns the smallest smallest value inside of the avl tree and place the values in the locations of the array
+		//this will sort in a smallest to largest order aka Ascending
 		for (int i = sortStart; i <= arrLength; i++)
 		{
 			arr[i] = findSmallest(root);
@@ -58,16 +57,20 @@ public:
 
 private:
 
+	//this might have worked great but only for a binary search tree - CHECK -> hence check the public func "sort" that uses it
 	int findSmallest(node *&r)
 	{
-		if (r != NULL)
+		if (r != NULL) //if this node isnt NULL (I dont think it should ever NOT go into here - CHECK - if im right then remove)
 		{
-			if ((r->left) == NULL)
+			if ((r->left) == NULL) //if this node's left side doesnt exist then it is the smallest value
 			{
-				int tempD = r->data; //grab the data value
-				r = r->right;
+				int tempD = r->data; //grab the data value since its the smallest after all
+
+				//idk why we need this...
+				r = r->right; 
 				if (r == NULL)
 					delete r;
+
 				return tempD; //return the data value
 			}
 			else
