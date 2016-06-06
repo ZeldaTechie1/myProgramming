@@ -18,6 +18,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!--TODO parentActivityName is introduced in API level 16, im aiming for 8, FIX LATER-->
+        <!--parentActivityName only provides for UP navigation (uses this to determine what to do when up button pressed in action bar - REALLY NEEDED?)-->
+        <activity
+            android:name=".DisplayMessageActivity"
+            android:label="My Message to ma Peeps!"
+            android:parentActivityName=".MyActivity">
+
+        </activity>
     </application>
 
 </manifest>

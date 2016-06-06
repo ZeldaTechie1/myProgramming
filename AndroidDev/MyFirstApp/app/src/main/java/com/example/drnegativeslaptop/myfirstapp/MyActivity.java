@@ -16,6 +16,8 @@ public class MyActivity extends AppCompatActivity {
     public final static String EXTRA_MESSAGE = "com.mycompany.myfirstapp.MESSAGE";
     //you should define the key for your intent's extra using a public constant. Its GOOD PRACTICE to define keys for intent extras using your app's package name as a prefix (so keys are unique)
 
+    //all subclasses of activity must implement onCreate. here the activity receives the intent with the message, then renders a message
+    //also must define the activity layout with the setContentView()
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
