@@ -37,8 +37,11 @@
         android:hint="@string/edit_message"
         android:layout_weight="1" />
 
+    <!-- sendMessage would be the name of a method in myActivity that the system calls when the button is clicked-->
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_send"/>
+        android:text="@string/button_send"
+        android:onClick="sendMessage"
+        />
 </LinearLayout>
