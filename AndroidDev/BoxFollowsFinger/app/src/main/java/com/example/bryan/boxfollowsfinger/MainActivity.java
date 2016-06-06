@@ -1,5 +1,6 @@
 package com.example.bryan.boxfollowsfinger;
 
+import android.app.Activity;
 import android.net.Uri;
 import android.support.v4.view.GestureDetectorCompat;
 import android.support.v4.view.MotionEventCompat;
@@ -9,6 +10,9 @@ import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -18,19 +22,17 @@ import com.google.android.gms.common.api.GoogleApiClient;
 
 import org.w3c.dom.Text;
 
-public class MainActivity extends AppCompatActivity{
+//i used to extend appcomapactivity and that added the action bar, it seems that the notification bar also adds some slight skew to the position of the bar
+
+public class MainActivity extends Activity {
     //for the above always implement a onDown that return true because every other call of a gesture starts with ondown()
 
     private GestureDetectorCompat mDetector;
 
-    /**
-     * ATTENTION: This was auto-generated to implement the App Indexing API.
-     * See https://g.co/AppIndexing/AndroidStudio for more information.
-     */
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
 
         //new gesture detector for this activity, using our mygesturelistener class created below
@@ -53,13 +55,14 @@ public class MainActivity extends AppCompatActivity{
 
         //When one finger on screen, track its location visually (yes this will only track the movement on the first finger that touches the screen)
         //TODO perhaps add something where it place priority on the finger with most presure
+        //TODO figure out why strane reaciton after a multitouch has occured, perhaps manually set it to lock onto the finger that has been on the screen the longest
         TextView xTextBox = (TextView)findViewById(R.id.xPos);
         TextView yTextBox = (TextView)findViewById(R.id.yPos);
 
         TextView xBoxBox = (TextView)findViewById(R.id.xPosBox);
         TextView yBoxBox = (TextView)findViewById(R.id.yPosBox);
 
-        ImageView imgThing = (ImageView) findViewById(R.id.menuBtn);
+        ImageButton imgThing = (ImageButton) findViewById(R.id.menuBtn);
 
         xTextBox.setText("X: "+Integer.toString((int)event.getX()));
         yTextBox.setText("Y: "+Integer.toString((int)event.getY()));
@@ -68,10 +71,13 @@ public class MainActivity extends AppCompatActivity{
         yBoxBox.setText("Y: "+Integer.toString((int)imgThing.getY()));
 
         //TODO only follow finger when long press
-        //TODO get rid of margins or whatever is stoping the box from following the center of my finger
-        //menubutton follows my finger
+        //NOTE: The bars on top of the application will interfere with the position of the box since the box is inside of that view, will have to compensate by
+        //1. getting rid of bar (I did this), 2. considering size of bars with finger detection or box position
+
+        //This make the box follow my finger
+        //(width and height adjustments needed since the 0,0 point in on top left corner)
         imgThing.setX(event.getX() - (imgThing.getWidth()/2));
-        imgThing.setY(event.getY() - imgThing.getHeight() );
+        imgThing.setY(event.getY() - (imgThing.getHeight()/2));
 
         // Be sure to call the superclass implementation
         return super.onTouchEvent(event);
