@@ -8,16 +8,18 @@ import android.widget.TextView;
 
 public class DisplayMessageActivity extends AppCompatActivity {
 
-    //EVERY Activity is invoked by an Intent, REGARDLESS of how user navigated there
-    //get Intent that started it by calling getIntent()
 
-    Intent intent = getIntent();
-    String message = intent.getStringExtra(MyActivity.EXTRA_MESSAGE);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_message);
+
+        //EVERY Activity is invoked by an Intent, REGARDLESS of how user navigated there
+        //get Intent that started it by calling getIntent()
+
+        Intent intent = getIntent();
+        String message = intent.getStringExtra(MyActivity.EXTRA_MESSAGE);
 
         //make a new text view with the message that we recieved from intent
         TextView textView = new TextView(this);
