@@ -22,9 +22,8 @@
         android:layout_height="50dp"
         android:id="@+id/menuBtn"
         android:background="#ff0000"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="121dp" />
+        android:layout_margin="0dp"
+        android:longClickable="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -45,4 +44,34 @@
         android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/textView"
         android:layout_alignEnd="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/infoBox"
+        android:layout_above="@+id/xPos"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/yPosBox"
+        android:layout_above="@+id/infoBox"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/xPosBox"
+        android:layout_above="@+id/infoBox"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
 </RelativeLayout>
