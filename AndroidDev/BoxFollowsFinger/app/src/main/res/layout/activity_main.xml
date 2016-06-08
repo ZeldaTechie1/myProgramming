@@ -16,65 +16,17 @@
 
     <!-- adjustViewBounds is mega important, if not we will get strange unwanted padding-->
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Large Text"
-        android:id="@+id/xPos"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Large Text"
-        android:id="@+id/yPos"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/textView"
-        android:layout_alignEnd="@+id/textView" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Large Text"
-        android:id="@+id/infoBox"
-        android:layout_above="@+id/xPos"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Large Text"
-        android:id="@+id/yPosBox"
-        android:layout_above="@+id/infoBox"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Large Text"
-        android:id="@+id/xPosBox"
-        android:layout_above="@+id/infoBox"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
     <ImageButton
         android:layout_width="50dp"
         android:layout_height="50dp"
 
-        android:scaleType="center"
+        android:scaleType="fitCenter"
         android:adjustViewBounds="true"
 
         android:layout_margin="0dp"
         android:padding="0dp"
         android:id="@+id/menuBtn"
-        android:src="@mipmap/testimg" />
+        android:src="@mipmap/testimg"
+        android:longClickable="true"/>
 
 </RelativeLayout>

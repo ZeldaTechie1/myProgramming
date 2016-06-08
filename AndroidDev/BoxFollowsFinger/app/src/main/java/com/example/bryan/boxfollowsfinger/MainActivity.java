@@ -1,6 +1,7 @@
 package com.example.bryan.boxfollowsfinger;
 
 import android.app.Activity;
+import android.content.Context;
 import android.net.Uri;
 import android.support.v4.view.GestureDetectorCompat;
 import android.support.v4.view.MotionEventCompat;
@@ -9,12 +10,14 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
+import android.view.ScaleGestureDetector;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
@@ -25,18 +28,11 @@ import org.w3c.dom.Text;
 //i used to extend appcomapactivity and that added the action bar, it seems that the notification bar also adds some slight skew to the position of the bar
 
 public class MainActivity extends Activity {
-    //for the above always implement a onDown that return true because every other call of a gesture starts with ondown()
-
-    private GestureDetectorCompat mDetector;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_main);
-
-        //new gesture detector for this activity, using our mygesturelistener class created below
-        mDetector = new GestureDetectorCompat(this, new MyGestureListener());
 
     }
 
@@ -48,69 +44,101 @@ public class MainActivity extends Activity {
     //you can use the motionEvent() data to determine if you care about a gesture made
     //LEFT OFF at "Capturing touch events for a single view"
 
-    //quick side note that you can also use onTouch, but you need to iplement an onTouch Listener that didnt work for me the first time
+    // The ‘active pointer’ is the one currently moving our object.
+    private static final int INVALID_POINTER_ID = -1;
+    private int mActivePointerId = INVALID_POINTER_ID;
+
+    boolean draggingActive = false;
+
+    //quick side note that you can also use onTouch, but you need to implement an onTouch Listener and that didnt work for me the first time
     @Override
     public boolean onTouchEvent(MotionEvent event){
-        this.mDetector.onTouchEvent(event);
 
-        //When one finger on screen, track its location visually (yes this will only track the movement on the first finger that touches the screen)
-        //TODO perhaps add something where it place priority on the finger with most presure
-        //TODO figure out why strane reaciton after a multitouch has occured, perhaps manually set it to lock onto the finger that has been on the screen the longest
-        TextView xTextBox = (TextView)findViewById(R.id.xPos);
-        TextView yTextBox = (TextView)findViewById(R.id.yPos);
+        Log.v("onTouch: ", "you have triggered an ontouchevent"); //TODO figure out why this isnt being triggered if i straight up touch the button and idk why
 
-        TextView xBoxBox = (TextView)findViewById(R.id.xPosBox);
-        TextView yBoxBox = (TextView)findViewById(R.id.yPosBox);
+        //the objects Im messing with inside of the functions
+        final ImageButton imgThing = (ImageButton) findViewById(R.id.menuBtn);
 
-        ImageButton imgThing = (ImageButton) findViewById(R.id.menuBtn);
+        //Toast Indicators
+        Context context = getApplicationContext(); //TODO figure out what this context does
+        final int duration = Toast.LENGTH_SHORT;
+        CharSequence textOnLong = "dragging time";
+        CharSequence textOnShort = "menu time";
+        CharSequence textCreepy = "dragging OVER";
 
-        xTextBox.setText("X: "+Integer.toString((int)event.getX()));
-        yTextBox.setText("Y: "+Integer.toString((int)event.getY()));
+        final Toast toastLong = Toast.makeText(context, textOnLong, duration);
+        final Toast toastShort = Toast.makeText(context, textOnShort, duration);
+        final Toast toastCreepy = Toast.makeText(context, textCreepy, duration);
 
-        xBoxBox.setText("X: "+Integer.toString((int)imgThing.getX()));
-        yBoxBox.setText("Y: "+Integer.toString((int)imgThing.getY()));
+        //TODO stop if from jumping from finger to finger by paying attention to the ID (once the finger that started the drag event leaves the screen the drag event is over)
+        //TODO stop the requirement that it has for your to click the main view before you start messing with the button
 
-        //TODO only follow finger when long press
-        //NOTE: The bars on top of the application will interfere with the position of the box since the box is inside of that view, will have to compensate by
-        //1. getting rid of bar (I did this), 2. considering size of bars with finger detection or box position
+        final MotionEvent evForDragging = event;
 
-        //This make the box follow my finger
-        //(width and height adjustments needed since the 0,0 point in on top left corner)
-        imgThing.setX(event.getX() - (imgThing.getWidth()/2));
-        imgThing.setY(event.getY() - (imgThing.getHeight()/2));
+        imgThing.setOnTouchListener(new View.OnTouchListener() {
 
-        // Be sure to call the superclass implementation
-        return super.onTouchEvent(event);
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+
+                final int action = evForDragging.getAction();
+
+
+                //onLongClick the box should follow my finger
+                imgThing.setOnLongClickListener(new View.OnLongClickListener() {
+                    @Override
+                    public boolean onLongClick(View v) {
+
+                        draggingActive = true;
+
+                        toastLong.show();//for debugging purposes
+
+                        //TODO set the ACTIVE pointer ID
+
+                        return false;
+                    }
+                });
+
+                //stops draggin if our pointer goes up
+                //TODO use our pointer ID
+                if(action == evForDragging.ACTION_UP && draggingActive)
+                {
+                    draggingActive = false;
+                    toastCreepy.show();
+                }
+
+                //TODO use pointer ID
+                if(draggingActive)
+                {
+                    imgThing.setX(evForDragging.getX(0) - (imgThing.getWidth() / 2));
+                    imgThing.setY(evForDragging.getY(0) - (imgThing.getHeight() / 2));
+                }
+
+                //onClick the box should open a menu
+                imgThing.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        if(draggingActive)
+                        {
+                            draggingActive = false;
+                            toastCreepy.show();
+                        }
+                        else
+                        {
+                            toastShort.show();//for debugging purposes
+
+                        }
+
+                    }
+                });
+
+                return false;
+            }
+        });
+
+        return true;
+
     }
 
-
-    //simpleOnGestureListener only worries about the gestures you care about and automatically returns false for the rest for speed
-    class MyGestureListener extends GestureDetector.SimpleOnGestureListener{
-        //FOR DEBUGGING PURPOSES ONLY
-        private static final String DEBUG_TAG = "MyActivity";
-
-        @Override
-        public boolean onDown(MotionEvent event) {
-            Log.d(DEBUG_TAG,"onDown: " + event.toString());
-            TextView txtV = (TextView)findViewById(R.id.infoBox);
-            txtV.setText("onDown");
-            return true;
-        }
-
-        @Override
-        public void onLongPress(MotionEvent event) {
-            Log.d(DEBUG_TAG, "onLongPress: " + event.toString());
-            TextView txtV = (TextView)findViewById(R.id.infoBox);
-            txtV.setText("onLongPress");
-        }
-
-        @Override
-        public void onShowPress(MotionEvent event) {
-            Log.d(DEBUG_TAG, "onShowPress: " + event.toString());
-            TextView txtV = (TextView)findViewById(R.id.infoBox);
-            txtV.setText("onShowPress");
-        }
-
-    }
 
 }
