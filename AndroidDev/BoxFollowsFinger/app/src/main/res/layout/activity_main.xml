@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="0dp"
-    tools:context="com.example.bryan.boxfollowsfinger.MainActivity">
+    tools:context="com.example.bryan.boxfollowsfinger.MainActivity"
+    android:background="#2a10d4">
 
     <TextView
         android:layout_width="wrap_content"
