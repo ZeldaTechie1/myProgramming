@@ -11,8 +11,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1. if more than one finger is touching the screen ask user to only use one (PASSIVELY, go away once finger taken off) \n
-        The Box Simply Follow Your Finger (OnLongClick box will follow finger [dim] ) (Onclick box will become ACTIVE[dim], onclick again and it will become UN ACTIVE[not dim])"
+        android:text="Box.OnlongTouch will enable dragging \nBox.OnSingleTap will open a menu"
         android:id="@+id/textView" />
 
     <!-- adjustViewBounds is mega important, if not we will get strange unwanted padding-->

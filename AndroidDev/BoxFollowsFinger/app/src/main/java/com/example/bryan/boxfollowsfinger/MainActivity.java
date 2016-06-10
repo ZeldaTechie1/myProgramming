@@ -30,48 +30,62 @@ public class MainActivity extends Activity
 {
 
     //required for Activities
-    // although I can also do others dependant on that activities state (onResume, onStop)
+    //although I can also use others dependant on that activities state (onResume, onStop)
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
+
+        //NOTE: there is a root view attached to the window, in this case I beleive its the relativeLayoutView
+
+        //TODO investigate a bit more on the decoView
+        /*The Event Handling Pipeline looks a littleBit like this
+        1. Window (input manager service interact with window)
+        2. Activity
+        2. DecoView
+         */
+
+        //TODO find out what the status bar and navigation bar look like and why I don't have them
+        /*inside of the DECO VIEW you find 3 things (from top to bottom)
+        1. status bar
+        2. content view
+        3. navigation bar
+        */
+
         setContentView(R.layout.activity_main); //R.layout.activity_main
     }
 
-    // The ‘active pointer’ is the one currently moving our object.
-    private static final int INVALID_POINTER_ID = -1;
-    private int mActivePointerId = INVALID_POINTER_ID;
-
-    boolean draggingActive = false;//this needs to be initialized here or you have to strange error with it needing to be final
-
+    //this is the first thing to be called
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
 
-        final ImageButton imgThing = (ImageButton) findViewById(R.id.menuBtn); //referances our main menu
-
-        // TODO Auto-generated method stub
-        super.dispatchTouchEvent(ev);
-
+        //TODO figure out why i can use MotionEventCompat to make this work
         final int action = ev.getAction();
 
-        if(action == MotionEvent.ACTION_DOWN)
-        {
-            draggingActive = false; //required or it wont reset the variable
+        //TODO stop this wonky way of doing things, I should only pass down the event to a child if a child is clicked, no if any part of the screen is touched
+        //if screen is touch go to the onTouchEvent
+        if(action==MotionEvent.ACTION_DOWN)
             onTouchEvent(ev);
-        }
 
-        return  false;   //(True if the event was handled by the view, false otherwise.)
+        return super.dispatchTouchEvent(ev);   //this is done because of how the framework was designed to function
+        //FRAMEWORK designed to function by processing dispatchTouchEvent from parent to lowest children and then TouchEvent from lowestest child to parent
     }
 
-    @Override
-    public boolean onTouchEvent(MotionEvent event){
+    boolean draggingActive = false;//this needs to be initialized here or you have to strange error with it needing to be final
 
-        //TODO figure out why this isn't always called
+    //NOTE: the Activities onTouchEvent (below) Should ONLY be called if no views consume the event
+
+    //DONT FORGET that the events each call creates are different, very different!
+    //TODO figure out if I can make an onTouch Event Specific to an object or if an ontouchevent is actually what is called when the BIG parent (relativeLayoutView) view is called
+    //TODO figure out why I need this and I cant just ontouchlistener of an item straight up
+    @Override
+    public boolean onTouchEvent(final MotionEvent eventForOnTouchEvent){
+
         draggingActive = false; //required or it wont reset the variable
 
         final ImageButton imgThing = (ImageButton) findViewById(R.id.menuBtn);
 
-        //Toast Indicators
+        //Toast Indicators - for debug purposes
         Context context = getApplicationContext(); //TODO figure out what this context does
         final int duration = Toast.LENGTH_SHORT;
         CharSequence textOnLong = "dragging time";
@@ -82,17 +96,26 @@ public class MainActivity extends Activity
         final Toast toastStop = Toast.makeText(context, textOnLongStop, duration);
 
         //TODO stop if from jumping from finger to finger by paying attention to the ID (once the finger that started the drag event leaves the screen the drag event is over)
+        /*
+        int action = eventForOnTouch.getAction();
+        switch (action){
 
-        //TODO can i use something else for compatibilities sake?
-        final MotionEvent evForDragging = event;
+            //TODO make sure this is trigger and isnt consumed by the time I check it above
+            //when the first finger is down
+            case MotionEvent.ACTION_DOWN:
+                Log.d("in switch", "first finger down");
 
+        }
+        */
+
+        final MotionEvent eventFromOnTouchEvent = eventForOnTouchEvent;
 
         imgThing.setOnTouchListener(new View.OnTouchListener() {
 
             @Override
-            public boolean onTouch(View v, MotionEvent event) {
+            public boolean onTouch(View v, MotionEvent ev) {
 
-                final int action = evForDragging.getAction();
+                final int action = eventFromOnTouchEvent.getAction();
 
                 //onLongClick the box should follow my finger
                 imgThing.setOnLongClickListener(new View.OnLongClickListener() {
@@ -111,7 +134,7 @@ public class MainActivity extends Activity
 
                 //stops draggin if our pointer goes up
                 //TODO use our pointer ID
-                if(action == evForDragging.ACTION_UP && draggingActive) //TODO add "AND" our main pointer is the one that was raised...
+                if(action == eventFromOnTouchEvent.ACTION_UP && draggingActive) //TODO add "AND" our main pointer is the one that was raised...
                 {
                     draggingActive = false;
                     toastStop.show();
@@ -120,8 +143,8 @@ public class MainActivity extends Activity
                 //TODO use pointer ID BECAUSE NOT SUPER SURE if primary finger is in position 0 on array all the time
                 if(draggingActive)
                 {
-                    imgThing.setX(evForDragging.getX(0) - (imgThing.getWidth() / 2));
-                    imgThing.setY(evForDragging.getY(0) - (imgThing.getHeight() / 2));
+                    imgThing.setX(eventFromOnTouchEvent.getX(0) - (imgThing.getWidth() / 2));
+                    imgThing.setY(eventFromOnTouchEvent.getY(0) - (imgThing.getHeight() / 2));
                 }
 
                 //onClick the box should open a menu
@@ -161,6 +184,13 @@ public class MainActivity extends Activity
     //you can use the motionEvent() data to determine if you care about a gesture made
     //LEFT OFF at "Capturing touch events for a single view"
 
+
+    //ANY VIEWS dispatchTouchEvent sends the event to listener first IF IT EXISTS, if not then goes to that views onTouch
+
+    //RETURNING true from an onTouchEvent means that you processed the event there, false means that you didnt
+
+    //ONLY a view group has the onInterceptTouchEvent()
+
     /*
     THE ORDER IN WHICH TOUCHES ARE PROCESSED
 
@@ -173,6 +203,10 @@ public class MainActivity extends Activity
      */
 
     //----------UNFINISHED PARTS
+
+    // The ‘active pointer’ is the one currently moving our object.
+    private static final int INVALID_POINTER_ID = -1;
+    private int mActivePointerId = INVALID_POINTER_ID;
 
     //Detect your primary finger and only let you move the menu with your primary finger----------
 
