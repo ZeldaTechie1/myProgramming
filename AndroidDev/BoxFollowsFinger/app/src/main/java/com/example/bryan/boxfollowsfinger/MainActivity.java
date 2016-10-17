@@ -38,6 +38,8 @@ public class MainActivity extends Activity
 
         //NOTE: there is a root view attached to the window, in this case I beleive its the relativeLayoutView
 
+        //NOTE: you can use getLeft and getTop to get the coordinate of a view RELATIVE to its parent view
+
         //TODO investigate a bit more on the decoView
         /*The Event Handling Pipeline looks a littleBit like this
         1. Window (input manager service interact with window)
@@ -53,7 +55,14 @@ public class MainActivity extends Activity
         */
 
         setContentView(R.layout.activity_main); //R.layout.activity_main
+
+        //all the things Im referencing
+        View myRelView = (View) findViewById(R.id.relativeLayoutView);
+        final ImageButton imgThing = (ImageButton) findViewById(R.id.menuBtn);
+
+        //NOTE: I can implement all my onclick and what not here but I want to try gesture detectors
     }
+
 
     //this is the first thing to be called
     @Override
@@ -75,9 +84,13 @@ public class MainActivity extends Activity
 
     //NOTE: the Activities onTouchEvent (below) Should ONLY be called if no views consume the event
 
+
+
     //DONT FORGET that the events each call creates are different, very different!
     //TODO figure out if I can make an onTouch Event Specific to an object or if an ontouchevent is actually what is called when the BIG parent (relativeLayoutView) view is called
     //TODO figure out why I need this and I cant just ontouchlistener of an item straight up
+
+
     @Override
     public boolean onTouchEvent(final MotionEvent eventForOnTouchEvent){
 
@@ -96,17 +109,6 @@ public class MainActivity extends Activity
         final Toast toastStop = Toast.makeText(context, textOnLongStop, duration);
 
         //TODO stop if from jumping from finger to finger by paying attention to the ID (once the finger that started the drag event leaves the screen the drag event is over)
-        /*
-        int action = eventForOnTouch.getAction();
-        switch (action){
-
-            //TODO make sure this is trigger and isnt consumed by the time I check it above
-            //when the first finger is down
-            case MotionEvent.ACTION_DOWN:
-                Log.d("in switch", "first finger down");
-
-        }
-        */
 
         final MotionEvent eventFromOnTouchEvent = eventForOnTouchEvent;
 
@@ -169,9 +171,17 @@ public class MainActivity extends Activity
             }
         });
 
+
+
         return false; //TODO find out if this matters
 
     }
+
+
+
+
+
+
 
 
     //---------NOTES

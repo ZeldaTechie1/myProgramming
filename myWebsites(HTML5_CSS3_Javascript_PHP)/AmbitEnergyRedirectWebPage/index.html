@@ -1,0 +1,1622 @@
+<!DOCTYPE html>
+<html lang="en"> <!--obviously switch to es when in spanish-->
+
+<head>
+
+<title>RGV Energy Pro Abel A Alaniz</title>
+
+<!--stops google automatic translation-->
+<meta name="google" value="notranslate">
+
+<!--description meta tag-->
+<meta name="description" content="Learn how signing up with Ambit Energy can help you Save Money and Make Money">
+
+
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:800|Changa+One|Chivo:900|Erica+One|Sigmar+One">
+<link href="https://fonts.googleapis.com/css?family=Abel|Assistant|Cantarell|Carme|Droid+Sans|Gafata|Hind+Guntur|Hind+Madurai|Hind+Siliguri|Inder|Istok+Web|Jaldi|Mada|Mako|Mallanna|Meera+Inimai|Molengo|Monda|NTR|Open+Sans|Oxygen|Pontano+Sans|Questrial|Raleway|Ramabhadra|Rambla|Reem+Kufi|Roboto|Roboto+Condensed|Ropa+Sans|Sarala|Shanti|Sintony|Strait|Work+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Pacifico|Permanent+Marker|Rock+Salt" rel="stylesheet">
+<link rel="shortcut icon" type="image/png" href="./images/IconAmbit.png"/>
+
+<script>
+
+//basics (use keywordsin alts tags, body, meta,)
+//speed up html
+//get rid of all uneeded link tag extensions... only 1 font per link tag
+
+//TODO use target keywords through out page
+//TODO enable google ad sense
+//TODO enable google analytics
+//TODO keyword in h1 and h2 tags
+//have more than 1000 words of content
+//post last updated thing
+//TODO jump to begining of selection from bottom of make money or save money
+//TODO Use Schema to Boost CTR (But Be Careful)
+/*
+How do you get these 4-line descriptions? I’ve found that Google uses two factors:
+
+1. The page’s overall authority
+2. Actionable tips at the top of the page (how do they know it’s actionable? They’re Google. They’re smart)
+
+So when it makes sense, put an actionable tip (or two) at the top of your page. Google may grab that tip and use it in an extra-long description.
+*/
+//TODO use title tag modifiers
+//TODO optimize anchor links just right
+//hard” links. In other words, links built with good ol’ fashioned email outreach.
+//TODO add contextual links, aka in the middle of text, for defintions/questions the viewer may have
+/*
+Sitemaps help Google find (and index) your site’s pages.
+
+So make sure to create an XML and HTML sitemap of your site. And submit them to Google via the Google Search Console
+*/
+/*
+That’s why I recommend checking that your permanent redirects are all 301 redirects.
+
+You can easily check this by using Google’s “Fetch as Google” feature:
+*/
+//double check that its listed as mobile friendly
+/*
+Yes, dynamic URLs DO get indexed.
+
+And these dynamic URLs can lead to thin or duplicate content issues.
+
+So if you find your dynamic URLs in Google’s index, slap a “noindex” tag on them.
+*/
+//Google PageSpeed Insights to Improve Your Code
+//Use Google Search Console to Find (And Fix) Duplicate Title Tags
+
+//----------Adjusting to different screen sizes
+
+window.onload = adjustOnLoadAndOnResize;
+
+//check for browser support of onresize
+window.onresize = adjustOnLoadAndOnResize;
+
+function adjustOnLoadAndOnResize(){
+  var currWidth = document.getElementById("theBody").clientWidth;
+  var currWindowHeight = window.innerHeight;
+
+  //adjust header banner
+  if(currWidth<950)
+  {
+    //make everything in banner center aligned and on its own line
+    document.getElementById("headerBanner").style.textAlign="center";
+    var alPic = document.getElementById("alanizPic");
+
+    alPic.style.float="none";
+    alPic.style.display="block";
+    alPic.style.marginLeft="auto";
+    alPic.style.marginRight="auto";
+
+    var divList = document.getElementById("headerBanner").getElementsByTagName("div");
+
+    for (var i = 0; i < divList.length; i++) {
+      divList[i].style.width="100%";
+      divList[i].style.textAlign="center";
+      divList[i].style.paddingLeft="0px";
+    }
+
+    document.getElementById("logosGroup").style.float="none";
+    document.getElementById("logosGroup").style.paddingBottom="10px";
+    document.getElementById("logosGroup").style.paddingTop="15px";
+
+  }
+  else
+  {
+    //make everything in banner center aligned and on its own line
+    document.getElementById("headerBanner").style.textAlign="float";
+    var alPic = document.getElementById("alanizPic");
+
+    alPic.style.float="left";
+    alPic.style.display="inline-block";
+    alPic.style.marginLeft="0px";
+    alPic.style.marginRight="0px";
+
+    var divList = document.getElementById("headerBanner").getElementsByTagName("div");
+
+    for (var i = 0; i < divList.length; i++) {
+      divList[i].style.width="auto";
+      divList[i].style.textAlign="left";
+      divList[i].style.paddingLeft="20px;"
+    }
+
+    document.getElementById("logosGroup").style.float="right";
+    document.getElementById("logosGroup").style.paddingBottom="15px";
+    document.getElementById("logosGroup").style.paddingTop="0px";
+
+  }
+
+  //adjust qr code and contact info
+  if(currWidth<700)
+  {
+    //adjust QR Code
+    var qrCodeLRef = document.getElementById("qrCodeLeft");
+    var qrCodeCRef = document.getElementById("qrCodeCenter");
+
+    qrCodeLRef.style.display="none";
+    qrCodeCRef.style.display="block";
+
+    //adjust h2Ref
+    var h2Ref = document.getElementById("contactMe").getElementsByTagName("h2");
+
+    for (var i = 0; i < h2Ref.length; i++) {
+      h2Ref[i].style.textAlign="center";
+      h2Ref[i].style.paddingLeft="0px";
+    }
+  }
+  else
+  {
+    //adjust QR Code
+    var qrCodeLRef = document.getElementById("qrCodeLeft");
+    var qrCodeCRef = document.getElementById("qrCodeCenter");
+
+    qrCodeLRef.style.display="block";
+    qrCodeCRef.style.display="none";
+
+    //adjust h2Ref
+    var h2Ref = document.getElementById("contactMe").getElementsByTagName("h2");
+
+    for (var i = 0; i < h2Ref.length; i++) {
+      h2Ref[i].style.textAlign="left";
+      h2Ref[i].style.paddingLeft="20px";
+    }
+
+  }
+
+  var optionsDivRef = document.getElementById("optionsDiv");
+
+  //adjust options Div
+  if(currWidth<675)
+  {
+    //everything in "the choice" center aligned and on its own line
+    optionsDivRef.getElementsByTagName("div")[0].getElementsByTagName("div")[0].style.display="block";
+  }
+  else
+  {
+    optionsDivRef.getElementsByTagName("div")[0].getElementsByTagName("div")[0].style.display="inline-block";
+  }
+
+  //ajdust the main top padding
+  var newPaddingTop = document.getElementById("header").clientHeight;
+    
+  document.getElementById("mainTitle").style.paddingTop = newPaddingTop + "px";
+}
+
+//----------Thing That Happen On Button Clicks
+
+window.onload = prepForTranslation;
+
+//NOTE: the translation feature will ONLY work if you have the same ammount of element with class spanish as those with class english and ofcourse these come in pairs (if the header has class spanish then it should also have a counterpart(yes another header) header with class english)
+
+var displayValueArray;
+
+function prepForTranslation(){
+  var englishText = document.getElementsByClassName("english");
+
+  displayValueArray = new Array(englishText.length);
+
+  for (var i = 0; i < englishText.length; i++) {
+
+    /*check if this is compatible for every browser*/
+    var something = englishText[i].currentStyle ? englishText[i].currentStyle.display :
+                              getComputedStyle(englishText[i], null).display;
+    displayValueArray[i] = something;
+  }
+}
+
+function myTranslate(){
+  var transBtn = document.getElementById("translateButton");
+
+  if(transBtn.innerHTML == "Translate to English")
+  {
+    transBtn.innerHTML = "Traducir al Espanol";
+
+    //make spanish disappear
+
+    var spanishText = document.getElementsByClassName("spanish");
+
+    for (var i = 0; i < spanishText.length; i++) {
+      spanishText[i].style.display="none";
+    }
+
+    //make english appear
+
+    var englishText = document.getElementsByClassName("english");
+
+    for (var i = 0; i < englishText.length; i++) {
+      englishText[i].style.display=displayValueArray[i];
+    }
+
+
+    //switch to english video links
+
+    /*https://vimeo.com/74411506 the ambit opp https://vimeo.com/74411785-->
+    <!--https://vimeo.com/74411504 the business https://vimeo.com/74411783-->
+    <!--https://vimeo.com/74411505 the company https://vimeo.com/74411784-->
+    <!--https://vimeo.com/74411508 getting paid https://vimeo.com/74411786*/
+
+    var videoArray = document.getElementsByClassName("iframeVids");
+    var englishVideos = [
+      "https://player.vimeo.com/video/153166831?color=00aaa6&title=0&byline=0&portrait=0",
+      "https://player.vimeo.com/video/153286887?color=00aaa6&title=0&byline=0&portrait=0",
+      "https://player.vimeo.com/video/153286889?color=00aaa6&title=0&byline=0&portrait=0",
+      "https://player.vimeo.com/video/153286888?color=00aaa6&title=0&byline=0&portrait=0"
+      ];
+
+    for (var i = 0; i < videoArray.length; i++) {
+      videoArray[i].getElementsByTagName("iframe")[0].src = englishVideos[i];
+    }
+
+    //change html tag lang thing to en
+
+  }
+  else
+  {
+    transBtn.innerHTML = "Translate to English";
+
+    //make english disapear
+
+    var englishText = document.getElementsByClassName("english");
+
+    for (var i = 0; i < englishText.length; i++) {
+      englishText[i].style.display="none";
+    }
+
+    //make spanish appear
+
+    var spanishText = document.getElementsByClassName("spanish");
+
+    for (var i = 0; i < spanishText.length; i++) {
+      spanishText[i].style.display=displayValueArray[i];
+    }
+
+
+    //switch to spanish video links
+
+    /*https://vimeo.com/74411506 the ambit opp https://vimeo.com/74411785-->
+    <!--https://vimeo.com/74411504 the business https://vimeo.com/74411783-->
+    <!--https://vimeo.com/74411505 the company https://vimeo.com/74411784-->
+    <!--https://vimeo.com/74411508 getting paid https://vimeo.com/74411786*/
+
+    var videoArray = document.getElementsByClassName("iframeVids");
+    var spanishVideos = [
+      "https://player.vimeo.com/video/153419676?color=00aaa6&title=0&byline=0&portrait=0",
+      "https://player.vimeo.com/video/153419679?color=00aaa6&title=0&byline=0&portrait=0",
+      "https://player.vimeo.com/video/153419675?color=00aaa6&title=0&byline=0&portrait=0",
+      "https://player.vimeo.com/video/153419680?color=00aaa6&title=0&byline=0&portrait=0"
+      ];
+
+    for (var i = 0; i < videoArray.length; i++) {
+      videoArray[i].getElementsByTagName("iframe")[0].src = spanishVideos[i];
+    }
+
+    //change html tag lang thing to en
+
+  }
+}
+
+function showMeMoreFunc(){
+  var extras = document.getElementsByClassName("extras");
+  var button = document.getElementById("showMeMoreButton");
+ 
+
+  var arrayOSpans = button.getElementsByTagName("span"); 
+  var activeSpan= 0;
+  var nonActiveSpan=0;
+
+
+
+  for (var i = 0; i < arrayOSpans.length; i++) {
+    var something = arrayOSpans[i].currentStyle ? arrayOSpans[i].currentStyle.display :
+                              getComputedStyle(arrayOSpans[i], null).display;
+    if(something != "none")
+      activeSpan=arrayOSpans[i];
+    else
+      nonActiveSpan=arrayOSpans[i];
+
+  }
+
+
+
+
+  if(activeSpan.innerHTML == "Show Me More" || activeSpan.innerHTML == "Muestrame Mas")
+  {
+    
+    if(activeSpan.innerHTML == "Show Me More")
+    {
+      nonActiveSpan.innerHTML = "Muestrame Menos";
+      activeSpan.innerHTML = "Show Me Less";
+    }
+    else
+    {
+      nonActiveSpan.innerHTML = "Show Me Less";
+      activeSpan.innerHTML = "Muestrame Menos";
+    }
+
+    for (var i = 0; i < extras.length; i++) {
+      extras[i].style.display = "block";
+    }
+    
+
+  }
+  else
+  {
+    if(activeSpan.innerHTML == "Show Me Less")
+    {
+      nonActiveSpan.innerHTML = "Muestrame Mas";
+      activeSpan.innerHTML = "Show Me More";
+    }
+    else
+    {
+      nonActiveSpan.innerHTML = "Show Me More";
+      activeSpan.innerHTML = "Muestrame Mas";
+    }
+
+    for (var i = 0; i < extras.length; i++) {
+      extras[i].style.display = "none";
+    }
+  }
+
+  
+  
+}
+
+//----------Two Main Options and What They Do Layed Out Here
+
+function makeMoneyFunc(){
+
+  //reduce impactful spacing
+  document.getElementById("optionsDiv").style.height = "auto";
+  document.getElementById("optionsDiv").style.lineHeight = "normal";
+
+  //make stuff appear and disappear accordingly
+  var makeBox = document.getElementById("makeMoney");
+  var saveBox = document.getElementById("saveMoney");
+  document.getElementById("moreQuest").style.display = "block";
+
+  makeBox.style.display = "block";
+  saveBox.style.display = "none";
+
+  //grab the src from the main iframe
+  var currSRC = document.getElementById("makeMoneyIntroVideo").src;
+  var start = (currSRC.length-11);
+  var end = (currSRC.length);
+  var currSrcSubString = currSRC.substring(start, end);
+
+  //if it isnt already playing then make it autoplay
+  if( currSrcSubString != "&autoplay=1")
+  {
+    //add to the end &autoplay=1
+    var currSRC = currSRC + "&autoplay=1";
+
+    //set new src
+    document.getElementById("makeMoneyIntroVideo").src = currSRC;
+  }
+  
+  var makeButton = document.getElementById("makeMoneyButton");
+  var saveButton = document.getElementById("saveMoneyButton");
+
+  //button stuff
+  //reduce the pading bottom to 10px
+  document.getElementById("optionsDiv").style.paddingTop="10px";
+  document.getElementById("optionsDiv").style.paddingBottom="10px";
+
+  //for selected button
+  //make this button permenantly bigger --- font-size: 42px
+  //make the color of the button the darker --- orange #ff3300
+  makeButton.style.fontSize = "42px";
+  makeButton.style.backgroundColor = "#ff3300";
+
+  //for nonselected button
+  //make this button its regular size --- font-size: 32px
+  //make its color the regular color --- #ff6633
+  //saveButton.style.fontSize = "32px";
+  saveButton.style.backgroundColor = "#ff6633";
+
+
+}
+
+function saveMoneyFunc(){
+
+  //reduce impactful spacing
+  document.getElementById("optionsDiv").style.height = "auto";
+  document.getElementById("optionsDiv").style.lineHeight = "normal";
+
+  //make stuff appear and disappear accordingly
+  document.getElementById("saveMoney").style.display = "block";
+  document.getElementById("makeMoney").style.display = "none";
+  document.getElementById("moreQuest").style.display = "block";
+
+  //button stuff
+  //reduce the pading bottom to 10px
+  document.getElementById("optionsDiv").style.paddingTop="10px";
+  document.getElementById("optionsDiv").style.paddingBottom="10px";
+
+  //button stuff
+  var makeButton = document.getElementById("makeMoneyButton");
+  var saveButton = document.getElementById("saveMoneyButton");
+
+  //reduce the pading bottom to 10px
+  document.getElementById("optionsDiv").style.paddingBottom="10px";
+
+  //for selected button
+  //make this button permenantly bigger --- font-size: 42px
+  //make the color of the button the darker --- orange #ff3300
+  saveButton.style.fontSize = "42px";
+  saveButton.style.backgroundColor = "#ff3300";
+
+  //for nonselected button
+  //make this button its regular size --- font-size: 32px
+  //make its color the regular color --- #ff6633
+  makeButton.style.backgroundColor = "#ff6633";
+  
+}
+</script>
+
+<style>
+
+/*
+LARGER
+font-family: 'Sigmar One', cursive;
+font-family: 'Erica One', cursive;
+font-family: 'Alegreya Sans SC', sans-serif;
+font-family: 'Chivo', sans-serif;
+font-family: 'Changa One', cursive;
+
+SMALLER
+
+*/
+
+body{
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  font-family: "arial","courier", "times";
+  /*font-weight: bold;*/
+  text-align: center;
+  color: black;
+  font-size: 18px;
+  overflow-x: hidden;
+}
+
+/*----------header styling----------*/
+
+header{
+  position: fixed;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-bottom: 5px solid #ff6633;
+}
+
+header div{
+  display: inline-block;
+}
+
+header > div, #insideContactMe, #headerBanner{
+  width: 100%;
+  max-width: 1000px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+#insideContactMe{
+  max-width: 775px;
+  min-height: 275px;
+}
+
+header > div > div{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.VerticalMiddleText{
+    vertical-align:35%;
+    font-size: 22px;
+}
+
+header img{
+  height: 35px;
+  width: 35px;
+}
+
+#translateButtonDiv{
+  float:right !important;
+  vertical-align: 35%;
+  margin-right: 10px;
+}
+
+#translateButton{
+  color: black !important;
+  background-color: white !important;
+  font-size: 18px;
+}
+
+/*----------main section styling----------*/
+
+main{
+  margin-left:auto;margin-right:auto;
+  width: 100%;
+  max-width: 1000px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+main > div, #makeMoney > div, #saveMoney > div{
+  margin-top:5px;
+  margin-bottom:5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+/*main title*/
+
+#mainTitle{
+  font-family: 'Chivo', sans-serif;
+  font-size: 60px;
+  padding-top: 60px;
+  border-bottom: 5px solid black;
+  border-top: 5px solid grey;
+}
+
+#addMeToContacts{
+  font-family: 'Chivo', sans-serif;
+  font-size: 40px;
+  background-color: green;
+  margin-bottom: 5px;
+}
+
+/*this one keeps the white line in front of it*/
+#bigQuestion{
+  font-family: 'Chivo', sans-serif;
+  font-size: 40px;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: absolute;
+  z-index: 2;
+}
+
+/*this one keep things resizing properly*/
+#bigQuestion2{
+  font-family: 'Chivo', sans-serif;
+  font-size: 40px;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#lineForBigQuestion{
+  float: both;
+  margin: auto;
+  padding: 0px;
+  height: 10px;
+  left: 0px; right: 0px;
+  margin-top: 15px;
+  width: 975px;
+  position: absolute;
+  z-index: 1;
+}
+
+/*-----Q/A Section Styling-----*/
+
+#optionsDiv{
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+#optionsDiv > div{
+  
+}
+
+#optionsDiv > div > div{
+  font-family: 'Chivo', sans-serif;
+  font-size: 20px;
+  margin:20px;
+  display: inline-block; /*this inline block is what allow everything to be on one line*/
+}
+
+/*-----CUSTOM button Styling-----*/
+
+.button{
+background-color: #ff6633;
+color: black;
+border: 2px solid black;
+padding:5px;
+padding-left: 15px;
+padding-right: 15px;
+font-size: 32px;
+/*
+opacity: 1;
+filter: alpha(opacity=100);
+*/
+-webkit-transition-duration: 0.5s; /* Safari */
+transition-duration: 0.5s;
+}
+
+.button:hover{
+background-color: #ff3300; /*TODO specify which grey*/
+color: black;
+border: 2px solid black;
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+font-size: 42px;
+/*
+opacity: 0.5;
+filter: alpha(opacity=75);
+*/
+}
+
+.button:active{
+  transform: translateY(10px);
+}
+
+#showMeMoreButton{
+background-color: #ff3300; /*TODO specify which grey*/
+}
+
+#showMeMoreButton:hover{
+background-color: #ff6633;
+}
+
+/*-----Iframe for video-----*/
+
+#myVid{
+  width:100%;
+  max-width: 1000px;
+  height: 500px;
+}
+
+/*-----other-----*/
+
+.orContactMe{
+  text-align: left;
+}
+
+#headerBanner div{
+  display: inline-block;
+}
+
+#logosGroup{
+float: right;
+height: 70px;
+}
+
+#logosGroup img{
+  height: 70px !important;
+}
+
+
+#headerBanner{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align:left !important;
+}
+
+#alanizPic{
+  float:left;
+}
+
+/*-----link styling-----*/
+
+a{
+  margin: 0px;
+  padding: 0px;
+  text-decoration: underline;
+}
+
+a:link{
+  color: white;
+}
+
+a:visited{
+  color:white;
+}
+
+a:hover{
+  color:white;
+  text-decoration: none;
+}
+
+a:active{
+  color: white;
+}
+
+#makeMoney, #saveMoney, #moreQuest, .extras{
+  display: none;
+  padding-top: 0px;
+
+}
+
+/*---Text Styling---*/
+
+h1 {
+  font-family: 'Chivo', sans-serif;
+  font-size: 32px;
+  background-color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h2{
+  font-family: 'Chivo', sans-serif;
+  font-size: 20px;
+  margin: 0px;
+  color:white;
+  padding: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/*---Contact Me Styling---*/
+
+#contactMe{
+  text-align: left;
+  min-height:270px;
+}
+
+#qrCodeLeft{
+  float:left;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+#qrCodeCenter{
+  float: none;
+  text-align: center;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+}
+
+#contactMe > h2{
+  text-align: left;
+  padding-left:20px;
+}
+
+/*---Iframe Styling---*/
+
+.iframeVids{
+    position: relative;
+    padding-bottom: 56.25% !important;
+    height: 0;
+    overflow: hidden;
+}
+
+.iframeVids > iframe{
+  position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*---DEBUGING COLORS---*/
+
+#contactMe > h2{
+background-color: pink;
+}
+
+#contactMe{
+  background-color:blue; 
+}
+
+#headerBanner > div{
+  background-color:green;
+}
+
+#lineForBigQuestion{
+  background-color: white;
+  }
+
+#bigQuestion, #bigQuestion2{
+  background-color: green;
+}
+
+main > div, #makeMoney > div, #saveMoney > div{
+  background-color: purple;
+}
+
+header > div{
+background-color: red;
+}
+
+.VerticalMiddleText{
+      background-color:blue;
+}
+
+#main{
+  background-color: #cccccc;
+}
+
+/*---REAL COLORS---*/
+
+header > div{
+  background-color: transparent;
+}
+
+.VerticalMiddleText{
+  background-color: transparent;
+}
+
+#headerBanner{
+  background-color: transparent;
+}
+
+#headerBanner > div{
+  background-color: transparent;
+}
+
+#main > div, #makeMoney > div, #saveMoney > div{
+  background-color: transparent;
+}
+#main{
+  background-color: white;
+}
+
+#bigQuestion, #bigQuestion2{
+  background-color: white;
+  color: black;
+}
+
+#makeMoney, #saveMoney{
+  background-color: #666666 !important;
+  border-left: 10px solid #ff3300;
+  border-right: 10px solid #ff3300;
+  color: white;
+}
+
+#makeMoney a, #saveMoney a{
+  /*color: black;*/
+}
+
+#moreQuest{
+  color: white;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+#moreQuest > h1{
+  margin-bottom: 0px;
+}
+
+/*this is done because the page first loads up in english*/
+/*these need to be spans or ids that have this class otherwise issue way arrise*/
+.spanish{
+  display: none;
+}
+
+.notConvinced > div{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 100px;
+    line-height: 100px;
+    max-width: 375px;
+  }
+
+  .notConvinced > div img{
+    max-width:100px;
+    width: 100%;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    float: left;
+  }
+
+.saveMoneySections, .makeMoneySections{
+  min-height: 150px;
+  width: 80%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.saveMoneySections img, .makeMoneySections img{
+  width: 100%;
+  max-width: 150px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  float: left;
+}
+
+.saveMoneySections p, .makeMoneySections p, .extraText{
+  font-family: 'Strait', sans-serif;
+  font-size: 28px;
+  text-align: left;
+}
+</style>
+
+</head>
+
+<body id="theBody">
+
+<!--always on contact info-->
+
+<header id="header" style="z-index:10;">
+    <div>
+      <div class="VerticalMiddleText">
+      <span class="english">Contact Me:</span>
+      <span class="spanish">Contactenme:</span>
+      </div>
+      <div> 
+        <img src="./images/phoneIconW.png" alt="phone Icon, link to the right">
+        <div class="VerticalMiddleText">(956) 522-2278</div>
+      </div>
+      <div>
+        <img src="./images/emailIconW.png" alt="email Icon, link to the right">
+        <a href="mailto:aaalaniz1@aol.com?Subject=Customer%20from%20RGV%20Energy%20Pro%20Website" class="VerticalMiddleText">aaalaniz1@aol.com</a>
+      </div>
+      <div>
+        <a href="#qrCode">
+          <img src="./images/qrcodereader.png" alt="QR Code Icon, links to the picture of the QR Code at the bottom of the page">
+          <div class="VerticalMiddleText">QR Code</div>
+        </a>
+      </div>
+      <div id="translateButtonDiv">
+          <button type="button" class="button" onclick="myTranslate();" id="translateButton">Traducir al Espanol</button>
+      </div>
+    </div>
+</header>
+
+<!--Main Title-->
+<div id="mainTitle" style="background-color:#ff6633; color:black;">Ambit Energy Pro</div>
+
+<div style="background-color:#4d4d4d; width:100%;">
+  <div id="headerBanner" style="min-height:300px;">
+      
+  <!--his photo-->
+      <img id = "alanizPic" style="margin-bottom:5px;" src="./images/AlanizPic1.png" alt="Abel A. Alaniz, the Ambit Energy Pro" title="Abel A. Alaniz, the Ambit Energy Pro">
+
+  <!--his name-->
+      <div style="font-size:60px; padding-left:20px; padding-right: 20px; border:5px #ff6633 solid; border-left:0px #ff9900 solid;">
+        <span style="color:#ff6633; font-weight:bold;">Abel</span> 
+        <span style="color:#d9d9d9;">Alaniz</span>
+      </div>
+
+  <!--ambit energy with logo-->
+      <div style="font-size:65px; padding-left:20px;">
+        <span style="color:#ff6633; font-weight:bold;"><b>AMBIT</b></span>
+        <span style="color:#d9d9d9;">ENERGY</span>
+        <img style="height:75px; width:75px; " src="./images/IconAmbit.png" alt="Ambit Energy Icon">
+        <hr style="margin:0px; padding:0px; border-top: 5px solid black; margin-top:10px;">
+      </div>
+   
+  <!--independant consultant-->   
+      <div style=" padding-left:20px; font-size:30px; vertical-align:top; padding-right:20px; padding-top:10px; ">
+        <span class = "english" style="color:#ff6633; font-weight:bold;">INDEPENDANT</span> 
+        <span class = "english" style="color:#d9d9d9;">CONSULTANT</span>
+
+        <span class = "spanish" style="color:#ff6633; font-weight:bold;">CONSULTOR</span> 
+        <span class = "spanish" style="color:#d9d9d9;">INDEPENDIENTE</span>
+      </div>
+
+      <br>
+  <!--little logos nd stuff-->
+      <div id="logosGroup">
+        <img src="./images/mag1.png" alt="Abel A. Alaniz in the cover of a 'Success From Home' Magazine" title="Abel A. Alaniz in the cover of a 'Success From Home' Magazine">
+        <img src="./images/mag2.png" alt="Abel A. Alaniz in the cover of another 'Success From Home' Magazine" title="Abel A. Alaniz in the cover of another 'Success From Home' Magazine">
+        <img src="./images/mag3.png" alt="Abel A. Alaniz in the cover of a 'Direct Selling News' Magazine" title="Abel A. Alaniz in the cover of a 'Direct Selling News' Magazine">
+        <a href="http://downloads.energygoldrush.com/wp-content/uploads/2015/09/1_INC500AmbitEnergy.pdf" target=_blank><img src="./images/Icon500.png" alt="A Picture Link to a Magazine Cover that shows that Ambit Energy became the number 1 Fastest Growing Private Company in 2010" title="Ambit Energy is the #1 Fastest Growing Private Company"></a>
+        <a href="http://downloads.energygoldrush.com/wp-content/uploads/2015/09/JD-Powers-2015.pdf" target=_blank><img src="./images/IconJDPower.png" alt="A Picture Link to the JD Power Award that Ambit Energy received in 2015" title="Ambit Energy Received a JD Power Award in 2015"></a>
+        <a href="http://downloads.energygoldrush.com/wp-content/uploads/2015/09/2_BBB_AmbitEnergy.pdf" target=_blank><img src="./images/IconBBB.png" alt="A Picture Link to Ambit Energy's evaluation from the Better Business Bureau, that rates Ambit Energy with an A since 2006" title="Ambit Energy with an A by the BBB"></a>
+      </div>
+      
+  </div>
+</div>
+
+<main id="main">
+
+<!--Hello Banner-->
+
+<!--AFTER 950px or lower make all divs and the image under header banner align center-->
+
+
+
+<!--
+MEDIUM
+
+font-family: 'Ramabhadra', sans-serif;
+
+font-family: 'Assistant', sans-serif;
+
+
+font-family: 'Strait', sans-serif;
+
+font-family: 'Mako', sans-serif;
+
+font-family: 'Jaldi', sans-serif;
+
+font-family: 'Meera Inimai', sans-serif;
+font-family: 'Sarala', sans-serif;
+font-family: 'Mada', sans-serif;
+
+font-family: 'Carme', sans-serif;
+
+font-family: 'Hind Siliguri', sans-serif;
+
+font-family: 'Pontano Sans', sans-serif;
+
+font-family: 'Istok Web', sans-serif;
+
+font-family: 'Monda', sans-serif;
+
+font-family: 'Abel', sans-serif;
+
+font-family: 'Droid Sans', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+SMALL
+font-family: 'Sintony', sans-serif;*
+
+-->
+
+<!--SMALL INTRO ABOUT EXPERTISE-->
+
+<div style="text-align:left; font-size: 20px; padding:20px; font-weight: bold; font-family: 'Sintony', sans-serif; color:black;">
+  <span class="english">
+    &nbsp; &nbsp; &nbsp; Hi, my name is Abel Alaniz <br>
+    <br>
+    &nbsp; &nbsp; &nbsp; I'm in the business of helping my friends save money in something that they use every day... Energy!
+    <br>
+    <br>
+    &nbsp; &nbsp; &nbsp; We all use electrical energy to fuel our homes. Their isn't any way around it. But what if you could save some cash every month by signing up with us!?
+    That money that you save, you can then use to buy yourself a new car, fund your children's education, or just have an easier time paying bills in these dificult economic times.
+    <br>
+    <br>
+    &nbsp; &nbsp; &nbsp; If your are interested and you live close or nearby McAllen, Mission, Edinburg, Rio Grande, or Harlingen I am proud to say I can offer same day service!
+    And if you live anywhere in Texas, I am available almost 24/7! So just give me a call, send me a text, or send me an email to the information shown above.
+  </span>
+  <span class="spanish">
+    &nbsp; &nbsp; &nbsp; Hola, mi nombre es Abel Alaniz<br>
+    <br>
+    &nbsp; &nbsp; &nbsp; Estoy en el negocio de ayudar a mis amigos a ahorrar dinero en algo que utilizan todos los dias ... la energia!
+    <br>
+    <br>
+    &nbsp; &nbsp; &nbsp; Todos usamos la energia electrica en nuestros hogares. No hay manera de evitarlo, Y como reacionaria si le dijera que puede ahorrarse dinero todos los meses, al registrarse con nosotros!? Ese dinero que se ahorre, puede utilizarlo para comprarse un coche nuevo, financiar la educacion de sus hijos, o sensillamente facilitar el pago de sus facturas.
+    <br>
+    <br>
+    &nbsp; &nbsp; &nbsp; Si tiene interes y vive en el Area de McAllen, Mission, Edinburg, Rio Grande, o Harlingen me siento orgulloso de decir que puedo ofrecerle servicio el mismo dia! Y si usted vive en cualquier lugar en Texas, estoy disponible casi 24/7! Asi que comuniquese conmigo por llamada, texto, o un correo electronico a mi informacion de contacto que se muestra arriba.
+  </span>
+
+</div>
+
+<!--QUESTION-->
+
+<div>
+    <hr id="lineForBigQuestion" style="background-color:black;">
+    <div id="bigQuestion" style="z-index:1;">
+    <span class="english">Now The Choice Is Yours</span>
+    <span class="spanish">Ahora La Eleccion Es Suya</span>
+    </div>
+    <div id="bigQuestion2" style="z-index:1;">
+    <span class="english">Now The Choice Is Yours</span>
+    <span class="spanish">Ahora La Eleccion Es Suya</span>
+    </div>
+</div>
+
+<!--ANSWER-->
+
+<div id="optionsDiv">
+  <div>
+      <button type="button" class="button notSelected" onclick="saveMoneyFunc();" id="saveMoneyButton">
+      <span class="english">Save Money</span>
+      <span class="spanish">Ahorrar Dinero</span>
+      </button>
+      <div> 
+      <span class="english">OR</span> 
+      <span class="spanish">O</span>
+      </div>
+      <button type="button" class="button notSelected" onclick="makeMoneyFunc();" id="makeMoneyButton">
+        <span class="english">Make Money</span>
+        <span class="spanish">Producir Dinero</span>
+      </button>
+  </div> 
+</div>
+
+<!--LEFT OFF HERE WITH TRANSLATION-->
+
+
+<!--Save Money Box -->
+
+<div id="saveMoney">
+
+    <div style="padding:0px;"> 
+    <h1 style="font-size: 56px; padding-top: 0px; margin-top: 0px;">    
+      <span class="english">YOU ARE IN FOR A TREAT!</span>
+      <span class="spanish">PREPARESE PARA TREMENDA SORPRESA!</span>
+    </h1> 
+    </div> <!--la vas a passar bien-->
+
+    <div class="saveMoneySections"> 
+      <img src="./images/rates.png" alt="icon of rates and plans that can help you save money with Ambit Energy">
+      <p>
+        <span class="english"><a href="http://naytex.myambit.com/rates-and-plans" target=_blank>Click Here</a> <br> to see what Rates and Plans can save you Money!</span>
+        <span class="spanish"><a href="http://naytex.myambit.com/rates-and-plans" hreflang="es" target=_blank>Haga Clic Aqui</a> <br> para ver los planes y precios que pueden ayudarle a ahorrar dinero!</span>
+      </p>
+    </div>
+
+    <hr style="height: 5px; background-color: black; border: 1px solid black; width: 80%; margin-left: 10%;">
+
+    <div class="saveMoneySections"> 
+          <img src="./images/littlePiggy.png" alt="icon of a little piggy bank with all the money you could save if you switch to Ambit Energy">
+
+      <p>
+        <span class="english"><a href="http://downloads.energygoldrush.com/" target=_blank>Click Here</a> to see <br> REAL Saving from <br> REAL Bills</span>
+        <span class="spanish"><a href="http://downloads.energygoldrush.com/" hreflang="es" target=_blank>Haga Clic Aqui</a> para ver <br> ahoros REALES<br> en facuturas REALES</span>
+      </p>
+    </div>
+
+    <hr style="height: 5px; background-color: black; border: 1px solid black; width: 80%; margin-left: 10%;">
+
+    <div class="saveMoneySections"> 
+          <img src="./images/buildings.png" alt="a picture of buildings to show that we can help your business save money">
+
+      <p>
+        <span class="english">Powering your business is our business! <br> <a href="http://naytex.myambit.com/rates-and-plans/commercial" target=_blank>Click Here</a> to see How!</span>
+        <span class="spanish">Ayudar a su negocio es nuestro negocio! <br> <a href="http://naytex.myambit.com/rates-and-plans/commercial" hreflang="es" target=_blank>Haga Clic Aqui</a> para ver como!</span>
+      </p>
+    </div>
+
+    <hr style="height: 5px; background-color: black; border: 1px solid black; width: 80%; margin-left: 10%;">
+
+
+    <div class="extraText">
+      <p style="width: 100%;"> 
+        <span class="english"><a href="http://naytex.myambit.com/rates-and-plans/ambit-advantages" target=_blank>Click Here</a> to Learn about the Advantages of being Our Customer</span>
+        <span class="spanish"><a href="http://naytex.myambit.com/rates-and-plans/ambit-advantages" hreflang="es" target=_blank>Haga Clic Aqui</a> para conocer las ventajas de ser nuestro Cliente</span>
+      </p> 
+      <div style="width: 40%; display: inline-block;">
+        <img src="./images/saveMoney.png" alt="a picture of money to show that you can save money buy getting free energy from Ambit Energy" style="width: 30%; margin: 35%; margin-bottom: 20px; margin-top: 0px; display: block;">
+        <span class="english"><a href="http://naytex.myambit.com/rates-and-plans/ambit-advantages/free-energy" target=_blank>Get Free Energy!</a></span>
+        <span class="spanish"><a href="http://naytex.myambit.com/rates-and-plans/ambit-advantages/free-energy" hreflang="es" target=_blank>Obtiene Energia Gratis!</a></span> 
+      </div>
+      <div style="width: 40%; display: inline-block;" >
+        <img src="./images/travel.png" alt="a picture of a plane to show that you can receive travel rewards from Ambit Energy" style="width: 30%; margin: 35%; margin-bottom: 20px; margin-top: 0px; display: block;">
+        <span class="english"><a href="http://naytex.myambit.com/rates-and-plans/ambit-advantages/travel-rewards" target=_blank>Receive Travel Rewards!</a></span>
+        <span class="spanish"><a href="http://naytex.myambit.com/rates-and-plans/ambit-advantages/travel-rewards" hreflang="es" target=_blank>Recibe Recompensas de Viaje!</a></span> 
+      </div>
+    </div>
+
+    <hr style="height: 5px; background-color: black; border: 1px solid black; width: 80%; margin-left: 10%;">
+
+    <div class="saveMoneySections"> 
+          <img src="./images/epower.png" alt="the EPower Logo because Ambit takes care of their Environment with green energy">
+
+      <p>
+        <span class="english">We take Care of Our Environment too! <br> <a href="http://naytex.myambit.com/rates-and-plans/green-energy" target=_blank>Click Here</a> to Learn How</span>
+        <span class="spanish">Tambien cuidamos de nuestro Ambiente! <br> <a href="http://naytex.myambit.com/rates-and-plans/green-energy" hreflang="es" target=_blank>Haga Clic Aqui</a> para aprender mas</span>
+      </p>
+    </div>
+
+    <hr style="height: 5px; background-color: black; border: 1px solid black; width: 80%; margin-left: 10%;">
+
+    <div class="saveMoneySections"> 
+          <img src="./images/averageBilling.png" alt="a graphic to show that you can take advantage of Average Billing so your energy bill doesn't rise in the summer because of AC use">
+
+      <p>
+        <span class="english">Tired of the Ups and Downs of energy bills due to temperature changes? <br> Take advantage of Average and Budget Billing! <br> <a href="http://naytex.myambit.com/rates-and-plans/average-budget-billing" target=_blank>Click Here</a> to Learn More</span>
+        <span class="spanish">Cansado de los altibajos de las facturas de energia debido a los cambios de temperatura? <br> Saquele ventaja a nestro metodo de Factura que se basa en promedios! <br> <a href="http://naytex.myambit.com/rates-and-plans/average-budget-billing" hreflang="es" target=_blank>Haga Clic Aqui</a> para aprender mas</span>
+      </p>
+    </div>
+
+    <hr style="height: 5px; background-color: black; border: 1px solid black; width: 80%; margin-left: 10%;">
+
+    <div class="saveMoneySections"> 
+          <img src="./images/shieldOfShields.png" alt="a logo to show that we offer Electrical Surge and AC Heat Wave protection">
+
+      <p>
+        <span class="english">Repairs due to Electrical Surges or AC Heat waves can be Expensive <br> Let Us Help! <br> <a href="http://naytex.myambit.com/rates-and-plans/home-services" target=_blank>Click Here</a> to Learn How</span>
+        <span class="spanish">Reparaciones dado a sobrecargas electricas pueden ser costosas <br> Permitenos Ayudarle! <br> <a href="http://naytex.myambit.com/rates-and-plans/home-services" hreflang="es" target=_blank>Haga Clic Aqui</a> para aprender mas</span>
+      </p>
+    </div>
+
+    <hr style="height: 5px; background-color: black; border: 1px solid black; width: 80%; margin-left: 10%;">
+
+    <div class="saveMoneySections"> 
+          <img src="./images/solar.png" alt="Icon with solar panels that can help you, help the earth and save even more money">
+
+      <p>
+        <span class="english">Save Even More Money, <br> and Protect Our Earth with Solar! <br> <a href="http://naytex.myambit.com/rates-and-plans/solar" target=_blank>Click Here</a> to Learn More</span>
+        <span class="spanish">Ahorre aun mas dinero, <br> y proteja nuestro planeta con energia Solar! <br> <a href="http://naytex.myambit.com/rates-and-plans/solar" hreflang="es" target=_blank>Haga Clic Aqui</a> para aprender mas</span>
+      </p>
+    </div>
+
+    <hr style="height: 5px; background-color: black; border: 1px solid black; width: 80%; margin-left: 10%;">
+
+    <!--
+font-family: 'Permanent Marker', cursive;
+font-family: 'Rock Salt', cursive;
+-->
+
+    <div style="width: 60%; margin-left: auto; margin-right: auto;" class="extraText">
+      <span class="english">We cover a Huge part of <span style="font-family: 'Permanent Marker', cursive; font-size: 42px;">Texas</span></span>
+      <span class="spanish">Cubrimos una Gran parte de <span style="font-family: 'Permanent Marker', cursive; font-size: 42px;">Texas</span></span>
+      <img src="./images/coverageMap.png" alt="Ambit Energy service coverage map for texas" style="width: 100%;">  
+    </div>
+
+</div>
+
+<!--Make Money Box-->
+
+<div id="makeMoney">
+
+  <div style="padding: 0px;">
+  <h1 style="font-size:56px; padding-top: 0px; margin-top: 0px;">
+    <span class="english">YOU AND EVERYONE YOU KNOW IS IN FOR A TREAT!</span>
+    <span class="spanish">PREPARE A TODOS LOS QUE CONOCE PARA TREMENDA SORPRESA!</span> 
+  </h1>
+  </div>
+
+  <h1>
+    <span class="english">The Ambit Opportunity</span>
+    <span class="spanish">La Oportunidad Ambit</span>
+  </h1>
+
+  <div class="iframeVids">
+    <iframe id="makeMoneyIntroVideo" src="https://player.vimeo.com/video/153166831?color=00aaa6&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <!--https://vimeo.com/74411506 the ambit opp https://vimeo.com/74411785-->
+  </div>
+
+  <h1 class="extras">
+    <span class="english">The Business</span>
+    <span class="spanish">El Negocio</span>
+  </h1>
+  <div class="iframeVids extras">
+    <iframe src="https://player.vimeo.com/video/153286887?color=00aaa6&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <!--https://vimeo.com/74411504 the business https://vimeo.com/74411783-->
+  </div>
+
+  <h1 class="extras">
+    <span class="english">The Company</span>
+    <span class="spanish">La Empresa</span>
+  </h1>
+  <div class="iframeVids extras">
+    <iframe src="https://player.vimeo.com/video/153286889?color=00aaa6&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <!--https://vimeo.com/74411505 the company https://vimeo.com/74411784-->
+  </div>
+
+  <h1 class="extras">
+    <span class="english">Getting Paid</span>
+    <span class="spanish">Obteniendo Su Pago</span>
+  </h1>
+  <div class="iframeVids extras">
+    <iframe src="https://player.vimeo.com/video/153286888?color=00aaa6&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <!--https://vimeo.com/74411508 getting paid https://vimeo.com/74411786-->
+  </div>
+
+  <span class="english"><a href="https://vimeo.com/officialambitenergy" target=_blank class="extras" style="margin: 10px;   font-family: 'Strait', sans-serif;">Click Here to Check out more of Ambit's Videos on Vimeo</a></span>
+  <span class="spanish"><a href="https://vimeo.com/officialambitenergy" hreflang="es" target=_blank class="extras" style="margin: 10px;   font-family: 'Strait', sans-serif;">Haga clic aqui para ver mas Videos de Ambit en Vimeo</a></span>
+
+  <!--EXTRAS END-->
+
+  <button type="button" class="button" onclick="showMeMoreFunc()" id="showMeMoreButton">
+    <span class="english">Show Me More</span>
+    <span class="spanish">Muestrame Mas</span>
+  </button>
+  
+  <!--EXTRAS TO DISPLAY ON I WANT MORE CLICKED-->
+
+  <hr style="height: 5px; background-color: black; border: 1px solid black; width: 80%; margin-left: 10%;">
+
+  <div class="makeMoneySections notConvinced">
+    <h1 style="background-color: transparent; font-size: 56px;"><span style="width:100%;" class="english">Still not Convinced ?!?</span></h1>
+    <h1 style="background-color: transparent; font-size: 48px;"><span style="width:100%;" class="spanish">Todavia no esta Convencido ?!?</span></h1>
+    <div>
+      <img src="./images/testimonials.png" alt="a logo for the testimonials page in Ambit Energy's Website">
+      <p>
+        <span class="english"><a href="http://naytex.myambit.com/start-a-business/testimonials" target=_blank> Testimonials </a></span>
+        <span class="spanish"><a href="http://naytex.myambit.com/start-a-business/testimonials" hreflang="es" target=_blank> Testimonios </a></span>
+      </p>
+    </div> 
+    <div>
+      <img src="./images/ambitSuccess.png" alt="a logo for the Ambit Success website">
+      <p>
+        <span class="english"><a href="http://www.ambitsuccess.com/" target=_blank> Success stories</a></span>
+        <span class="spanish"><a href="http://www.ambitsuccess.com/" hreflang="es" target=_blank> Historias de Exito</a></span>
+      </p>
+    </div>
+    <div>
+      <img src="./images/media.png" alt="a logo to indicate the Media's coverage of Ambit's Activity and Success">
+      <p>
+        <span class="english"><a href="http://naytex.myambit.com/about-ambit-energy/newsroom" target=_blank> Media Coverage </a></span>
+        <span class="spanish"><a href="http://naytex.myambit.com/about-ambit-energy/newsroom" hreflang="es" target=_blank> Cobertura Periodistica </a></span>
+      </p>
+    </div>
+  </div>
+
+    <hr style="height: 5px; background-color: black; border: 1px solid black; width: 80%; margin-left: 10%;">
+
+
+  <div class="makeMoneySections">
+    <img src="./images/consultant.png" alt="A logo of an anonymous consultant, to indicate that just like Abel A. Alaniz, you could become a consultant too">
+    <p>
+      <span class="english"><a href = "https://enroll.ambitenergy.com/consultant.php?h=naytex&l=en" target=_blank>Click Here</a> <br> If you are Ready to Sign Up as a Consultant!</span>
+      <span class="spanish"><a href = "https://enroll.ambitenergy.com/consultant.php?h=naytex&l=es" hreflang="es" target=_blank>Haga Clic Aqui</a> <br> Si esta listo/lista para entrar como Consultor!</span>
+    </p>
+  </div>
+
+    <hr style="height: 5px; background-color: black; border: 1px solid black; width: 80%; margin-left: 10%;">
+
+
+  <div class="makeMoneySections">
+    <img src="./images/training.png" alt="a logo to indicate a link to website that will help you train to become an Ambit Energy Consultant">
+    <p>
+      <span class="english"><a href = "http://rgvenergypro.energygoldrush.com/training" target=_blank>Click Here</a> <br> If you are Ready to Train as an Ambit Energy Consultant!</span>
+      <span class="spanish"><a href = "http://rgvenergypro.energygoldrush.com/training" hreflang="es" target=_blank>Haga Clic Aqui</a> <br> Si ya esta listo/lista para Entrenar como un Consultor para Ambit Energy!</span>
+    </p>
+  </div>
+
+</div>
+
+</main>
+
+<!--Still Have ?-->
+
+<div id="moreQuest">
+  <h1>
+    <span class="english">Still Have More Questions?</span>
+    <span class="spanish">Todavia tiene mas preguntas?</span>
+  </h1>
+</div>
+
+<!--add us to your contacts-->
+
+<div id="contactMe" style="background-color:black;">
+  <div id="insideContactMe">
+      <div id="qrCodeLeft">
+        <a name="qrCode"><img src="./images/qrcode.png" style="max-width: 250px; width:100%; margin-top:10px;" alt="if you scan this QR Code with your phone you will have all of Abel A. Alaniz's information at once"></a>
+      </div>
+
+      <!--style="padding-top:10px;" this should be in p but its giving me an error-->
+        <h2>
+          <span class="spanish"><br>No Dude En Communicarse...<br><br></span>
+          <span class="spanish">(1) Llamandome al numero (956) 522-2278<br><br></span>
+          <span class="spanish">(2) Eviandome un email a <a href="mailto:aaalaniz1@aol.com?Subject=Customer%20from%20RGV%20Energy%20Pro%20Website">aaalaniz1@aol.com</a><br><br></span>
+          <span class="spanish">(3) Escaneando el Codigo QR Aqui<br><br></span>
+
+          <span class="english"><br>Feel Free to Contact Me by...<br><br></span>
+          <span class="english">(1) Calling me at (956) 522-2278<br><br></span>
+          <span class="english">(2) Emailing me at <a href="mailto:aaalaniz1@aol.com?Subject=Customer%20from%20RGV%20Energy%20Pro%20Website">aaalaniz1@aol.com</a><br><br></span>
+          <span class="english">(3) Scanning the QR Code here<br><br></span>
+        </h2>
+
+      <div id="qrCodeCenter">
+        <a name="qrCode"><img src="./images/qrcode.png" style="max-width: 250px; width:100%;" alt="if you scan this QR Code with your phone you will have all of Abel A. Alaniz's information at once"></a>
+      </div>
+  </div> 
+</div>  
+
+</body>
+
+<!--
+
+<h2>
+	Web Site Terms and Conditions of Use
+</h2>
+
+<h3>
+	1. Terms
+</h3>
+
+<p>
+	By accessing this web site, you are agreeing to be bound by these 
+	web site Terms and Conditions of Use, all applicable laws and regulations, 
+	and agree that you are responsible for compliance with any applicable local 
+	laws. If you do not agree with any of these terms, you are prohibited from 
+	using or accessing this site. The materials contained in this web site are 
+	protected by applicable copyright and trade mark law.
+</p>
+
+<h3>
+	2. Use License
+</h3>
+
+<ol type="a">
+	<li>
+		Permission is granted to temporarily download one copy of the materials 
+		(information or software) on RGV Ambit Energy Pro's web site for personal, 
+		non-commercial transitory viewing only. This is the grant of a license, 
+		not a transfer of title, and under this license you may not:
+		
+		<ol type="i">
+			<li>modify or copy the materials;</li>
+			<li>use the materials for any commercial purpose, or for any public display (commercial or non-commercial);</li>
+			<li>attempt to decompile or reverse engineer any software contained on RGV Ambit Energy Pro's web site;</li>
+			<li>remove any copyright or other proprietary notations from the materials; or</li>
+			<li>transfer the materials to another person or "mirror" the materials on any other server.</li>
+		</ol>
+	</li>
+	<li>
+		This license shall automatically terminate if you violate any of these restrictions and may be terminated by RGV Ambit Energy Pro at any time. Upon terminating your viewing of these materials or upon the termination of this license, you must destroy any downloaded materials in your possession whether in electronic or printed format.
+	</li>
+</ol>
+
+<h3>
+	3. Disclaimer
+</h3>
+
+<ol type="a">
+	<li>
+		The materials on RGV Ambit Energy Pro's web site are provided "as is". RGV Ambit Energy Pro makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties, including without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights. Further, RGV Ambit Energy Pro does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its Internet web site or otherwise relating to such materials or on any sites linked to this site.
+	</li>
+</ol>
+
+<h3>
+	4. Limitations
+</h3>
+
+<p>
+	In no event shall RGV Ambit Energy Pro or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption,) arising out of the use or inability to use the materials on RGV Ambit Energy Pro's Internet site, even if RGV Ambit Energy Pro or a RGV Ambit Energy Pro authorized representative has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.
+</p>
+			
+<h3>
+	5. Revisions and Errata
+</h3>
+
+<p>
+	The materials appearing on RGV Ambit Energy Pro's web site could include technical, typographical, or photographic errors. RGV Ambit Energy Pro does not warrant that any of the materials on its web site are accurate, complete, or current. RGV Ambit Energy Pro may make changes to the materials contained on its web site at any time without notice. RGV Ambit Energy Pro does not, however, make any commitment to update the materials.
+</p>
+
+<h3>
+	6. Links
+</h3>
+
+<p>
+	RGV Ambit Energy Pro has not reviewed all of the sites linked to its Internet web site and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by RGV Ambit Energy Pro of the site. Use of any such linked web site is at the user's own risk.
+</p>
+
+<h3>
+	7. Site Terms of Use Modifications
+</h3>
+
+<p>
+	RGV Ambit Energy Pro may revise these terms of use for its web site at any time without notice. By using this web site you are agreeing to be bound by the then current version of these Terms and Conditions of Use.
+</p>
+
+<h3>
+	8. Governing Law
+</h3>
+
+<p>
+	Any claim relating to RGV Ambit Energy Pro's web site shall be governed by the laws of the State of McAllen without regard to its conflict of law provisions.
+</p>
+
+<p>
+	General Terms and Conditions applicable to Use of a Web Site.
+</p>
+
+
+
+<h2>
+	Privacy Policy
+</h2>
+
+<p>
+	Your privacy is very important to us. Accordingly, we have developed this Policy in order for you to understand how we collect, use, communicate and disclose and make use of personal information. The following outlines our privacy policy.
+</p>
+
+<ul>
+	<li>
+		Before or at the time of collecting personal information, we will identify the purposes for which information is being collected.
+	</li>
+	<li>
+		We will collect and use of personal information solely with the objective of fulfilling those purposes specified by us and for other compatible purposes, unless we obtain the consent of the individual concerned or as required by law.		
+	</li>
+	<li>
+		We will only retain personal information as long as necessary for the fulfillment of those purposes. 
+	</li>
+	<li>
+		We will collect personal information by lawful and fair means and, where appropriate, with the knowledge or consent of the individual concerned. 
+	</li>
+	<li>
+		Personal data should be relevant to the purposes for which it is to be used, and, to the extent necessary for those purposes, should be accurate, complete, and up-to-date. 
+	</li>
+	<li>
+		We will protect personal information by reasonable security safeguards against loss or theft, as well as unauthorized access, disclosure, copying, use or modification.
+	</li>
+	<li>
+		We will make readily available to customers information about our policies and practices relating to the management of personal information. 
+	</li>
+</ul>
+
+<p>
+	We are committed to conducting our business in accordance with these principles in order to ensure that the confidentiality of personal information is protected and maintained. 
+</p>		
+
+			
+-->
+
+<!--
+<h1>Terms of Service ("Terms")</h1>
+<p>Last updated: October 16, 2016</p>
+<p>Please read these Terms of Service ("Terms", "Terms of Service") carefully before using the rgvenergypro.com website (the "Service") operated by RGV Energy Pro ("us", "we", or "our").</p>
+<p>Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service.</p>
+<p>By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service. This Terms of Service was based on <a href="https://termsfeed.com/blog/sample-terms-and-conditions-template/">the Terms & Conditions Template from TermsFeed</a>.</p>
+<p><strong>Links To Other Web Sites</strong></p>
+<p>Our Service may contain links to third-party web sites or services that are not owned or controlled by RGV Energy Pro.</p>
+<p>RGV Energy Pro has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that RGV Energy Pro shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such web sites or services.</p>
+<p>We strongly advise you to read the terms and conditions and privacy policies of any third-party web sites or services that you visit.</p>
+<p><strong>Governing Law</strong></p>
+<p>These Terms shall be governed and construed in accordance with the laws of Texas, United States, without regard to its conflict of law provisions.</p>
+<p>Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect. These Terms constitute the entire agreement between us regarding our Service, and supersede and replace any prior agreements we might have between us regarding the Service.</p>
+<p><strong>Changes</strong></p>
+<p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will try to provide at least 30 days notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.</p>
+<p>By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, please stop using the Service.</p>
+<p><strong>Contact Us</strong></p>
+<p>If you have any questions about these Terms, please contact us.</p>
+
+-->
+
+<!--
+
+Your Terms & Privacy Policy
+
+TEXTHTMLBACKCOPY TO CLIPBOARD
+RGV Energy Pro Terms of Service and Privacy Policy
+
+1. Terms
+
+By accessing the website at http://rgvenergypro.com, you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this website are protected by applicable copyright and trademark law.
+
+2. Use License
+
+Permission is granted to temporarily download one copy of the materials (information or software) on RGV Energy Pro's website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
+modify or copy the materials;
+use the materials for any commercial purpose, or for any public display (commercial or non-commercial);
+attempt to decompile or reverse engineer any software contained on RGV Energy Pro's website;
+remove any copyright or other proprietary notations from the materials; or
+transfer the materials to another person or "mirror" the materials on any other server.
+This license shall automatically terminate if you violate any of these restrictions and may be terminated by RGV Energy Pro at any time. Upon terminating your viewing of these materials or upon the termination of this license, you must destroy any downloaded materials in your possession whether in electronic or printed format.
+3. Disclaimer
+
+The materials on RGV Energy Pro's website are provided on an 'as is' basis. RGV Energy Pro makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.
+Further, RGV Energy Pro does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its website or otherwise relating to such materials or on any sites linked to this site.
+4. Limitations
+
+In no event shall RGV Energy Pro or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on RGV Energy Pro's website, even if RGV Energy Pro or a RGV Energy Pro authorized representative has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.
+
+5. Accuracy of materials
+
+The materials appearing on RGV Energy Pro's website could include technical, typographical, or photographic errors. RGV Energy Pro does not warrant that any of the materials on its website are accurate, complete or current. RGV Energy Pro may make changes to the materials contained on its website at any time without notice. However RGV Energy Pro does not make any commitment to update the materials.
+
+6. Links
+
+RGV Energy Pro has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by RGV Energy Pro of the site. Use of any such linked website is at the user's own risk.
+
+7. Modifications
+
+RGV Energy Pro may revise these terms of service for its website at any time without notice. By using this website you are agreeing to be bound by the then current version of these terms of service.
+
+8. Governing Law
+
+These terms and conditions are governed by and construed in accordance with the laws of Texas and you irrevocably submit to the exclusive jurisdiction of the courts in that State or location.
+
+Privacy Policy
+
+Your privacy is important to us.
+
+It is RGV Energy Pro's policy to respect your privacy regarding any information we may collect while operating our website. Accordingly, we have developed this privacy policy in order for you to understand how we collect, use, communicate, disclose and otherwise make use of personal information. We have outlined our privacy policy below.
+
+We will collect personal information by lawful and fair means and, where appropriate, with the knowledge or consent of the individual concerned.
+Before or at the time of collecting personal information, we will identify the purposes for which information is being collected.
+We will collect and use personal information solely for fulfilling those purposes specified by us and for other ancillary purposes, unless we obtain the consent of the individual concerned or as required by law.
+Personal data should be relevant to the purposes for which it is to be used, and, to the extent necessary for those purposes, should be accurate, complete, and up-to-date.
+We will protect personal information by using reasonable security safeguards against loss or theft, as well as unauthorized access, disclosure, copying, use or modification.
+We will make readily available to customers information about our policies and practices relating to the management of personal information.
+We will only retain personal information for as long as necessary for the fulfilment of those purposes.
+We are committed to conducting our business in accordance with these principles in order to ensure that the confidentiality of personal information is protected and maintained. RGV Energy Pro may change this privacy policy from time to time at RGV Energy Pro's sole discretion.
+
+Share Lovingly crafted by Humaan Humaan Logo
+-->
+</html>
