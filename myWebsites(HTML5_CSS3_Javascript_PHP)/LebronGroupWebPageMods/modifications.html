@@ -14,16 +14,14 @@ NOTE: the client wanted to be able to edit the form(from the Simfatic form UI) a
 *add default value again for textarea... -_-
 
 //CURRENTLY DONE in script
-1. Add placeholder for all the input fields and legal description
-2. use type="date" inside of input for date picker... (will display as regular input in unsupported browsers)
-3. add autocomplete to (1st section) and (certifications)
-4. turn it off for (all other sections)
-
-//for Script do this...
-*For Old Browsers
--it should just not display the placeholder... CHECK... might have to hide the placeholder just in case
-
-*For New Browsers
+*****For ALL Browsers
+1. use type="date" inside of input for date picker... (will display as regular input in unsupported browsers)
+2. add autocomplete to (1st section) and (certifications)
+3. turn it off for (all other sections)
+*****For Old Browsers that dont support placeholder
+1. display labels on top of input fields
+2. clear value attribute from input field (simfactic automatically adds this in for some reason)
+*****For New Browsers
 1. add place holder with value equivalent to the inputs value
 2. make the input tags value BLANK
 
@@ -34,8 +32,7 @@ Soon to be added:
       You will focus on the first of the required fields
    Else
       It will submit normally
-
-   When you type any character into the field it will go back to being transparent
+2. When you type any character into the field it will go back to being transparent
 
 -->
 
