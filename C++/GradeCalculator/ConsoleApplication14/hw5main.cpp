@@ -1,7 +1,8 @@
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
 //hw4main.cpp - This is the driver file for the static list homework          \\
 //  assignment                                                                \\
-//Author: Tim Wylie                                                           \\
+//Author of Assignment: Tim Wylie                                             \\
+//Programmer: Bryan Cancel						      \\
 //Class: CSCI/CMPE 2380                                                       \\
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
 
